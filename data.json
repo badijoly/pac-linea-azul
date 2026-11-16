@@ -4641,5 +4641,3775 @@
         "p9": "Sí"
       }
     }
+  ],
+  "auditoria": [
+    {
+      "id": "AUD-H3-001",
+      "estudiante": "Alan Erazo Cuero",
+      "colegio": "Escuela Claudio Matte Pérez",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "3.0 pts",
+        "post": "8.0 pts",
+        "delta": "+5 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: b→b | Q2: d→b | Q3: c→b",
+        "respuestas_abiertas": "Q4 Especies: mantarrayas; tiburones di... | Q5: se moririan los peces y f..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "hito 3 AM pre Azul.pdf",
+        "pdf_post": "hito 3 AM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión AM. Las 3 respuestas cerradas coinciden con el registro Excel. Puntajes D1=3, D2=3, D3=2 (Total 8.0/9) calculados con exactitud."
+    },
+    {
+      "id": "AUD-H4-001",
+      "estudiante": "Alan Erazo Cuero",
+      "colegio": "Escuela Claudio Matte Pérez",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "2.0 pts",
+        "post": "4.0 pts",
+        "delta": "+2 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: d→d | Q2: a→d | Q3: a→a",
+        "respuestas_abiertas": "Colillas: Sí (+1 pto) | Acción: botellas y colillas; la p..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "Hito 4 AM pre Azul.pdf",
+        "pdf_post": "Hito 4 AM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión AM. KPI PRE=2.0/4 y POST=4.0/4 concordantes con las marcas de alternativas y mención de colillas."
+    },
+    {
+      "id": "AUD-H3-002",
+      "estudiante": "Alonso Cárdenas Cabrera",
+      "colegio": "Escuela Claudio Matte Pérez",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "1.0 pts",
+        "post": "2.0 pts",
+        "delta": "+1 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: d→d | Q2: d→b | Q3: c→d",
+        "respuestas_abiertas": "Q4 Especies: pez... | Q5: no se..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "hito 3 AM pre Azul.pdf",
+        "pdf_post": "hito 3 AM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión AM. Las 3 respuestas cerradas coinciden con el registro Excel. Puntajes D1=1, D2=1, D3=0 (Total 2.0/9) calculados con exactitud."
+    },
+    {
+      "id": "AUD-H4-002",
+      "estudiante": "Alonso Cárdenas Cabrera",
+      "colegio": "Escuela Claudio Matte Pérez",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "1.0 pts",
+        "post": "2.0 pts",
+        "delta": "+1 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: e→e | Q2: a→a | Q3: a→a",
+        "respuestas_abiertas": "Colillas: Sí (+1 pto) | Acción: cigarros y botellas..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "Hito 4 AM pre Azul.pdf",
+        "pdf_post": "Hito 4 AM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión AM. KPI PRE=1.0/4 y POST=2.0/4 concordantes con las marcas de alternativas y mención de colillas."
+    },
+    {
+      "id": "AUD-H3-003",
+      "estudiante": "Antonia Negrete Pastén",
+      "colegio": "Escuela Claudio Matte Pérez",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "3.0 pts",
+        "post": "5.0 pts",
+        "delta": "+2 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: d→b | Q2: d→b | Q3: b→b",
+        "respuestas_abiertas": "Q4 Especies: peces... | Q5: se secarian las microalga..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "hito 3 AM pre Azul.pdf",
+        "pdf_post": "hito 3 AM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión AM. Las 3 respuestas cerradas coinciden con el registro Excel. Puntajes D1=3, D2=1, D3=1 (Total 5.0/9) calculados con exactitud."
+    },
+    {
+      "id": "AUD-H4-003",
+      "estudiante": "Antonia Negrete Pastén",
+      "colegio": "Escuela Claudio Matte Pérez",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "2.0 pts",
+        "post": "4.0 pts",
+        "delta": "+2 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: a→d | Q2: d→d | Q3: a→a",
+        "respuestas_abiertas": "Colillas: Sí (+1 pto) | Acción: bolsas y colilla de cigar..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "Hito 4 AM pre Azul.pdf",
+        "pdf_post": "Hito 4 AM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión AM. KPI PRE=2.0/4 y POST=4.0/4 concordantes con las marcas de alternativas y mención de colillas."
+    },
+    {
+      "id": "AUD-H3-004",
+      "estudiante": "Ariana Morales Alpaca",
+      "colegio": "Escuela Claudio Matte Pérez",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "2.0 pts",
+        "post": "5.0 pts",
+        "delta": "+3 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: d→d | Q2: d→b | Q3: c→c",
+        "respuestas_abiertas": "Q4 Especies: pez; tiburon; ballena... | Q5: desapareceran los animale..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "hito 3 AM pre Azul.pdf",
+        "pdf_post": "hito 3 AM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión AM. Las 3 respuestas cerradas coinciden con el registro Excel. Puntajes D1=1, D2=2, D3=2 (Total 5.0/9) calculados con exactitud."
+    },
+    {
+      "id": "AUD-H4-004",
+      "estudiante": "Ariana Morales Alpaca",
+      "colegio": "Escuela Claudio Matte Pérez",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "2.0 pts",
+        "post": "4.0 pts",
+        "delta": "+2 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: d→d | Q2: a→d | Q3: a→a",
+        "respuestas_abiertas": "Colillas: Sí (+1 pto) | Acción: botellas; bolsas; toallas..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "Hito 4 AM pre Azul.pdf",
+        "pdf_post": "Hito 4 AM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión AM. KPI PRE=2.0/4 y POST=4.0/4 concordantes con las marcas de alternativas y mención de colillas."
+    },
+    {
+      "id": "AUD-H3-005",
+      "estudiante": "Cristopher Padrón Cárdenas",
+      "colegio": "Escuela Claudio Matte Pérez",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "2.0 pts",
+        "post": "8.0 pts",
+        "delta": "+6 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: d→b | Q2: d→b | Q3: d→b",
+        "respuestas_abiertas": "Q4 Especies: gatopardo; raya aguila; p... | Q5: muchas especies moririan..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "hito 3 AM pre Azul.pdf",
+        "pdf_post": "hito 3 AM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión AM. Las 3 respuestas cerradas coinciden con el registro Excel. Puntajes D1=3, D2=3, D3=2 (Total 8.0/9) calculados con exactitud."
+    },
+    {
+      "id": "AUD-H4-005",
+      "estudiante": "Cristopher Padrón Cárdenas",
+      "colegio": "Escuela Claudio Matte Pérez",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "2.0 pts",
+        "post": "3.0 pts",
+        "delta": "+1 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: d→d | Q2: a→d | Q3: a→a",
+        "respuestas_abiertas": "Colillas: No | Acción: bolsas plasticas y botell..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "Hito 4 AM pre Azul.pdf",
+        "pdf_post": "Hito 4 AM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión AM. KPI PRE=2.0/4 y POST=3.0/4 concordantes con las marcas de alternativas y mención de colillas."
+    },
+    {
+      "id": "AUD-H3-006",
+      "estudiante": "Janely Rodríguez Hernández",
+      "colegio": "Escuela Claudio Matte Pérez",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "1.0 pts",
+        "post": "5.0 pts",
+        "delta": "+4 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: d→d | Q2: d→b | Q3: c→b",
+        "respuestas_abiertas": "Q4 Especies: peces; lobos marinos... | Q5: volverian las focas..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "hito 3 AM pre Azul.pdf",
+        "pdf_post": "hito 3 AM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión AM. Las 3 respuestas cerradas coinciden con el registro Excel. Puntajes D1=2, D2=1, D3=2 (Total 5.0/9) calculados con exactitud."
+    },
+    {
+      "id": "AUD-H4-006",
+      "estudiante": "Janely Rodríguez Hernández",
+      "colegio": "Escuela Claudio Matte Pérez",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "1.0 pts",
+        "post": "1.0 pts",
+        "delta": "+0 pts",
+        "status": "Mantuvo",
+        "respuestas_cerradas": "Q1: a→a | Q2: a/d→b | Q3: a→a",
+        "respuestas_abiertas": "Colillas: No | Acción: plasticos..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "Hito 4 AM pre Azul.pdf",
+        "pdf_post": "Hito 4 AM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "OBS",
+      "tipo_observacion": "Marcado doble en alternativa",
+      "diagnostico": "En el pretest físico marcó opciones 'a' y 'd' en Q2; el digitador registró 'a/d', otorgando 1 punto, lo cual refleja el criterio inclusivo del protocolo."
+    },
+    {
+      "id": "AUD-H3-007",
+      "estudiante": "José Arando Jiménez",
+      "colegio": "Escuela Claudio Matte Pérez",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "1.0 pts",
+        "post": "2.0 pts",
+        "delta": "+1 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: d→d | Q2: b→c | Q3: d→b",
+        "respuestas_abiertas": "Q4 Especies: no se... | Q5: no hubiera comida..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "hito 3 AM pre Azul.pdf",
+        "pdf_post": "hito 3 AM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión AM. Las 3 respuestas cerradas coinciden con el registro Excel. Puntajes D1=1, D2=0, D3=1 (Total 2.0/9) calculados con exactitud."
+    },
+    {
+      "id": "AUD-H4-007",
+      "estudiante": "José Arando Jiménez",
+      "colegio": "Escuela Claudio Matte Pérez",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "1.0 pts",
+        "post": "2.0 pts",
+        "delta": "+1 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: e→c | Q2: d→d | Q3: b→d",
+        "respuestas_abiertas": "Colillas: Sí (+1 pto) | Acción: cigarro y tapas de botell..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "Hito 4 AM pre Azul.pdf",
+        "pdf_post": "Hito 4 AM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión AM. KPI PRE=1.0/4 y POST=2.0/4 concordantes con las marcas de alternativas y mención de colillas."
+    },
+    {
+      "id": "AUD-H3-008",
+      "estudiante": "Luciana Urapiante Bilbao",
+      "colegio": "Escuela Claudio Matte Pérez",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "1.0 pts",
+        "post": "9.0 pts",
+        "delta": "+8 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: d→b | Q2: d→b | Q3: c→b",
+        "respuestas_abiertas": "Q4 Especies: pez; tiburon tollo; manta... | Q5: los lobos marinos se dupl..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "hito 3 AM pre Azul.pdf",
+        "pdf_post": "hito 3 AM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión AM. Las 3 respuestas cerradas coinciden con el registro Excel. Puntajes D1=3, D2=3, D3=3 (Total 9.0/9) calculados con exactitud."
+    },
+    {
+      "id": "AUD-H4-008",
+      "estudiante": "Luciana Urapiante Bilbao",
+      "colegio": "Escuela Claudio Matte Pérez",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "2.0 pts",
+        "post": "4.0 pts",
+        "delta": "+2 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: a→d | Q2: d→d | Q3: a→a",
+        "respuestas_abiertas": "Colillas: Sí (+1 pto) | Acción: colilla; plastico y bolsa..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "Hito 4 AM pre Azul.pdf",
+        "pdf_post": "Hito 4 AM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión AM. KPI PRE=2.0/4 y POST=4.0/4 concordantes con las marcas de alternativas y mención de colillas."
+    },
+    {
+      "id": "AUD-H3-009",
+      "estudiante": "Nahuel Prieto Campillay",
+      "colegio": "Escuela Claudio Matte Pérez",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "4.0 pts",
+        "post": "5.0 pts",
+        "delta": "+1 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: a→a | Q2: b→b | Q3: c→b",
+        "respuestas_abiertas": "Q4 Especies: tiburones; rayas; ballena... | Q5: varias especies no se pod..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "hito 3 AM pre Azul.pdf",
+        "pdf_post": "hito 3 AM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión AM. Las 3 respuestas cerradas coinciden con el registro Excel. Puntajes D1=2, D2=2, D3=1 (Total 5.0/9) calculados con exactitud."
+    },
+    {
+      "id": "AUD-H4-009",
+      "estudiante": "Nahuel Prieto Campillay",
+      "colegio": "Escuela Claudio Matte Pérez",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "2.0 pts",
+        "post": "2.0 pts",
+        "delta": "+0 pts",
+        "status": "Mantuvo",
+        "respuestas_cerradas": "Q1: a→a | Q2: d→d | Q3: a→a",
+        "respuestas_abiertas": "Colillas: No | Acción: bolsas y botellas de plas..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "Hito 4 AM pre Azul.pdf",
+        "pdf_post": "Hito 4 AM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión AM. KPI PRE=2.0/4 y POST=2.0/4 concordantes con las marcas de alternativas y mención de colillas."
+    },
+    {
+      "id": "AUD-H3-010",
+      "estudiante": "Ángel Vera Forero",
+      "colegio": "Escuela Claudio Matte Pérez",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "2.0 pts",
+        "post": "5.0 pts",
+        "delta": "+3 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: d→b | Q2: d→c | Q3: c→c",
+        "respuestas_abiertas": "Q4 Especies: peces; medusas; algas... | Q5: varios animales estarian ..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "hito 3 AM pre Azul.pdf",
+        "pdf_post": "hito 3 AM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "OBS",
+      "tipo_observacion": "Expresión coloquial registrada",
+      "diagnostico": "En el razonamiento basal inicial escribió 'no se, nunca he ido alla'; el registro Excel transcribió textualmente su expresión sin alterarla."
+    },
+    {
+      "id": "AUD-H4-010",
+      "estudiante": "Ángel Vera Forero",
+      "colegio": "Escuela Claudio Matte Pérez",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "2.0 pts",
+        "post": "2.0 pts",
+        "delta": "+0 pts",
+        "status": "Mantuvo",
+        "respuestas_cerradas": "Q1: a→a | Q2: d→d | Q3: a→a",
+        "respuestas_abiertas": "Colillas: No | Acción: botellas y muchas bolsas..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "Hito 4 AM pre Azul.pdf",
+        "pdf_post": "Hito 4 AM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión AM. KPI PRE=2.0/4 y POST=2.0/4 concordantes con las marcas de alternativas y mención de colillas."
+    },
+    {
+      "id": "AUD-H3-011",
+      "estudiante": "Alfonso Araos Torrejón",
+      "colegio": "Escuela Ecológica Humberto González Echegoyen",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "7.0 pts",
+        "post": "7.0 pts",
+        "delta": "+0 pts",
+        "status": "Mantuvo",
+        "respuestas_cerradas": "Q1: b→b | Q2: b→b | Q3: a→a",
+        "respuestas_abiertas": "Q4 Especies: lobo marino; tiburones; b... | Q5: se complicaria la cadena ..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "hito 3 AM pre Azul.pdf",
+        "pdf_post": "hito 3 AM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión AM. Las 3 respuestas cerradas coinciden con el registro Excel. Puntajes D1=2, D2=3, D3=2 (Total 7.0/9) calculados con exactitud."
+    },
+    {
+      "id": "AUD-H4-011",
+      "estudiante": "Alfonso Araos Torrejón",
+      "colegio": "Escuela Ecológica Humberto González Echegoyen",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "2.0 pts",
+        "post": "3.0 pts",
+        "delta": "+1 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: b→b | Q2: a/d→d | Q3: a→a",
+        "respuestas_abiertas": "Colillas: Sí (+1 pto) | Acción: cigarro; botellas; papel;..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "Hito 4 AM pre Azul.pdf",
+        "pdf_post": "Hito 4 AM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "OBS",
+      "tipo_observacion": "Marcado múltiple en papel",
+      "diagnostico": "En el pretest físico marcó 'a/d' en Q2; digitado fielmente como 'a/d' en la base digital."
+    },
+    {
+      "id": "AUD-H3-012",
+      "estudiante": "Cristopher Salazar Medero",
+      "colegio": "Escuela Ecológica Humberto González Echegoyen",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "1.0 pts",
+        "post": "6.0 pts",
+        "delta": "+5 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: a→a | Q2: d→b | Q3: c→b",
+        "respuestas_abiertas": "Q4 Especies: tiburones; mantas... | Q5: los tiburones son esencia..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "hito 3 AM pre Azul.pdf",
+        "pdf_post": "hito 3 AM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión AM. Las 3 respuestas cerradas coinciden con el registro Excel. Puntajes D1=2, D2=1, D3=3 (Total 6.0/9) calculados con exactitud."
+    },
+    {
+      "id": "AUD-H4-012",
+      "estudiante": "Cristopher Salazar Medero",
+      "colegio": "Escuela Ecológica Humberto González Echegoyen",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "3.0 pts",
+        "post": "3.0 pts",
+        "delta": "+0 pts",
+        "status": "Mantuvo",
+        "respuestas_cerradas": "Q1: a→a | Q2: d→d | Q3: a→a",
+        "respuestas_abiertas": "Colillas: Sí (+1 pto) | Acción: botellas; cigarros; poner..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "Hito 4 AM pre Azul.pdf",
+        "pdf_post": "Hito 4 AM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión AM. KPI PRE=3.0/4 y POST=3.0/4 concordantes con las marcas de alternativas y mención de colillas."
+    },
+    {
+      "id": "AUD-H3-013",
+      "estudiante": "Emilia Ahumada Araya",
+      "colegio": "Escuela Ecológica Humberto González Echegoyen",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "4.0 pts",
+        "post": "8.0 pts",
+        "delta": "+4 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: d→b | Q2: d→b | Q3: d→b",
+        "respuestas_abiertas": "Q4 Especies: tiburones; delfines; ball... | Q5: afectaria porque se compl..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "hito 3 AM pre Azul.pdf",
+        "pdf_post": "hito 3 AM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión AM. Las 3 respuestas cerradas coinciden con el registro Excel. Puntajes D1=3, D2=2, D3=3 (Total 8.0/9) calculados con exactitud."
+    },
+    {
+      "id": "AUD-H4-013",
+      "estudiante": "Emilia Ahumada Araya",
+      "colegio": "Escuela Ecológica Humberto González Echegoyen",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "4.0 pts",
+        "post": "4.0 pts",
+        "delta": "+0 pts",
+        "status": "Mantuvo",
+        "respuestas_cerradas": "Q1: d→d | Q2: d→d | Q3: a→a",
+        "respuestas_abiertas": "Colillas: Sí (+1 pto) | Acción: botellas; bolsas; cigarro..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "Hito 4 AM pre Azul.pdf",
+        "pdf_post": "Hito 4 AM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión AM. KPI PRE=4.0/4 y POST=4.0/4 concordantes con las marcas de alternativas y mención de colillas."
+    },
+    {
+      "id": "AUD-H3-014",
+      "estudiante": "Emily Manríquez Villegas",
+      "colegio": "Escuela Ecológica Humberto González Echegoyen",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "—",
+        "post": "—",
+        "delta": "—",
+        "status": "No Asistió",
+        "respuestas_cerradas": "—",
+        "respuestas_abiertas": "—"
+      },
+      "escaneo_data": {
+        "pdf_pre": "No registra en escaneo",
+        "pdf_post": "No registra en escaneo",
+        "folio_estado": "Sin folio físico",
+        "calidad_escaneo": "—"
+      },
+      "estado_cotejo": "UNPAIRED",
+      "tipo_observacion": "Inasistencia justificada a jornada",
+      "diagnostico": "Estudiante matriculado en nómina pero que no estuvo presente en el Hito 3. Justifica ausencia de folio físico."
+    },
+    {
+      "id": "AUD-H4-014",
+      "estudiante": "Emily Manríquez Villegas",
+      "colegio": "Escuela Ecológica Humberto González Echegoyen",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "3.0 pts",
+        "post": "4.0 pts",
+        "delta": "+1 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: d→d | Q2: d→d | Q3: a→a",
+        "respuestas_abiertas": "Colillas: Sí (+1 pto) | Acción: carbon y cigarrillos; cua..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "Hito 4 AM pre Azul.pdf",
+        "pdf_post": "Hito 4 AM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión AM. KPI PRE=3.0/4 y POST=4.0/4 concordantes con las marcas de alternativas y mención de colillas."
+    },
+    {
+      "id": "AUD-H3-015",
+      "estudiante": "Javiera Paredes Jackson",
+      "colegio": "Escuela Ecológica Humberto González Echegoyen",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "6.0 pts",
+        "post": "5.0 pts",
+        "delta": "-1 pts",
+        "status": "Retrocedió",
+        "respuestas_cerradas": "Q1: b→b | Q2: d→b | Q3: c→d",
+        "respuestas_abiertas": "Q4 Especies: tiburones; manta rayas; p... | Q5: habria mucha cantidad de ..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "hito 3 AM pre Azul.pdf",
+        "pdf_post": "hito 3 AM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión AM. Las 3 respuestas cerradas coinciden con el registro Excel. Puntajes D1=2, D2=2, D3=1 (Total 5.0/9) calculados con exactitud."
+    },
+    {
+      "id": "AUD-H4-015",
+      "estudiante": "Javiera Paredes Jackson",
+      "colegio": "Escuela Ecológica Humberto González Echegoyen",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "4.0 pts",
+        "post": "3.0 pts",
+        "delta": "-1 pts",
+        "status": "Retrocedió",
+        "respuestas_cerradas": "Q1: d→d | Q2: d→d | Q3: a→a",
+        "respuestas_abiertas": "Colillas: No | Acción: plastico; madera; unos ba..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "Hito 4 AM pre Azul.pdf",
+        "pdf_post": "Hito 4 AM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión AM. KPI PRE=4.0/4 y POST=3.0/4 concordantes con las marcas de alternativas y mención de colillas."
+    },
+    {
+      "id": "AUD-H3-016",
+      "estudiante": "Kendra Calderón Viacava",
+      "colegio": "Escuela Ecológica Humberto González Echegoyen",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "7.0 pts",
+        "post": "6.0 pts",
+        "delta": "-1 pts",
+        "status": "Retrocedió",
+        "respuestas_cerradas": "Q1: b→b | Q2: b→b | Q3: a→no sabe",
+        "respuestas_abiertas": "Q4 Especies: tiburon tollo manchado; t... | Q5: nos afectaria a nosotros ..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "hito 3 AM pre Azul.pdf",
+        "pdf_post": "hito 3 AM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión AM. Las 3 respuestas cerradas coinciden con el registro Excel. Puntajes D1=2, D2=3, D3=1 (Total 6.0/9) calculados con exactitud."
+    },
+    {
+      "id": "AUD-H4-016",
+      "estudiante": "Kendra Calderón Viacava",
+      "colegio": "Escuela Ecológica Humberto González Echegoyen",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "—",
+        "post": "—",
+        "delta": "—",
+        "status": "No Asistió / Incompleto",
+        "respuestas_cerradas": "—",
+        "respuestas_abiertas": "—"
+      },
+      "escaneo_data": {
+        "pdf_pre": "No registra en escaneo",
+        "pdf_post": "No registra en escaneo",
+        "folio_estado": "Sin folio físico",
+        "calidad_escaneo": "—"
+      },
+      "estado_cotejo": "UNPAIRED",
+      "tipo_observacion": "Inasistencia justificada a jornada",
+      "diagnostico": "Estudiante de nómina oficial que no participó de Hito 4. No genera par evaluativo."
+    },
+    {
+      "id": "AUD-H3-017",
+      "estudiante": "Lia Kong Villafuente",
+      "colegio": "Escuela Ecológica Humberto González Echegoyen",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "—",
+        "post": "—",
+        "delta": "—",
+        "status": "No Asistió",
+        "respuestas_cerradas": "—",
+        "respuestas_abiertas": "—"
+      },
+      "escaneo_data": {
+        "pdf_pre": "No registra en escaneo",
+        "pdf_post": "No registra en escaneo",
+        "folio_estado": "Sin folio físico",
+        "calidad_escaneo": "—"
+      },
+      "estado_cotejo": "UNPAIRED",
+      "tipo_observacion": "Inasistencia justificada a jornada",
+      "diagnostico": "Estudiante matriculado en nómina pero que no estuvo presente en el Hito 3. Justifica ausencia de folio físico."
+    },
+    {
+      "id": "AUD-H4-017",
+      "estudiante": "Lia Kong Villafuente",
+      "colegio": "Escuela Ecológica Humberto González Echegoyen",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "1.0 pts",
+        "post": "1.0 pts",
+        "delta": "+0 pts",
+        "status": "Mantuvo",
+        "respuestas_cerradas": "Q1: a→a | Q2: a→a | Q3: a→a",
+        "respuestas_abiertas": "Colillas: No | Acción: botella; lata; bolsas; hi..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "Hito 4 AM pre Azul.pdf",
+        "pdf_post": "Hito 4 AM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión AM. KPI PRE=1.0/4 y POST=1.0/4 concordantes con las marcas de alternativas y mención de colillas."
+    },
+    {
+      "id": "AUD-H3-018",
+      "estudiante": "Matias Roda Olivares",
+      "colegio": "Escuela Ecológica Humberto González Echegoyen",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "8.0 pts",
+        "post": "8.0 pts",
+        "delta": "+0 pts",
+        "status": "Mantuvo",
+        "respuestas_cerradas": "Q1: b→b | Q2: b→b | Q3: b→b",
+        "respuestas_abiertas": "Q4 Especies: tollo comun; leon marino;... | Q5: la sobrepoblacion de espe..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "hito 3 AM pre Azul.pdf",
+        "pdf_post": "hito 3 AM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión AM. Las 3 respuestas cerradas coinciden con el registro Excel. Puntajes D1=3, D2=3, D3=2 (Total 8.0/9) calculados con exactitud."
+    },
+    {
+      "id": "AUD-H4-018",
+      "estudiante": "Matias Roda Olivares",
+      "colegio": "Escuela Ecológica Humberto González Echegoyen",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "4.0 pts",
+        "post": "4.0 pts",
+        "delta": "+0 pts",
+        "status": "Mantuvo",
+        "respuestas_cerradas": "Q1: d→d | Q2: d→d | Q3: a→a",
+        "respuestas_abiertas": "Colillas: Sí (+1 pto) | Acción: cigarros; cajas de jugo; ..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "Hito 4 AM pre Azul.pdf",
+        "pdf_post": "Hito 4 AM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión AM. KPI PRE=4.0/4 y POST=4.0/4 concordantes con las marcas de alternativas y mención de colillas."
+    },
+    {
+      "id": "AUD-H3-019",
+      "estudiante": "Maximiliano Cortés Barrios",
+      "colegio": "Escuela Ecológica Humberto González Echegoyen",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "5.0 pts",
+        "post": "3.0 pts",
+        "delta": "-2 pts",
+        "status": "Retrocedió",
+        "respuestas_cerradas": "Q1: b→b | Q2: c→c | Q3: d→d",
+        "respuestas_abiertas": "Q4 Especies: lobo marino; leon marino... | Q5: controlan las plagas..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "hito 3 AM pre Azul.pdf",
+        "pdf_post": "hito 3 AM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión AM. Las 3 respuestas cerradas coinciden con el registro Excel. Puntajes D1=1, D2=1, D3=1 (Total 3.0/9) calculados con exactitud."
+    },
+    {
+      "id": "AUD-H4-019",
+      "estudiante": "Maximiliano Cortés Barrios",
+      "colegio": "Escuela Ecológica Humberto González Echegoyen",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "3.0 pts",
+        "post": "3.0 pts",
+        "delta": "+0 pts",
+        "status": "Mantuvo",
+        "respuestas_cerradas": "Q1: a→d | Q2: d→d | Q3: a→a",
+        "respuestas_abiertas": "Colillas: No | Acción: botella plastica; botando..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "Hito 4 AM pre Azul.pdf",
+        "pdf_post": "Hito 4 AM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión AM. KPI PRE=3.0/4 y POST=3.0/4 concordantes con las marcas de alternativas y mención de colillas."
+    },
+    {
+      "id": "AUD-H3-020",
+      "estudiante": "Máximo Alvarado Gordillo",
+      "colegio": "Escuela Ecológica Humberto González Echegoyen",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "3.0 pts",
+        "post": "5.0 pts",
+        "delta": "+2 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: d→b | Q2: d→c | Q3: a→b",
+        "respuestas_abiertas": "Q4 Especies: lobos marinos... | Q5: la sobrepoblacion..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "hito 3 AM pre Azul.pdf",
+        "pdf_post": "hito 3 AM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión AM. Las 3 respuestas cerradas coinciden con el registro Excel. Puntajes D1=2, D2=1, D3=2 (Total 5.0/9) calculados con exactitud."
+    },
+    {
+      "id": "AUD-H4-020",
+      "estudiante": "Máximo Alvarado Gordillo",
+      "colegio": "Escuela Ecológica Humberto González Echegoyen",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "1.0 pts",
+        "post": "1.0 pts",
+        "delta": "+0 pts",
+        "status": "Mantuvo",
+        "respuestas_cerradas": "Q1: a→a | Q2: a→a | Q3: a→a",
+        "respuestas_abiertas": "Colillas: No | Acción: cristal; plastico; no bot..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "Hito 4 AM pre Azul.pdf",
+        "pdf_post": "Hito 4 AM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión AM. KPI PRE=1.0/4 y POST=1.0/4 concordantes con las marcas de alternativas y mención de colillas."
+    },
+    {
+      "id": "AUD-H3-021",
+      "estudiante": "Antonella Espinoza Manuelda",
+      "colegio": "Escuela Ecológica Padre Alberto Hurtado",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "6.0 pts",
+        "post": "9.0 pts",
+        "delta": "+3 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: b→b | Q2: d→b | Q3: a→b",
+        "respuestas_abiertas": "Q4 Especies: tiburon tollo; ballena az... | Q5: los lobos y focas se exti..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "hito 3 AM pre Azul.pdf",
+        "pdf_post": "hito 3 AM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión AM. Las 3 respuestas cerradas coinciden con el registro Excel. Puntajes D1=3, D2=3, D3=3 (Total 9.0/9) calculados con exactitud."
+    },
+    {
+      "id": "AUD-H4-021",
+      "estudiante": "Antonella Espinoza Manuelda",
+      "colegio": "Escuela Ecológica Padre Alberto Hurtado",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "4.0 pts",
+        "post": "4.0 pts",
+        "delta": "+0 pts",
+        "status": "Mantuvo",
+        "respuestas_cerradas": "Q1: d→d | Q2: d→d | Q3: a→a",
+        "respuestas_abiertas": "Colillas: Sí (+1 pto) | Acción: cigarros; botellas de alc..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "Hito 4 AM pre Azul.pdf",
+        "pdf_post": "Hito 4 AM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión AM. KPI PRE=4.0/4 y POST=4.0/4 concordantes con las marcas de alternativas y mención de colillas."
+    },
+    {
+      "id": "AUD-H3-022",
+      "estudiante": "Emily Sandoval Sandoval",
+      "colegio": "Escuela Ecológica Padre Alberto Hurtado",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "—",
+        "post": "—",
+        "delta": "—",
+        "status": "No Asistió",
+        "respuestas_cerradas": "—",
+        "respuestas_abiertas": "—"
+      },
+      "escaneo_data": {
+        "pdf_pre": "No registra en escaneo",
+        "pdf_post": "No registra en escaneo",
+        "folio_estado": "Sin folio físico",
+        "calidad_escaneo": "—"
+      },
+      "estado_cotejo": "UNPAIRED",
+      "tipo_observacion": "Inasistencia justificada a jornada",
+      "diagnostico": "Estudiante matriculado en nómina pero que no estuvo presente en el Hito 3. Justifica ausencia de folio físico."
+    },
+    {
+      "id": "AUD-H4-022",
+      "estudiante": "Emily Sandoval Sandoval",
+      "colegio": "Escuela Ecológica Padre Alberto Hurtado",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "—",
+        "post": "—",
+        "delta": "—",
+        "status": "No Asistió / Incompleto",
+        "respuestas_cerradas": "—",
+        "respuestas_abiertas": "—"
+      },
+      "escaneo_data": {
+        "pdf_pre": "No registra en escaneo",
+        "pdf_post": "No registra en escaneo",
+        "folio_estado": "Sin folio físico",
+        "calidad_escaneo": "—"
+      },
+      "estado_cotejo": "UNPAIRED",
+      "tipo_observacion": "Inasistencia justificada a jornada",
+      "diagnostico": "Estudiante de nómina oficial que no participó de Hito 4. No genera par evaluativo."
+    },
+    {
+      "id": "AUD-H3-023",
+      "estudiante": "Janain Jimenez Delgadillo",
+      "colegio": "Escuela Ecológica Padre Alberto Hurtado",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "—",
+        "post": "—",
+        "delta": "—",
+        "status": "No Asistió",
+        "respuestas_cerradas": "—",
+        "respuestas_abiertas": "—"
+      },
+      "escaneo_data": {
+        "pdf_pre": "No registra en escaneo",
+        "pdf_post": "No registra en escaneo",
+        "folio_estado": "Sin folio físico",
+        "calidad_escaneo": "—"
+      },
+      "estado_cotejo": "UNPAIRED",
+      "tipo_observacion": "Inasistencia justificada a jornada",
+      "diagnostico": "Estudiante matriculado en nómina pero que no estuvo presente en el Hito 3. Justifica ausencia de folio físico."
+    },
+    {
+      "id": "AUD-H4-023",
+      "estudiante": "Janain Jimenez Delgadillo",
+      "colegio": "Escuela Ecológica Padre Alberto Hurtado",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "—",
+        "post": "—",
+        "delta": "—",
+        "status": "No Asistió / Incompleto",
+        "respuestas_cerradas": "—",
+        "respuestas_abiertas": "—"
+      },
+      "escaneo_data": {
+        "pdf_pre": "No registra en escaneo",
+        "pdf_post": "No registra en escaneo",
+        "folio_estado": "Sin folio físico",
+        "calidad_escaneo": "—"
+      },
+      "estado_cotejo": "UNPAIRED",
+      "tipo_observacion": "Inasistencia justificada a jornada",
+      "diagnostico": "Estudiante de nómina oficial que no participó de Hito 4. No genera par evaluativo."
+    },
+    {
+      "id": "AUD-H3-024",
+      "estudiante": "Madeleyn Ibaer Báez",
+      "colegio": "Escuela Ecológica Padre Alberto Hurtado",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "—",
+        "post": "—",
+        "delta": "—",
+        "status": "No Asistió",
+        "respuestas_cerradas": "—",
+        "respuestas_abiertas": "—"
+      },
+      "escaneo_data": {
+        "pdf_pre": "No registra en escaneo",
+        "pdf_post": "No registra en escaneo",
+        "folio_estado": "Sin folio físico",
+        "calidad_escaneo": "—"
+      },
+      "estado_cotejo": "UNPAIRED",
+      "tipo_observacion": "Inasistencia justificada a jornada",
+      "diagnostico": "Estudiante matriculado en nómina pero que no estuvo presente en el Hito 3. Justifica ausencia de folio físico."
+    },
+    {
+      "id": "AUD-H4-024",
+      "estudiante": "Madeleyn Ibaer Báez",
+      "colegio": "Escuela Ecológica Padre Alberto Hurtado",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "—",
+        "post": "—",
+        "delta": "—",
+        "status": "No Asistió / Incompleto",
+        "respuestas_cerradas": "—",
+        "respuestas_abiertas": "—"
+      },
+      "escaneo_data": {
+        "pdf_pre": "No registra en escaneo",
+        "pdf_post": "No registra en escaneo",
+        "folio_estado": "Sin folio físico",
+        "calidad_escaneo": "—"
+      },
+      "estado_cotejo": "UNPAIRED",
+      "tipo_observacion": "Inasistencia justificada a jornada",
+      "diagnostico": "Estudiante de nómina oficial que no participó de Hito 4. No genera par evaluativo."
+    },
+    {
+      "id": "AUD-H3-025",
+      "estudiante": "María Paz Amira Valencia",
+      "colegio": "Escuela Ecológica Padre Alberto Hurtado",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "3.0 pts",
+        "post": "8.0 pts",
+        "delta": "+5 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: b→b | Q2: d→b | Q3: c→b",
+        "respuestas_abiertas": "Q4 Especies: tiburon tollo; gato pardo... | Q5: el oceano cambiaria de co..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "hito 3 AM pre Azul.pdf",
+        "pdf_post": "hito 3 AM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión AM. Las 3 respuestas cerradas coinciden con el registro Excel. Puntajes D1=3, D2=3, D3=2 (Total 8.0/9) calculados con exactitud."
+    },
+    {
+      "id": "AUD-H4-025",
+      "estudiante": "María Paz Amira Valencia",
+      "colegio": "Escuela Ecológica Padre Alberto Hurtado",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "3.0 pts",
+        "post": "4.0 pts",
+        "delta": "+1 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: d→d | Q2: d→d | Q3: a→a",
+        "respuestas_abiertas": "Colillas: Sí (+1 pto) | Acción: cigarros; plastico; metal..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "Hito 4 AM pre Azul.pdf",
+        "pdf_post": "Hito 4 AM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión AM. KPI PRE=3.0/4 y POST=4.0/4 concordantes con las marcas de alternativas y mención de colillas."
+    },
+    {
+      "id": "AUD-H3-026",
+      "estudiante": "Roberto Ledezma Cuturrufo",
+      "colegio": "Escuela Ecológica Padre Alberto Hurtado",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "2.0 pts",
+        "post": "7.0 pts",
+        "delta": "+5 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: d→b | Q2: d→b | Q3: c→b",
+        "respuestas_abiertas": "Q4 Especies: tiburon tollo; tiburon ma... | Q5: los focas revivirian exti..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "hito 3 AM pre Azul.pdf",
+        "pdf_post": "hito 3 AM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión AM. Las 3 respuestas cerradas coinciden con el registro Excel. Puntajes D1=3, D2=2, D3=2 (Total 7.0/9) calculados con exactitud."
+    },
+    {
+      "id": "AUD-H4-026",
+      "estudiante": "Roberto Ledezma Cuturrufo",
+      "colegio": "Escuela Ecológica Padre Alberto Hurtado",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "2.0 pts",
+        "post": "2.0 pts",
+        "delta": "+0 pts",
+        "status": "Mantuvo",
+        "respuestas_cerradas": "Q1: d→c | Q2: c→a | Q3: a→a",
+        "respuestas_abiertas": "Colillas: Sí (+1 pto) | Acción: colillas; plasticos; vidr..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "Hito 4 AM pre Azul.pdf",
+        "pdf_post": "Hito 4 AM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión AM. KPI PRE=2.0/4 y POST=2.0/4 concordantes con las marcas de alternativas y mención de colillas."
+    },
+    {
+      "id": "AUD-H3-027",
+      "estudiante": "Selena Oros Riquelme",
+      "colegio": "Escuela Ecológica Padre Alberto Hurtado",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "—",
+        "post": "—",
+        "delta": "—",
+        "status": "No Asistió",
+        "respuestas_cerradas": "—",
+        "respuestas_abiertas": "—"
+      },
+      "escaneo_data": {
+        "pdf_pre": "No registra en escaneo",
+        "pdf_post": "No registra en escaneo",
+        "folio_estado": "Sin folio físico",
+        "calidad_escaneo": "—"
+      },
+      "estado_cotejo": "UNPAIRED",
+      "tipo_observacion": "Inasistencia justificada a jornada",
+      "diagnostico": "Estudiante matriculado en nómina pero que no estuvo presente en el Hito 3. Justifica ausencia de folio físico."
+    },
+    {
+      "id": "AUD-H4-027",
+      "estudiante": "Selena Oros Riquelme",
+      "colegio": "Escuela Ecológica Padre Alberto Hurtado",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "—",
+        "post": "—",
+        "delta": "—",
+        "status": "No Asistió / Incompleto",
+        "respuestas_cerradas": "—",
+        "respuestas_abiertas": "—"
+      },
+      "escaneo_data": {
+        "pdf_pre": "No registra en escaneo",
+        "pdf_post": "No registra en escaneo",
+        "folio_estado": "Sin folio físico",
+        "calidad_escaneo": "—"
+      },
+      "estado_cotejo": "UNPAIRED",
+      "tipo_observacion": "Inasistencia justificada a jornada",
+      "diagnostico": "Estudiante de nómina oficial que no participó de Hito 4. No genera par evaluativo."
+    },
+    {
+      "id": "AUD-H3-028",
+      "estudiante": "Sofía Araos Bueno",
+      "colegio": "Escuela Ecológica Padre Alberto Hurtado",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "3.0 pts",
+        "post": "6.0 pts",
+        "delta": "+3 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: b→b | Q2: c→b | Q3: b→b",
+        "respuestas_abiertas": "Q4 Especies: tiburones; rayas... | Q5: el agua se contaminaria y..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "hito 3 AM pre Azul.pdf",
+        "pdf_post": "hito 3 AM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión AM. Las 3 respuestas cerradas coinciden con el registro Excel. Puntajes D1=3, D2=1, D3=2 (Total 6.0/9) calculados con exactitud."
+    },
+    {
+      "id": "AUD-H4-028",
+      "estudiante": "Sofía Araos Bueno",
+      "colegio": "Escuela Ecológica Padre Alberto Hurtado",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "3.0 pts",
+        "post": "3.0 pts",
+        "delta": "+0 pts",
+        "status": "Mantuvo",
+        "respuestas_cerradas": "Q1: d→d | Q2: d→d | Q3: a→a",
+        "respuestas_abiertas": "Colillas: No | Acción: tapas de cerveza; bolsas;..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "Hito 4 AM pre Azul.pdf",
+        "pdf_post": "Hito 4 AM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión AM. KPI PRE=3.0/4 y POST=3.0/4 concordantes con las marcas de alternativas y mención de colillas."
+    },
+    {
+      "id": "AUD-H3-029",
+      "estudiante": "Sofía Mella",
+      "colegio": "Escuela Ecológica Padre Alberto Hurtado",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "3.0 pts",
+        "post": "5.0 pts",
+        "delta": "+2 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: b→b | Q2: a→a | Q3: c→c",
+        "respuestas_abiertas": "Q4 Especies: tiburon tollo; pez; lobos... | Q5: no habria algas..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "hito 3 AM pre Azul.pdf",
+        "pdf_post": "hito 3 AM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión AM. Las 3 respuestas cerradas coinciden con el registro Excel. Puntajes D1=1, D2=3, D3=1 (Total 5.0/9) calculados con exactitud."
+    },
+    {
+      "id": "AUD-H4-029",
+      "estudiante": "Sofía Mella",
+      "colegio": "Escuela Ecológica Padre Alberto Hurtado",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "3.0 pts",
+        "post": "3.0 pts",
+        "delta": "+0 pts",
+        "status": "Mantuvo",
+        "respuestas_cerradas": "Q1: c→c | Q2: d→d | Q3: a→a",
+        "respuestas_abiertas": "Colillas: Sí (+1 pto) | Acción: cigarros; botellas; colil..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "Hito 4 AM pre Azul.pdf",
+        "pdf_post": "Hito 4 AM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión AM. KPI PRE=3.0/4 y POST=3.0/4 concordantes con las marcas de alternativas y mención de colillas."
+    },
+    {
+      "id": "AUD-H3-030",
+      "estudiante": "Álvaro Vargas",
+      "colegio": "Escuela Ecológica Padre Alberto Hurtado",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "2.0 pts",
+        "post": "7.0 pts",
+        "delta": "+5 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: b→b | Q2: a→b | Q3: c→b",
+        "respuestas_abiertas": "Q4 Especies: medusas; peces; tiburones... | Q5: aumentaria la cantidad de..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "hito 3 AM pre Azul.pdf",
+        "pdf_post": "hito 3 AM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión AM. Las 3 respuestas cerradas coinciden con el registro Excel. Puntajes D1=3, D2=2, D3=2 (Total 7.0/9) calculados con exactitud."
+    },
+    {
+      "id": "AUD-H4-030",
+      "estudiante": "Álvaro Vargas",
+      "colegio": "Escuela Ecológica Padre Alberto Hurtado",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "2.0 pts",
+        "post": "3.0 pts",
+        "delta": "+1 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: d→d | Q2: a→a | Q3: a→a",
+        "respuestas_abiertas": "Colillas: Sí (+1 pto) | Acción: plasticos y colillas..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "Hito 4 AM pre Azul.pdf",
+        "pdf_post": "Hito 4 AM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión AM. KPI PRE=2.0/4 y POST=3.0/4 concordantes con las marcas de alternativas y mención de colillas."
+    },
+    {
+      "id": "AUD-H3-031",
+      "estudiante": "Aymeet Cueva Opazo",
+      "colegio": "Escuela Javiera Carrera",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "2.0 pts",
+        "post": "6.0 pts",
+        "delta": "+4 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: b→b | Q2: d→a | Q3: d→b",
+        "respuestas_abiertas": "Q4 Especies: tiburon tollo; manta raya... | Q5: no me acuerdo, pero los l..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "hito 3 PM pre Azul.pdf",
+        "pdf_post": "hito 3 PM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión PM. Las 3 respuestas cerradas coinciden con el registro Excel. Puntajes D1=2, D2=3, D3=1 (Total 6.0/9) calculados con exactitud."
+    },
+    {
+      "id": "AUD-H4-031",
+      "estudiante": "Aymeet Cueva Opazo",
+      "colegio": "Escuela Javiera Carrera",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "—",
+        "post": "—",
+        "delta": "—",
+        "status": "No Asistió / Incompleto",
+        "respuestas_cerradas": "—",
+        "respuestas_abiertas": "—"
+      },
+      "escaneo_data": {
+        "pdf_pre": "No registra en escaneo",
+        "pdf_post": "No registra en escaneo",
+        "folio_estado": "Sin folio físico",
+        "calidad_escaneo": "—"
+      },
+      "estado_cotejo": "UNPAIRED",
+      "tipo_observacion": "Inasistencia justificada a jornada",
+      "diagnostico": "Estudiante de nómina oficial que no participó de Hito 4. No genera par evaluativo."
+    },
+    {
+      "id": "AUD-H3-032",
+      "estudiante": "Esteban Guerra Calle",
+      "colegio": "Escuela Javiera Carrera",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "3.0 pts",
+        "post": "7.0 pts",
+        "delta": "+4 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: b→b | Q2: d→b | Q3: c→b",
+        "respuestas_abiertas": "Q4 Especies: tiburon tollo; medusas; t... | Q5: el mar no serviria..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "hito 3 PM pre Azul.pdf",
+        "pdf_post": "hito 3 PM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión PM. Las 3 respuestas cerradas coinciden con el registro Excel. Puntajes D1=3, D2=3, D3=1 (Total 7.0/9) calculados con exactitud."
+    },
+    {
+      "id": "AUD-H4-032",
+      "estudiante": "Esteban Guerra Calle",
+      "colegio": "Escuela Javiera Carrera",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "4.0 pts",
+        "post": "3.0 pts",
+        "delta": "-1 pts",
+        "status": "Retrocedió",
+        "respuestas_cerradas": "Q1: d→d | Q2: d→d | Q3: a→a",
+        "respuestas_abiertas": "Colillas: No | Acción: bolsas y tapas; no botar ..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "Hito 4 PM pre Azul.pdf",
+        "pdf_post": "Hito 4 PM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión PM. KPI PRE=4.0/4 y POST=3.0/4 concordantes con las marcas de alternativas y mención de colillas."
+    },
+    {
+      "id": "AUD-H3-033",
+      "estudiante": "Hugo Molina Naranjo",
+      "colegio": "Escuela Javiera Carrera",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "2.0 pts",
+        "post": "6.0 pts",
+        "delta": "+4 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: a→a | Q2: d→b | Q3: c→b",
+        "respuestas_abiertas": "Q4 Especies: tiburon tollo; mantarraya... | Q5: afectaria a nuestro plane..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "hito 3 PM pre Azul.pdf",
+        "pdf_post": "hito 3 PM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión PM. Las 3 respuestas cerradas coinciden con el registro Excel. Puntajes D1=2, D2=3, D3=1 (Total 6.0/9) calculados con exactitud."
+    },
+    {
+      "id": "AUD-H4-033",
+      "estudiante": "Hugo Molina Naranjo",
+      "colegio": "Escuela Javiera Carrera",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "2.0 pts",
+        "post": "1.0 pts",
+        "delta": "-1 pts",
+        "status": "Retrocedió",
+        "respuestas_cerradas": "Q1: c→c | Q2: a→c | Q3: a→a",
+        "respuestas_abiertas": "Colillas: No | Acción: madera; bolsas..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "Hito 4 PM pre Azul.pdf",
+        "pdf_post": "Hito 4 PM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión PM. KPI PRE=2.0/4 y POST=1.0/4 concordantes con las marcas de alternativas y mención de colillas."
+    },
+    {
+      "id": "AUD-H3-034",
+      "estudiante": "Jeremy Marín Jiménez",
+      "colegio": "Escuela Javiera Carrera",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "—",
+        "post": "—",
+        "delta": "—",
+        "status": "No Asistió",
+        "respuestas_cerradas": "—",
+        "respuestas_abiertas": "—"
+      },
+      "escaneo_data": {
+        "pdf_pre": "No registra en escaneo",
+        "pdf_post": "No registra en escaneo",
+        "folio_estado": "Sin folio físico",
+        "calidad_escaneo": "—"
+      },
+      "estado_cotejo": "UNPAIRED",
+      "tipo_observacion": "Inasistencia justificada a jornada",
+      "diagnostico": "Estudiante matriculado en nómina pero que no estuvo presente en el Hito 3. Justifica ausencia de folio físico."
+    },
+    {
+      "id": "AUD-H4-034",
+      "estudiante": "Jeremy Marín Jiménez",
+      "colegio": "Escuela Javiera Carrera",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "1.0 pts",
+        "post": "2.0 pts",
+        "delta": "+1 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: a→c | Q2: a→b | Q3: a→a",
+        "respuestas_abiertas": "Colillas: Sí (+1 pto) | Acción: cigarro; plastico; no lle..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "Hito 4 PM pre Azul.pdf",
+        "pdf_post": "Hito 4 PM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión PM. KPI PRE=1.0/4 y POST=2.0/4 concordantes con las marcas de alternativas y mención de colillas."
+    },
+    {
+      "id": "AUD-H3-035",
+      "estudiante": "León Chang Riveros",
+      "colegio": "Escuela Javiera Carrera",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "2.0 pts",
+        "post": "2.0 pts",
+        "delta": "+0 pts",
+        "status": "Mantuvo",
+        "respuestas_cerradas": "Q1: b→a | Q2: b→b | Q3: a→b",
+        "respuestas_abiertas": "Q4 Especies: toyo ajoa (ilegible)... | Q5: no se..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "hito 3 PM pre Azul.pdf",
+        "pdf_post": "hito 3 PM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "OBS",
+      "tipo_observacion": "Anotación en pregunta abierta",
+      "diagnostico": "En el postest escribió 'tomo yo (sin respuesta valida)', clasificado con puntaje 0 en esa dimensión, lo que ratifica la objetividad de la corrección."
+    },
+    {
+      "id": "AUD-H4-035",
+      "estudiante": "León Chang Riveros",
+      "colegio": "Escuela Javiera Carrera",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "1.0 pts",
+        "post": "3.0 pts",
+        "delta": "+2 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: e→d | Q2: c→d | Q3: a→a",
+        "respuestas_abiertas": "Colillas: No | Acción: botellas..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "Hito 4 PM pre Azul.pdf",
+        "pdf_post": "Hito 4 PM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión PM. KPI PRE=1.0/4 y POST=3.0/4 concordantes con las marcas de alternativas y mención de colillas."
+    },
+    {
+      "id": "AUD-H3-036",
+      "estudiante": "Roben Díaz Condori",
+      "colegio": "Escuela Javiera Carrera",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "2.0 pts",
+        "post": "4.0 pts",
+        "delta": "+2 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: d→d | Q2: b→b | Q3: d→b",
+        "respuestas_abiertas": "Q4 Especies: lobos marinos; pez... | Q5: desapareceria los peces p..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "hito 3 PM pre Azul.pdf",
+        "pdf_post": "hito 3 PM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión PM. Las 3 respuestas cerradas coinciden con el registro Excel. Puntajes D1=2, D2=1, D3=1 (Total 4.0/9) calculados con exactitud."
+    },
+    {
+      "id": "AUD-H4-036",
+      "estudiante": "Roben Díaz Condori",
+      "colegio": "Escuela Javiera Carrera",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "1.0 pts",
+        "post": "3.0 pts",
+        "delta": "+2 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: a→a | Q2: a→d | Q3: a→a",
+        "respuestas_abiertas": "Colillas: Sí (+1 pto) | Acción: cigarros; vidrios; plasti..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "Hito 4 PM pre Azul.pdf",
+        "pdf_post": "Hito 4 PM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión PM. KPI PRE=1.0/4 y POST=3.0/4 concordantes con las marcas de alternativas y mención de colillas."
+    },
+    {
+      "id": "AUD-H3-037",
+      "estudiante": "Sebastián Salazar Tapia",
+      "colegio": "Escuela Javiera Carrera",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "7.0 pts",
+        "post": "9.0 pts",
+        "delta": "+2 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: b→b | Q2: a→b | Q3: c→b",
+        "respuestas_abiertas": "Q4 Especies: reineta; tiburon tollo; c... | Q5: los peces se saldrian de ..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "hito 3 PM pre Azul.pdf",
+        "pdf_post": "hito 3 PM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión PM. Las 3 respuestas cerradas coinciden con el registro Excel. Puntajes D1=3, D2=3, D3=3 (Total 9.0/9) calculados con exactitud."
+    },
+    {
+      "id": "AUD-H4-037",
+      "estudiante": "Sebastián Salazar Tapia",
+      "colegio": "Escuela Javiera Carrera",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "2.0 pts",
+        "post": "4.0 pts",
+        "delta": "+2 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: d→d | Q2: c→d | Q3: a→a",
+        "respuestas_abiertas": "Colillas: Sí (+1 pto) | Acción: cigarro; botellas y recog..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "Hito 4 PM pre Azul.pdf",
+        "pdf_post": "Hito 4 PM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión PM. KPI PRE=2.0/4 y POST=4.0/4 concordantes con las marcas de alternativas y mención de colillas."
+    },
+    {
+      "id": "AUD-H3-038",
+      "estudiante": "Valery Cáceres Meneses",
+      "colegio": "Escuela Javiera Carrera",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "1.0 pts",
+        "post": "6.0 pts",
+        "delta": "+5 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: d→d | Q2: d→b | Q3: c→c",
+        "respuestas_abiertas": "Q4 Especies: lobo marino; tollo comun... | Q5: las focas se expandirian ..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "hito 3 PM pre Azul.pdf",
+        "pdf_post": "hito 3 PM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión PM. Las 3 respuestas cerradas coinciden con el registro Excel. Puntajes D1=1, D2=2, D3=3 (Total 6.0/9) calculados con exactitud."
+    },
+    {
+      "id": "AUD-H4-038",
+      "estudiante": "Valery Cáceres Meneses",
+      "colegio": "Escuela Javiera Carrera",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "1.0 pts",
+        "post": "2.0 pts",
+        "delta": "+1 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: a→a | Q2: a→b | Q3: a→a",
+        "respuestas_abiertas": "Colillas: Sí (+1 pto) | Acción: bolsas plasticas; botella..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "Hito 4 PM pre Azul.pdf",
+        "pdf_post": "Hito 4 PM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión PM. KPI PRE=1.0/4 y POST=2.0/4 concordantes con las marcas de alternativas y mención de colillas."
+    },
+    {
+      "id": "AUD-H3-039",
+      "estudiante": "Aliz Mollericona Ticona",
+      "colegio": "Escuela Juan Pablo II",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "3.0 pts",
+        "post": "7.0 pts",
+        "delta": "+4 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: d→b | Q2: d→c | Q3: c→b",
+        "respuestas_abiertas": "Q4 Especies: tiburones (martillo, sier... | Q5: si ellos desaparecieran n..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "hito 3 AM pre Azul.pdf",
+        "pdf_post": "hito 3 AM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "OBS",
+      "tipo_observacion": "Caligrafía manuscrita ajustada",
+      "diagnostico": "En el folio escaneado el nombre figura como 'Alig Mollericord'; el digitador lo normalizó correctamente a 'Aliz Mollericona Ticona' según nómina oficial de Escuela Juan Pablo II."
+    },
+    {
+      "id": "AUD-H4-039",
+      "estudiante": "Aliz Mollericona Ticona",
+      "colegio": "Escuela Juan Pablo II",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "3.0 pts",
+        "post": "4.0 pts",
+        "delta": "+1 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: d→d | Q2: d→d | Q3: a→a",
+        "respuestas_abiertas": "Colillas: Sí (+1 pto) | Acción: cigarro; plasticos; vidri..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "Hito 4 AM pre Azul.pdf",
+        "pdf_post": "Hito 4 AM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión AM. KPI PRE=3.0/4 y POST=4.0/4 concordantes con las marcas de alternativas y mención de colillas."
+    },
+    {
+      "id": "AUD-H3-040",
+      "estudiante": "Ana Campos",
+      "colegio": "Escuela Juan Pablo II",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "1.0 pts",
+        "post": "5.0 pts",
+        "delta": "+4 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: d→d | Q2: d→b | Q3: b→b",
+        "respuestas_abiertas": "Q4 Especies: muchos tiburones de disti... | Q5: habria un desbalance de t..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "hito 3 AM pre Azul.pdf",
+        "pdf_post": "hito 3 AM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión AM. Las 3 respuestas cerradas coinciden con el registro Excel. Puntajes D1=2, D2=1, D3=2 (Total 5.0/9) calculados con exactitud."
+    },
+    {
+      "id": "AUD-H4-040",
+      "estudiante": "Ana Campos",
+      "colegio": "Escuela Juan Pablo II",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "3.0 pts",
+        "post": "4.0 pts",
+        "delta": "+1 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: d→d | Q2: d→d | Q3: a→a",
+        "respuestas_abiertas": "Colillas: Sí (+1 pto) | Acción: cigarros; plasticos; pode..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "Hito 4 AM pre Azul.pdf",
+        "pdf_post": "Hito 4 AM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión AM. KPI PRE=3.0/4 y POST=4.0/4 concordantes con las marcas de alternativas y mención de colillas."
+    },
+    {
+      "id": "AUD-H3-041",
+      "estudiante": "Anaís Rojas Cheuquepán",
+      "colegio": "Escuela Juan Pablo II",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "—",
+        "post": "—",
+        "delta": "—",
+        "status": "No Asistió",
+        "respuestas_cerradas": "—",
+        "respuestas_abiertas": "—"
+      },
+      "escaneo_data": {
+        "pdf_pre": "No registra en escaneo",
+        "pdf_post": "No registra en escaneo",
+        "folio_estado": "Sin folio físico",
+        "calidad_escaneo": "—"
+      },
+      "estado_cotejo": "UNPAIRED",
+      "tipo_observacion": "Inasistencia justificada a jornada",
+      "diagnostico": "Estudiante matriculado en nómina pero que no estuvo presente en el Hito 3. Justifica ausencia de folio físico."
+    },
+    {
+      "id": "AUD-H4-041",
+      "estudiante": "Anaís Rojas Cheuquepán",
+      "colegio": "Escuela Juan Pablo II",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "3.0 pts",
+        "post": "4.0 pts",
+        "delta": "+1 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: e→d | Q2: d→d | Q3: a→a",
+        "respuestas_abiertas": "Colillas: Sí (+1 pto) | Acción: plastico; tapas; cigarril..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "Hito 4 AM pre Azul.pdf",
+        "pdf_post": "Hito 4 AM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión AM. KPI PRE=3.0/4 y POST=4.0/4 concordantes con las marcas de alternativas y mención de colillas."
+    },
+    {
+      "id": "AUD-H3-042",
+      "estudiante": "Emilia Marín Castillo",
+      "colegio": "Escuela Juan Pablo II",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "4.0 pts",
+        "post": "5.0 pts",
+        "delta": "+1 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: b→b | Q2: d→c | Q3: b→b",
+        "respuestas_abiertas": "Q4 Especies: pulpo; lobo marino... | Q5: habria mucha poblacion de..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "hito 3 AM pre Azul.pdf",
+        "pdf_post": "hito 3 AM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión AM. Las 3 respuestas cerradas coinciden con el registro Excel. Puntajes D1=2, D2=1, D3=2 (Total 5.0/9) calculados con exactitud."
+    },
+    {
+      "id": "AUD-H4-042",
+      "estudiante": "Emilia Marín Castillo",
+      "colegio": "Escuela Juan Pablo II",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "1.0 pts",
+        "post": "3.0 pts",
+        "delta": "+2 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: d→d | Q2: a/d→d | Q3: d→c",
+        "respuestas_abiertas": "Colillas: Sí (+1 pto) | Acción: plasticos; cigarro..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "Hito 4 AM pre Azul.pdf",
+        "pdf_post": "Hito 4 AM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión AM. KPI PRE=1.0/4 y POST=3.0/4 concordantes con las marcas de alternativas y mención de colillas."
+    },
+    {
+      "id": "AUD-H3-043",
+      "estudiante": "Erik Serrano",
+      "colegio": "Escuela Juan Pablo II",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "2.0 pts",
+        "post": "4.0 pts",
+        "delta": "+2 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: b→b | Q2: a→a | Q3: c→b",
+        "respuestas_abiertas": "Q4 Especies: tiburones; peces; manta r... | Q5: mal..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "hito 3 AM pre Azul.pdf",
+        "pdf_post": "hito 3 AM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión AM. Las 3 respuestas cerradas coinciden con el registro Excel. Puntajes D1=2, D2=2, D3=0 (Total 4.0/9) calculados con exactitud."
+    },
+    {
+      "id": "AUD-H4-043",
+      "estudiante": "Erik Serrano",
+      "colegio": "Escuela Juan Pablo II",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "2.0 pts",
+        "post": "3.0 pts",
+        "delta": "+1 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: d→d | Q2: c→d | Q3: a→a",
+        "respuestas_abiertas": "Colillas: No | Acción: plastico; botellas; las l..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "Hito 4 AM pre Azul.pdf",
+        "pdf_post": "Hito 4 AM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión AM. KPI PRE=2.0/4 y POST=3.0/4 concordantes con las marcas de alternativas y mención de colillas."
+    },
+    {
+      "id": "AUD-H3-044",
+      "estudiante": "Juan Sánchez Valencia",
+      "colegio": "Escuela Juan Pablo II",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "4.0 pts",
+        "post": "4.0 pts",
+        "delta": "+0 pts",
+        "status": "Mantuvo",
+        "respuestas_cerradas": "Q1: b→b | Q2: b→b | Q3: d→b",
+        "respuestas_abiertas": "Q4 Especies: delfines; ballenas... | Q5: no responde ..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "hito 3 AM pre Azul.pdf",
+        "pdf_post": "hito 3 AM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión AM. Las 3 respuestas cerradas coinciden con el registro Excel. Puntajes D1=3, D2=1, D3=0 (Total 4.0/9) calculados con exactitud."
+    },
+    {
+      "id": "AUD-H4-044",
+      "estudiante": "Juan Sánchez Valencia",
+      "colegio": "Escuela Juan Pablo II",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "1.0 pts",
+        "post": "1.0 pts",
+        "delta": "+0 pts",
+        "status": "Mantuvo",
+        "respuestas_cerradas": "Q1: a→a | Q2: a→a | Q3: a→a",
+        "respuestas_abiertas": "Colillas: No | Acción: botellas y redes de pesca..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "Hito 4 AM pre Azul.pdf",
+        "pdf_post": "Hito 4 AM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión AM. KPI PRE=1.0/4 y POST=1.0/4 concordantes con las marcas de alternativas y mención de colillas."
+    },
+    {
+      "id": "AUD-H3-045",
+      "estudiante": "Mateo Torres Quispe",
+      "colegio": "Escuela Juan Pablo II",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "3.0 pts",
+        "post": "9.0 pts",
+        "delta": "+6 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: b→b | Q2: d→b | Q3: a→b",
+        "respuestas_abiertas": "Q4 Especies: tiburon tollo; peces; tib... | Q5: los lobos marinos se repr..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "hito 3 AM pre Azul.pdf",
+        "pdf_post": "hito 3 AM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión AM. Las 3 respuestas cerradas coinciden con el registro Excel. Puntajes D1=3, D2=3, D3=3 (Total 9.0/9) calculados con exactitud."
+    },
+    {
+      "id": "AUD-H4-045",
+      "estudiante": "Mateo Torres Quispe",
+      "colegio": "Escuela Juan Pablo II",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "2.0 pts",
+        "post": "3.0 pts",
+        "delta": "+1 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: a→d | Q2: d→a | Q3: a→a",
+        "respuestas_abiertas": "Colillas: Sí (+1 pto) | Acción: cigarros; plastico; vidri..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "Hito 4 AM pre Azul.pdf",
+        "pdf_post": "Hito 4 AM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión AM. KPI PRE=2.0/4 y POST=3.0/4 concordantes con las marcas de alternativas y mención de colillas."
+    },
+    {
+      "id": "AUD-H3-046",
+      "estudiante": "Nadriel Vaca Suárez",
+      "colegio": "Escuela Juan Pablo II",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "4.0 pts",
+        "post": "6.0 pts",
+        "delta": "+2 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: b→b | Q2: d→c | Q3: d→b",
+        "respuestas_abiertas": "Q4 Especies: tiburones; mantas; rayas;... | Q5: se hubiese alimento para ..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "hito 3 AM pre Azul.pdf",
+        "pdf_post": "hito 3 AM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión AM. Las 3 respuestas cerradas coinciden con el registro Excel. Puntajes D1=2, D2=3, D3=1 (Total 6.0/9) calculados con exactitud."
+    },
+    {
+      "id": "AUD-H4-046",
+      "estudiante": "Nadriel Vaca Suárez",
+      "colegio": "Escuela Juan Pablo II",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "3.0 pts",
+        "post": "3.0 pts",
+        "delta": "+0 pts",
+        "status": "Mantuvo",
+        "respuestas_cerradas": "Q1: d→d | Q2: d→d | Q3: a→a",
+        "respuestas_abiertas": "Colillas: No | Acción: de actividades realizadas..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "Hito 4 AM pre Azul.pdf",
+        "pdf_post": "Hito 4 AM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión AM. KPI PRE=3.0/4 y POST=3.0/4 concordantes con las marcas de alternativas y mención de colillas."
+    },
+    {
+      "id": "AUD-H3-047",
+      "estudiante": "Patricio Chandía González",
+      "colegio": "Escuela Juan Pablo II",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "4.0 pts",
+        "post": "6.0 pts",
+        "delta": "+2 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: b→b | Q2: a→c | Q3: b→b",
+        "respuestas_abiertas": "Q4 Especies: diferentes tipos de tibur... | Q5: seria muy malo porque son..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "hito 3 AM pre Azul.pdf",
+        "pdf_post": "hito 3 AM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión AM. Las 3 respuestas cerradas coinciden con el registro Excel. Puntajes D1=2, D2=1, D3=3 (Total 6.0/9) calculados con exactitud."
+    },
+    {
+      "id": "AUD-H4-047",
+      "estudiante": "Patricio Chandía González",
+      "colegio": "Escuela Juan Pablo II",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "3.0 pts",
+        "post": "4.0 pts",
+        "delta": "+1 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: d→d | Q2: d→d | Q3: a→a",
+        "respuestas_abiertas": "Colillas: Sí (+1 pto) | Acción: colillas de cigarros; tap..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "Hito 4 AM pre Azul.pdf",
+        "pdf_post": "Hito 4 AM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión AM. KPI PRE=3.0/4 y POST=4.0/4 concordantes con las marcas de alternativas y mención de colillas."
+    },
+    {
+      "id": "AUD-H3-048",
+      "estudiante": "Aron Ardiles Vega",
+      "colegio": "Escuela República de Estados Unidos",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "3.0 pts",
+        "post": "6.0 pts",
+        "delta": "+3 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: b→b | Q2: d→b | Q3: c→b",
+        "respuestas_abiertas": "Q4 Especies: lobo marino; tiburon toll... | Q5: que el agua se pone muy c..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "hito 3 PM pre Azul.pdf",
+        "pdf_post": "hito 3 PM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión PM. Las 3 respuestas cerradas coinciden con el registro Excel. Puntajes D1=3, D2=2, D3=1 (Total 6.0/9) calculados con exactitud."
+    },
+    {
+      "id": "AUD-H4-048",
+      "estudiante": "Aron Ardiles Vega",
+      "colegio": "Escuela República de Estados Unidos",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "3.0 pts",
+        "post": "4.0 pts",
+        "delta": "+1 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: d→d | Q2: d→d | Q3: a→a",
+        "respuestas_abiertas": "Colillas: Sí (+1 pto) | Acción: botellas; colillas de cig..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "Hito 4 PM pre Azul.pdf",
+        "pdf_post": "Hito 4 PM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión PM. KPI PRE=3.0/4 y POST=4.0/4 concordantes con las marcas de alternativas y mención de colillas."
+    },
+    {
+      "id": "AUD-H3-049",
+      "estudiante": "Aylynn Opazo Carvajal",
+      "colegio": "Escuela República de Estados Unidos",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "4.0 pts",
+        "post": "8.0 pts",
+        "delta": "+4 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: b→b | Q2: d→a | Q3: c→b",
+        "respuestas_abiertas": "Q4 Especies: lobos marinos; ballenas; ... | Q5: habria sobrepoblacion de ..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "hito 3 PM pre Azul.pdf",
+        "pdf_post": "hito 3 PM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión PM. Las 3 respuestas cerradas coinciden con el registro Excel. Puntajes D1=2, D2=3, D3=3 (Total 8.0/9) calculados con exactitud."
+    },
+    {
+      "id": "AUD-H4-049",
+      "estudiante": "Aylynn Opazo Carvajal",
+      "colegio": "Escuela República de Estados Unidos",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "2.0 pts",
+        "post": "4.0 pts",
+        "delta": "+2 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: a→d | Q2: d→d | Q3: a→a",
+        "respuestas_abiertas": "Colillas: Sí (+1 pto) | Acción: botellas; colillas de cig..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "Hito 4 PM pre Azul.pdf",
+        "pdf_post": "Hito 4 PM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión PM. KPI PRE=2.0/4 y POST=4.0/4 concordantes con las marcas de alternativas y mención de colillas."
+    },
+    {
+      "id": "AUD-H3-050",
+      "estudiante": "Berenice Jora Zarate",
+      "colegio": "Escuela República de Estados Unidos",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "1.0 pts",
+        "post": "2.0 pts",
+        "delta": "+1 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: d→b | Q2: d→b | Q3: d→d",
+        "respuestas_abiertas": "Q4 Especies: no se... | Q5: no se..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "hito 3 PM pre Azul.pdf",
+        "pdf_post": "hito 3 PM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión PM. Las 3 respuestas cerradas coinciden con el registro Excel. Puntajes D1=2, D2=0, D3=0 (Total 2.0/9) calculados con exactitud."
+    },
+    {
+      "id": "AUD-H4-050",
+      "estudiante": "Berenice Jora Zarate",
+      "colegio": "Escuela República de Estados Unidos",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "—",
+        "post": "—",
+        "delta": "—",
+        "status": "No Asistió / Incompleto",
+        "respuestas_cerradas": "—",
+        "respuestas_abiertas": "—"
+      },
+      "escaneo_data": {
+        "pdf_pre": "No registra en escaneo",
+        "pdf_post": "No registra en escaneo",
+        "folio_estado": "Sin folio físico",
+        "calidad_escaneo": "—"
+      },
+      "estado_cotejo": "UNPAIRED",
+      "tipo_observacion": "Inasistencia justificada a jornada",
+      "diagnostico": "Estudiante de nómina oficial que no participó de Hito 4. No genera par evaluativo."
+    },
+    {
+      "id": "AUD-H3-051",
+      "estudiante": "Evelyn Estigarribia Choquecota",
+      "colegio": "Escuela República de Estados Unidos",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "5.0 pts",
+        "post": "5.0 pts",
+        "delta": "+0 pts",
+        "status": "Mantuvo",
+        "respuestas_cerradas": "Q1: b→b | Q2: d→b | Q3: c→c",
+        "respuestas_abiertas": "Q4 Especies: tiburones; mantarrayas; l... | Q5: habrian muchas mas bacter..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "hito 3 PM pre Azul.pdf",
+        "pdf_post": "hito 3 PM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión PM. Las 3 respuestas cerradas coinciden con el registro Excel. Puntajes D1=2, D2=2, D3=1 (Total 5.0/9) calculados con exactitud."
+    },
+    {
+      "id": "AUD-H4-051",
+      "estudiante": "Evelyn Estigarribia Choquecota",
+      "colegio": "Escuela República de Estados Unidos",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "3.0 pts",
+        "post": "3.0 pts",
+        "delta": "+0 pts",
+        "status": "Mantuvo",
+        "respuestas_cerradas": "Q1: d→a | Q2: d→d | Q3: a→a",
+        "respuestas_abiertas": "Colillas: Sí (+1 pto) | Acción: colillas de cigarro y hue..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "Hito 4 PM pre Azul.pdf",
+        "pdf_post": "Hito 4 PM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión PM. KPI PRE=3.0/4 y POST=3.0/4 concordantes con las marcas de alternativas y mención de colillas."
+    },
+    {
+      "id": "AUD-H3-052",
+      "estudiante": "Jorge Seas Tomicha",
+      "colegio": "Escuela República de Estados Unidos",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "3.0 pts",
+        "post": "3.0 pts",
+        "delta": "+0 pts",
+        "status": "Mantuvo",
+        "respuestas_cerradas": "Q1: b→b | Q2: c→c | Q3: c→c",
+        "respuestas_abiertas": "Q4 Especies: tiburon ballena; pez... | Q5: pasaria que ya saldrian d..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "hito 3 PM pre Azul.pdf",
+        "pdf_post": "hito 3 PM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión PM. Las 3 respuestas cerradas coinciden con el registro Excel. Puntajes D1=1, D2=1, D3=1 (Total 3.0/9) calculados con exactitud."
+    },
+    {
+      "id": "AUD-H4-052",
+      "estudiante": "Jorge Seas Tomicha",
+      "colegio": "Escuela República de Estados Unidos",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "1.0 pts",
+        "post": "1.0 pts",
+        "delta": "+0 pts",
+        "status": "Mantuvo",
+        "respuestas_cerradas": "Q1: a/d→a | Q2: d→d | Q3: d→d",
+        "respuestas_abiertas": "Colillas: No | Acción: no se..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "Hito 4 PM pre Azul.pdf",
+        "pdf_post": "Hito 4 PM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión PM. KPI PRE=1.0/4 y POST=1.0/4 concordantes con las marcas de alternativas y mención de colillas."
+    },
+    {
+      "id": "AUD-H3-053",
+      "estudiante": "Keyla Morán González",
+      "colegio": "Escuela República de Estados Unidos",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "5.0 pts",
+        "post": "8.0 pts",
+        "delta": "+3 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: b→b | Q2: d→b | Q3: b→b",
+        "respuestas_abiertas": "Q4 Especies: lobo marino; pinguinos; t... | Q5: habria un desequilibrio t..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "hito 3 PM pre Azul.pdf",
+        "pdf_post": "hito 3 PM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión PM. Las 3 respuestas cerradas coinciden con el registro Excel. Puntajes D1=3, D2=3, D3=2 (Total 8.0/9) calculados con exactitud."
+    },
+    {
+      "id": "AUD-H4-053",
+      "estudiante": "Keyla Morán González",
+      "colegio": "Escuela República de Estados Unidos",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "3.0 pts",
+        "post": "3.0 pts",
+        "delta": "+0 pts",
+        "status": "Mantuvo",
+        "respuestas_cerradas": "Q1: d→d | Q2: d→d | Q3: a→a",
+        "respuestas_abiertas": "Colillas: No | Acción: vidrio; plastico; no bota..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "Hito 4 PM pre Azul.pdf",
+        "pdf_post": "Hito 4 PM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión PM. KPI PRE=3.0/4 y POST=3.0/4 concordantes con las marcas de alternativas y mención de colillas."
+    },
+    {
+      "id": "AUD-H3-054",
+      "estudiante": "Lucas Llanqui Honorio",
+      "colegio": "Escuela República de Estados Unidos",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "5.0 pts",
+        "post": "7.0 pts",
+        "delta": "+2 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: b→b | Q2: d→b | Q3: c→b",
+        "respuestas_abiertas": "Q4 Especies: lobos marinos; tiburones ... | Q5: hubiera sobrepoblacion de..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "hito 3 PM pre Azul.pdf",
+        "pdf_post": "hito 3 PM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión PM. Las 3 respuestas cerradas coinciden con el registro Excel. Puntajes D1=3, D2=2, D3=2 (Total 7.0/9) calculados con exactitud."
+    },
+    {
+      "id": "AUD-H4-054",
+      "estudiante": "Lucas Llanqui Honorio",
+      "colegio": "Escuela República de Estados Unidos",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "3.0 pts",
+        "post": "2.0 pts",
+        "delta": "-1 pts",
+        "status": "Retrocedió",
+        "respuestas_cerradas": "Q1: b→a | Q2: d→a | Q3: a→a",
+        "respuestas_abiertas": "Colillas: Sí (+1 pto) | Acción: plastico y cigarros..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "Hito 4 PM pre Azul.pdf",
+        "pdf_post": "Hito 4 PM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión PM. KPI PRE=3.0/4 y POST=2.0/4 concordantes con las marcas de alternativas y mención de colillas."
+    },
+    {
+      "id": "AUD-H3-055",
+      "estudiante": "Matías Orellana Flores",
+      "colegio": "Escuela República de Estados Unidos",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "6.0 pts",
+        "post": "7.0 pts",
+        "delta": "+1 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: b→b | Q2: d→b | Q3: c→b",
+        "respuestas_abiertas": "Q4 Especies: lobo marino; tiburon toll... | Q5: cambiaria el mar para mal..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "hito 3 PM pre Azul.pdf",
+        "pdf_post": "hito 3 PM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión PM. Las 3 respuestas cerradas coinciden con el registro Excel. Puntajes D1=3, D2=3, D3=1 (Total 7.0/9) calculados con exactitud."
+    },
+    {
+      "id": "AUD-H4-055",
+      "estudiante": "Matías Orellana Flores",
+      "colegio": "Escuela República de Estados Unidos",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "3.0 pts",
+        "post": "4.0 pts",
+        "delta": "+1 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: d→d | Q2: d→d | Q3: a→a",
+        "respuestas_abiertas": "Colillas: Sí (+1 pto) | Acción: colillas; plastico; mader..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "Hito 4 PM pre Azul.pdf",
+        "pdf_post": "Hito 4 PM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión PM. KPI PRE=3.0/4 y POST=4.0/4 concordantes con las marcas de alternativas y mención de colillas."
+    },
+    {
+      "id": "AUD-H3-056",
+      "estudiante": "Minzy Díaz Vergara",
+      "colegio": "Escuela República de Estados Unidos",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "4.0 pts",
+        "post": "8.0 pts",
+        "delta": "+4 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: b→b | Q2: d→b | Q3: c→b",
+        "respuestas_abiertas": "Q4 Especies: lobo marino; pinguinos; t... | Q5: el equilibrio seria muy e..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "hito 3 PM pre Azul.pdf",
+        "pdf_post": "hito 3 PM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión PM. Las 3 respuestas cerradas coinciden con el registro Excel. Puntajes D1=3, D2=2, D3=3 (Total 8.0/9) calculados con exactitud."
+    },
+    {
+      "id": "AUD-H4-056",
+      "estudiante": "Minzy Díaz Vergara",
+      "colegio": "Escuela República de Estados Unidos",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "2.0 pts",
+        "post": "4.0 pts",
+        "delta": "+2 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: d→d | Q2: a→d | Q3: a→a",
+        "respuestas_abiertas": "Colillas: Sí (+1 pto) | Acción: botellas; colillas de cig..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "Hito 4 PM pre Azul.pdf",
+        "pdf_post": "Hito 4 PM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión PM. KPI PRE=2.0/4 y POST=4.0/4 concordantes con las marcas de alternativas y mención de colillas."
+    },
+    {
+      "id": "AUD-H3-057",
+      "estudiante": "Ariatna Herrera Caicedo",
+      "colegio": "Escuela República de Italia",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "5.0 pts",
+        "post": "5.0 pts",
+        "delta": "+0 pts",
+        "status": "Mantuvo",
+        "respuestas_cerradas": "Q1: b→b | Q2: b→c | Q3: b→b",
+        "respuestas_abiertas": "Q4 Especies: tiburon/ballena; mantas; ... | Q5: desaparecerian lobos mari..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "hito 3 PM pre Azul.pdf",
+        "pdf_post": "hito 3 PM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión PM. Las 3 respuestas cerradas coinciden con el registro Excel. Puntajes D1=2, D2=2, D3=1 (Total 5.0/9) calculados con exactitud."
+    },
+    {
+      "id": "AUD-H4-057",
+      "estudiante": "Ariatna Herrera Caicedo",
+      "colegio": "Escuela República de Italia",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "3.0 pts",
+        "post": "3.0 pts",
+        "delta": "+0 pts",
+        "status": "Mantuvo",
+        "respuestas_cerradas": "Q1: d→a | Q2: c→d | Q3: a→a",
+        "respuestas_abiertas": "Colillas: Sí (+1 pto) | Acción: cigarro; metal; papel; pl..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "Hito 4 PM pre Azul.pdf",
+        "pdf_post": "Hito 4 PM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión PM. KPI PRE=3.0/4 y POST=3.0/4 concordantes con las marcas de alternativas y mención de colillas."
+    },
+    {
+      "id": "AUD-H3-058",
+      "estudiante": "Arshiel Gronchi Martínez",
+      "colegio": "Escuela República de Italia",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "3.0 pts",
+        "post": "6.0 pts",
+        "delta": "+3 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: b→b | Q2: c→b | Q3: c→b",
+        "respuestas_abiertas": "Q4 Especies: tiburon tollo; lobos mari... | Q5: bajaria el tema de la pes..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "hito 3 PM pre Azul.pdf",
+        "pdf_post": "hito 3 PM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión PM. Las 3 respuestas cerradas coinciden con el registro Excel. Puntajes D1=3, D2=2, D3=1 (Total 6.0/9) calculados con exactitud."
+    },
+    {
+      "id": "AUD-H4-058",
+      "estudiante": "Arshiel Gronchi Martínez",
+      "colegio": "Escuela República de Italia",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "2.0 pts",
+        "post": "3.0 pts",
+        "delta": "+1 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: d→a | Q2: c→d | Q3: a→a",
+        "respuestas_abiertas": "Colillas: Sí (+1 pto) | Acción: papel; plastico; ceramica..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "Hito 4 PM pre Azul.pdf",
+        "pdf_post": "Hito 4 PM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión PM. KPI PRE=2.0/4 y POST=3.0/4 concordantes con las marcas de alternativas y mención de colillas."
+    },
+    {
+      "id": "AUD-H3-059",
+      "estudiante": "Emilia Narváez Narváez",
+      "colegio": "Escuela República de Italia",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "3.0 pts",
+        "post": "1.0 pts",
+        "delta": "-2 pts",
+        "status": "Retrocedió",
+        "respuestas_cerradas": "Q1: b→b | Q2: c→c | Q3: b→a",
+        "respuestas_abiertas": "Q4 Especies: no se... | Q5: no se..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "hito 3 PM pre Azul.pdf",
+        "pdf_post": "hito 3 PM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión PM. Las 3 respuestas cerradas coinciden con el registro Excel. Puntajes D1=1, D2=0, D3=0 (Total 1.0/9) calculados con exactitud."
+    },
+    {
+      "id": "AUD-H4-059",
+      "estudiante": "Emilia Narváez Narváez",
+      "colegio": "Escuela República de Italia",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "1.0 pts",
+        "post": "2.0 pts",
+        "delta": "+1 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: e→c | Q2: c→b | Q3: a→a",
+        "respuestas_abiertas": "Colillas: Sí (+1 pto) | Acción: cigarrillos; tapas..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "Hito 4 PM pre Azul.pdf",
+        "pdf_post": "Hito 4 PM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión PM. KPI PRE=1.0/4 y POST=2.0/4 concordantes con las marcas de alternativas y mención de colillas."
+    },
+    {
+      "id": "AUD-H3-060",
+      "estudiante": "Fernando Aros Santus",
+      "colegio": "Escuela República de Italia",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "7.0 pts",
+        "post": "9.0 pts",
+        "delta": "+2 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: b→b | Q2: d→b | Q3: c→b",
+        "respuestas_abiertas": "Q4 Especies: peces pequenos; pez loro;... | Q5: las focas se comerian los..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "hito 3 PM pre Azul.pdf",
+        "pdf_post": "hito 3 PM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión PM. Las 3 respuestas cerradas coinciden con el registro Excel. Puntajes D1=3, D2=3, D3=3 (Total 9.0/9) calculados con exactitud."
+    },
+    {
+      "id": "AUD-H4-060",
+      "estudiante": "Fernando Aros Santus",
+      "colegio": "Escuela República de Italia",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "—",
+        "post": "—",
+        "delta": "—",
+        "status": "No Asistió / Incompleto",
+        "respuestas_cerradas": "—",
+        "respuestas_abiertas": "—"
+      },
+      "escaneo_data": {
+        "pdf_pre": "No registra en escaneo",
+        "pdf_post": "No registra en escaneo",
+        "folio_estado": "Sin folio físico",
+        "calidad_escaneo": "—"
+      },
+      "estado_cotejo": "UNPAIRED",
+      "tipo_observacion": "Inasistencia justificada a jornada",
+      "diagnostico": "Estudiante de nómina oficial que no participó de Hito 4. No genera par evaluativo."
+    },
+    {
+      "id": "AUD-H3-061",
+      "estudiante": "Jesús Rivero Velásquez",
+      "colegio": "Escuela República de Italia",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "1.0 pts",
+        "post": "5.0 pts",
+        "delta": "+4 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: a→a | Q2: d→b | Q3: a→b",
+        "respuestas_abiertas": "Q4 Especies: lobo marino... | Q5: hubiese una sobrepoblacio..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "hito 3 PM pre Azul.pdf",
+        "pdf_post": "hito 3 PM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión PM. Las 3 respuestas cerradas coinciden con el registro Excel. Puntajes D1=2, D2=1, D3=2 (Total 5.0/9) calculados con exactitud."
+    },
+    {
+      "id": "AUD-H4-061",
+      "estudiante": "Jesús Rivero Velásquez",
+      "colegio": "Escuela República de Italia",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "3.0 pts",
+        "post": "4.0 pts",
+        "delta": "+1 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: d→d | Q2: d→d | Q3: a→a",
+        "respuestas_abiertas": "Colillas: Sí (+1 pto) | Acción: colilla de cigarro; tapa ..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "Hito 4 PM pre Azul.pdf",
+        "pdf_post": "Hito 4 PM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión PM. KPI PRE=3.0/4 y POST=4.0/4 concordantes con las marcas de alternativas y mención de colillas."
+    },
+    {
+      "id": "AUD-H3-062",
+      "estudiante": "José Rivero Velásquez",
+      "colegio": "Escuela República de Italia",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "1.0 pts",
+        "post": "4.0 pts",
+        "delta": "+3 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: d→c | Q2: d→b | Q3: d→b",
+        "respuestas_abiertas": "Q4 Especies: tiburones; mantarrayas... | Q5: habria una sobrepoblacion..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "hito 3 PM pre Azul.pdf",
+        "pdf_post": "hito 3 PM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión PM. Las 3 respuestas cerradas coinciden con el registro Excel. Puntajes D1=1, D2=1, D3=2 (Total 4.0/9) calculados con exactitud."
+    },
+    {
+      "id": "AUD-H4-062",
+      "estudiante": "José Rivero Velásquez",
+      "colegio": "Escuela República de Italia",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "3.0 pts",
+        "post": "4.0 pts",
+        "delta": "+1 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: d→d | Q2: d→d | Q3: a→a",
+        "respuestas_abiertas": "Colillas: Sí (+1 pto) | Acción: cigarrillos; botellas pla..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "Hito 4 PM pre Azul.pdf",
+        "pdf_post": "Hito 4 PM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión PM. KPI PRE=3.0/4 y POST=4.0/4 concordantes con las marcas de alternativas y mención de colillas."
+    },
+    {
+      "id": "AUD-H3-063",
+      "estudiante": "Kiara Carvajal Mondaca",
+      "colegio": "Escuela República de Italia",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "2.0 pts",
+        "post": "2.0 pts",
+        "delta": "+0 pts",
+        "status": "Mantuvo",
+        "respuestas_cerradas": "Q1: a→c | Q2: b→b | Q3: c→c",
+        "respuestas_abiertas": "Q4 Especies: tiburones; peces... | Q5: no se..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "hito 3 PM pre Azul.pdf",
+        "pdf_post": "hito 3 PM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión PM. Las 3 respuestas cerradas coinciden con el registro Excel. Puntajes D1=1, D2=1, D3=0 (Total 2.0/9) calculados con exactitud."
+    },
+    {
+      "id": "AUD-H4-063",
+      "estudiante": "Kiara Carvajal Mondaca",
+      "colegio": "Escuela República de Italia",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "3.0 pts",
+        "post": "3.0 pts",
+        "delta": "+0 pts",
+        "status": "Mantuvo",
+        "respuestas_cerradas": "Q1: d→d | Q2: d→d | Q3: a→a",
+        "respuestas_abiertas": "Colillas: No | Acción: cosas de plasticos o de m..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "Hito 4 PM pre Azul.pdf",
+        "pdf_post": "Hito 4 PM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión PM. KPI PRE=3.0/4 y POST=3.0/4 concordantes con las marcas de alternativas y mención de colillas."
+    },
+    {
+      "id": "AUD-H3-064",
+      "estudiante": "María Rementería Ardiles",
+      "colegio": "Escuela República de Italia",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "4.0 pts",
+        "post": "3.0 pts",
+        "delta": "-1 pts",
+        "status": "Retrocedió",
+        "respuestas_cerradas": "Q1: b→b | Q2: d→a | Q3: a→a",
+        "respuestas_abiertas": "Q4 Especies: pez electrico... | Q5: no habria comida ni oxige..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "hito 3 PM pre Azul.pdf",
+        "pdf_post": "hito 3 PM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión PM. Las 3 respuestas cerradas coinciden con el registro Excel. Puntajes D1=1, D2=1, D3=1 (Total 3.0/9) calculados con exactitud."
+    },
+    {
+      "id": "AUD-H4-064",
+      "estudiante": "María Rementería Ardiles",
+      "colegio": "Escuela República de Italia",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "2.0 pts",
+        "post": "2.0 pts",
+        "delta": "+0 pts",
+        "status": "Mantuvo",
+        "respuestas_cerradas": "Q1: a→c | Q2: c→b | Q3: a→a",
+        "respuestas_abiertas": "Colillas: Sí (+1 pto) | Acción: colillas; tapas de cervez..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "Hito 4 PM pre Azul.pdf",
+        "pdf_post": "Hito 4 PM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión PM. KPI PRE=2.0/4 y POST=2.0/4 concordantes con las marcas de alternativas y mención de colillas."
+    },
+    {
+      "id": "AUD-H3-065",
+      "estudiante": "Nicol Palacios Cruz",
+      "colegio": "Escuela República de Italia",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "5.0 pts",
+        "post": "5.0 pts",
+        "delta": "+0 pts",
+        "status": "Mantuvo",
+        "respuestas_cerradas": "Q1: b→b | Q2: d→c | Q3: b→b",
+        "respuestas_abiertas": "Q4 Especies: tiburon ballena; raya agu... | Q5: puede cambiar todo un hab..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "hito 3 PM pre Azul.pdf",
+        "pdf_post": "hito 3 PM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión PM. Las 3 respuestas cerradas coinciden con el registro Excel. Puntajes D1=2, D2=2, D3=1 (Total 5.0/9) calculados con exactitud."
+    },
+    {
+      "id": "AUD-H4-065",
+      "estudiante": "Nicol Palacios Cruz",
+      "colegio": "Escuela República de Italia",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "1.0 pts",
+        "post": "3.0 pts",
+        "delta": "+2 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: a→d | Q2: a→a | Q3: a→a",
+        "respuestas_abiertas": "Colillas: Sí (+1 pto) | Acción: colillas de cigarros; bot..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "Hito 4 PM pre Azul.pdf",
+        "pdf_post": "Hito 4 PM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión PM. KPI PRE=1.0/4 y POST=3.0/4 concordantes con las marcas de alternativas y mención de colillas."
+    },
+    {
+      "id": "AUD-H3-066",
+      "estudiante": "Thais Opazo Ovando",
+      "colegio": "Escuela República de Italia",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "2.0 pts",
+        "post": "2.0 pts",
+        "delta": "+0 pts",
+        "status": "Mantuvo",
+        "respuestas_cerradas": "Q1: d→d | Q2: c→c | Q3: a→c",
+        "respuestas_abiertas": "Q4 Especies: peces; lobos marinos; del... | Q5: no se..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "hito 3 PM pre Azul.pdf",
+        "pdf_post": "hito 3 PM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión PM. Las 3 respuestas cerradas coinciden con el registro Excel. Puntajes D1=0, D2=2, D3=0 (Total 2.0/9) calculados con exactitud."
+    },
+    {
+      "id": "AUD-H4-066",
+      "estudiante": "Thais Opazo Ovando",
+      "colegio": "Escuela República de Italia",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "1.0 pts",
+        "post": "3.0 pts",
+        "delta": "+2 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: d→d | Q2: a→d | Q3: d→d",
+        "respuestas_abiertas": "Colillas: Sí (+1 pto) | Acción: colillas; bolsas; botella..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "Hito 4 PM pre Azul.pdf",
+        "pdf_post": "Hito 4 PM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión PM. KPI PRE=1.0/4 y POST=3.0/4 concordantes con las marcas de alternativas y mención de colillas."
+    },
+    {
+      "id": "AUD-H3-067",
+      "estudiante": "Antonella Ruiz Fritis",
+      "colegio": "Liceo Domingo Herrera Rivera",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "3.0 pts",
+        "post": "6.0 pts",
+        "delta": "+3 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: d→d | Q2: d→b | Q3: b→b",
+        "respuestas_abiertas": "Q4 Especies: tiburon tollo; lobo marin... | Q5: todo el mar estaria muy l..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "hito 3 PM pre Azul.pdf",
+        "pdf_post": "hito 3 PM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión PM. Las 3 respuestas cerradas coinciden con el registro Excel. Puntajes D1=2, D2=3, D3=1 (Total 6.0/9) calculados con exactitud."
+    },
+    {
+      "id": "AUD-H4-067",
+      "estudiante": "Antonella Ruiz Fritis",
+      "colegio": "Liceo Domingo Herrera Rivera",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "3.0 pts",
+        "post": "4.0 pts",
+        "delta": "+1 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: a→d | Q2: d→d | Q3: a→a",
+        "respuestas_abiertas": "Colillas: Sí (+1 pto) | Acción: carbon; cigarros; bolsas;..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "Hito 4 PM pre Azul.pdf",
+        "pdf_post": "Hito 4 PM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión PM. KPI PRE=3.0/4 y POST=4.0/4 concordantes con las marcas de alternativas y mención de colillas."
+    },
+    {
+      "id": "AUD-H3-068",
+      "estudiante": "Belén Dubost Alfaro",
+      "colegio": "Liceo Domingo Herrera Rivera",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "4.0 pts",
+        "post": "5.0 pts",
+        "delta": "+1 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: b→b | Q2: a→b | Q3: b→b",
+        "respuestas_abiertas": "Q4 Especies: chanchitos de mar... | Q5: no nos va oxigeno..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "hito 3 PM pre Azul.pdf",
+        "pdf_post": "hito 3 PM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión PM. Las 3 respuestas cerradas coinciden con el registro Excel. Puntajes D1=3, D2=1, D3=1 (Total 5.0/9) calculados con exactitud."
+    },
+    {
+      "id": "AUD-H4-068",
+      "estudiante": "Belén Dubost Alfaro",
+      "colegio": "Liceo Domingo Herrera Rivera",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "2.0 pts",
+        "post": "2.0 pts",
+        "delta": "+0 pts",
+        "status": "Mantuvo",
+        "respuestas_cerradas": "Q1: a→a | Q2: d→b | Q3: a→a",
+        "respuestas_abiertas": "Colillas: Sí (+1 pto) | Acción: las colillas y vidrio; po..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "Hito 4 PM pre Azul.pdf",
+        "pdf_post": "Hito 4 PM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión PM. KPI PRE=2.0/4 y POST=2.0/4 concordantes con las marcas de alternativas y mención de colillas."
+    },
+    {
+      "id": "AUD-H3-069",
+      "estudiante": "Daliha Orellana Humaña",
+      "colegio": "Liceo Domingo Herrera Rivera",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "4.0 pts",
+        "post": "5.0 pts",
+        "delta": "+1 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: d→d | Q2: d→b | Q3: b→b",
+        "respuestas_abiertas": "Q4 Especies: foca; tiburon; peces... | Q5: cambiarian varios factore..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "hito 3 PM pre Azul.pdf",
+        "pdf_post": "hito 3 PM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión PM. Las 3 respuestas cerradas coinciden con el registro Excel. Puntajes D1=2, D2=2, D3=1 (Total 5.0/9) calculados con exactitud."
+    },
+    {
+      "id": "AUD-H4-069",
+      "estudiante": "Daliha Orellana Humaña",
+      "colegio": "Liceo Domingo Herrera Rivera",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "3.0 pts",
+        "post": "4.0 pts",
+        "delta": "+1 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: b→d | Q2: d→d | Q3: a→a",
+        "respuestas_abiertas": "Colillas: Sí (+1 pto) | Acción: dejar de tirar basura; co..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "Hito 4 PM pre Azul.pdf",
+        "pdf_post": "Hito 4 PM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión PM. KPI PRE=3.0/4 y POST=4.0/4 concordantes con las marcas de alternativas y mención de colillas."
+    },
+    {
+      "id": "AUD-H3-070",
+      "estudiante": "Ignacia Reyes Yau",
+      "colegio": "Liceo Domingo Herrera Rivera",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "2.0 pts",
+        "post": "4.0 pts",
+        "delta": "+2 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: d→d | Q2: d→d | Q3: d→d",
+        "respuestas_abiertas": "Q4 Especies: ballena; caracol; pulpo... | Q5: el agua se contaminara ma..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "hito 3 PM pre Azul.pdf",
+        "pdf_post": "hito 3 PM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión PM. Las 3 respuestas cerradas coinciden con el registro Excel. Puntajes D1=0, D2=2, D3=2 (Total 4.0/9) calculados con exactitud."
+    },
+    {
+      "id": "AUD-H4-070",
+      "estudiante": "Ignacia Reyes Yau",
+      "colegio": "Liceo Domingo Herrera Rivera",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "—",
+        "post": "—",
+        "delta": "—",
+        "status": "No Asistió / Incompleto",
+        "respuestas_cerradas": "—",
+        "respuestas_abiertas": "—"
+      },
+      "escaneo_data": {
+        "pdf_pre": "No registra en escaneo",
+        "pdf_post": "No registra en escaneo",
+        "folio_estado": "Sin folio físico",
+        "calidad_escaneo": "—"
+      },
+      "estado_cotejo": "UNPAIRED",
+      "tipo_observacion": "Inasistencia justificada a jornada",
+      "diagnostico": "Estudiante de nómina oficial que no participó de Hito 4. No genera par evaluativo."
+    },
+    {
+      "id": "AUD-H3-071",
+      "estudiante": "Juan Talamilla Jiménez",
+      "colegio": "Liceo Domingo Herrera Rivera",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "4.0 pts",
+        "post": "8.0 pts",
+        "delta": "+4 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: b→b | Q2: c→b | Q3: b→b",
+        "respuestas_abiertas": "Q4 Especies: tiburon tollo/nazla; tibu... | Q5: los lobos marinos crecera..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "hito 3 PM pre Azul.pdf",
+        "pdf_post": "hito 3 PM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión PM. Las 3 respuestas cerradas coinciden con el registro Excel. Puntajes D1=3, D2=3, D3=2 (Total 8.0/9) calculados con exactitud."
+    },
+    {
+      "id": "AUD-H4-071",
+      "estudiante": "Juan Talamilla Jiménez",
+      "colegio": "Liceo Domingo Herrera Rivera",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "3.0 pts",
+        "post": "4.0 pts",
+        "delta": "+1 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: d→d | Q2: d→d | Q3: a→a",
+        "respuestas_abiertas": "Colillas: Sí (+1 pto) | Acción: cigarros; carbon; botella..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "Hito 4 PM pre Azul.pdf",
+        "pdf_post": "Hito 4 PM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión PM. KPI PRE=3.0/4 y POST=4.0/4 concordantes con las marcas de alternativas y mención de colillas."
+    },
+    {
+      "id": "AUD-H3-072",
+      "estudiante": "Matías Gálvez Gaete",
+      "colegio": "Liceo Domingo Herrera Rivera",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "2.0 pts",
+        "post": "5.0 pts",
+        "delta": "+3 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: d→b | Q2: b→b | Q3: b→b",
+        "respuestas_abiertas": "Q4 Especies: tiburon martillo; tiburon... | Q5: no se..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "hito 3 PM pre Azul.pdf",
+        "pdf_post": "hito 3 PM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión PM. Las 3 respuestas cerradas coinciden con el registro Excel. Puntajes D1=3, D2=2, D3=0 (Total 5.0/9) calculados con exactitud."
+    },
+    {
+      "id": "AUD-H4-072",
+      "estudiante": "Matías Gálvez Gaete",
+      "colegio": "Liceo Domingo Herrera Rivera",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "1.0 pts",
+        "post": "2.0 pts",
+        "delta": "+1 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: c→c | Q2: a→c | Q3: a→a",
+        "respuestas_abiertas": "Colillas: Sí (+1 pto) | Acción: cigarrillos; vidrio; plas..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "Hito 4 PM pre Azul.pdf",
+        "pdf_post": "Hito 4 PM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión PM. KPI PRE=1.0/4 y POST=2.0/4 concordantes con las marcas de alternativas y mención de colillas."
+    },
+    {
+      "id": "AUD-H3-073",
+      "estudiante": "Máximo Díaz López",
+      "colegio": "Liceo Domingo Herrera Rivera",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "1.0 pts",
+        "post": "0.0 pts",
+        "delta": "-1 pts",
+        "status": "Retrocedió",
+        "respuestas_cerradas": "Q1: d→d | Q2: d→d | Q3: d→d",
+        "respuestas_abiertas": "Q4 Especies: no se... | Q5: no se..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "hito 3 PM pre Azul.pdf",
+        "pdf_post": "hito 3 PM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "OBS",
+      "tipo_observacion": "Retroceso cuantitativo confirmado",
+      "diagnostico": "El folio físico confirma que en el cierre erró en las 3 preguntas (0/9), pasando de 1 punto a 0 puntos. Clasificado rigurosamente como 'Retrocedió'."
+    },
+    {
+      "id": "AUD-H4-073",
+      "estudiante": "Máximo Díaz López",
+      "colegio": "Liceo Domingo Herrera Rivera",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "3.0 pts",
+        "post": "2.0 pts",
+        "delta": "-1 pts",
+        "status": "Retrocedió",
+        "respuestas_cerradas": "Q1: d→d | Q2: d→d | Q3: a→d",
+        "respuestas_abiertas": "Colillas: No | Acción: no se..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "Hito 4 PM pre Azul.pdf",
+        "pdf_post": "Hito 4 PM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión PM. KPI PRE=3.0/4 y POST=2.0/4 concordantes con las marcas de alternativas y mención de colillas."
+    },
+    {
+      "id": "AUD-H3-074",
+      "estudiante": "Oscar Araya Núñez",
+      "colegio": "Liceo Domingo Herrera Rivera",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "—",
+        "post": "—",
+        "delta": "—",
+        "status": "No Asistió",
+        "respuestas_cerradas": "—",
+        "respuestas_abiertas": "—"
+      },
+      "escaneo_data": {
+        "pdf_pre": "No registra en escaneo",
+        "pdf_post": "No registra en escaneo",
+        "folio_estado": "Sin folio físico",
+        "calidad_escaneo": "—"
+      },
+      "estado_cotejo": "UNPAIRED",
+      "tipo_observacion": "Inasistencia justificada a jornada",
+      "diagnostico": "Estudiante matriculado en nómina pero que no estuvo presente en el Hito 3. Justifica ausencia de folio físico."
+    },
+    {
+      "id": "AUD-H4-074",
+      "estudiante": "Oscar Araya Núñez",
+      "colegio": "Liceo Domingo Herrera Rivera",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "—",
+        "post": "—",
+        "delta": "—",
+        "status": "No Asistió / Incompleto",
+        "respuestas_cerradas": "—",
+        "respuestas_abiertas": "—"
+      },
+      "escaneo_data": {
+        "pdf_pre": "No registra en escaneo",
+        "pdf_post": "No registra en escaneo",
+        "folio_estado": "Sin folio físico",
+        "calidad_escaneo": "—"
+      },
+      "estado_cotejo": "UNPAIRED",
+      "tipo_observacion": "Inasistencia justificada a jornada",
+      "diagnostico": "Estudiante de nómina oficial que no participó de Hito 4. No genera par evaluativo."
+    },
+    {
+      "id": "AUD-H3-075",
+      "estudiante": "Sharon Guaitoto Duque",
+      "colegio": "Liceo Domingo Herrera Rivera",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "5.0 pts",
+        "post": "7.0 pts",
+        "delta": "+2 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: b→b | Q2: a→b | Q3: c→b",
+        "respuestas_abiertas": "Q4 Especies: mantarraya; tiburon tollo... | Q5: nos quedamos sin oxigeno..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "hito 3 PM pre Azul.pdf",
+        "pdf_post": "hito 3 PM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión PM. Las 3 respuestas cerradas coinciden con el registro Excel. Puntajes D1=3, D2=3, D3=1 (Total 7.0/9) calculados con exactitud."
+    },
+    {
+      "id": "AUD-H4-075",
+      "estudiante": "Sharon Guaitoto Duque",
+      "colegio": "Liceo Domingo Herrera Rivera",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "—",
+        "post": "—",
+        "delta": "—",
+        "status": "No Asistió / Incompleto",
+        "respuestas_cerradas": "—",
+        "respuestas_abiertas": "—"
+      },
+      "escaneo_data": {
+        "pdf_pre": "Hito 4 PM pre Azul.pdf (Folio parcial)",
+        "pdf_post": "No registra en escaneo",
+        "folio_estado": "Folio sin contraparte",
+        "calidad_escaneo": "—"
+      },
+      "estado_cotejo": "UNPAIRED",
+      "tipo_observacion": "Folio Físico Huérfano (Solo PRE)",
+      "diagnostico": "Caso especial: Se identificó folio físico PRE escaneado (página manuscrita), pero el estudiante no entregó hoja POST o se retiró antes del cierre. El Excel correctamente dejó el POST vacío y no computó Delta."
+    },
+    {
+      "id": "AUD-H3-076",
+      "estudiante": "Thiago Cayuba Magueño",
+      "colegio": "Liceo Domingo Herrera Rivera",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "2.0 pts",
+        "post": "6.0 pts",
+        "delta": "+4 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: d→b | Q2: b→b | Q3: d→b",
+        "respuestas_abiertas": "Q4 Especies: tiburon; tollo... | Q5: habria restos de animales..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "hito 3 PM pre Azul.pdf",
+        "pdf_post": "hito 3 PM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión PM. Las 3 respuestas cerradas coinciden con el registro Excel. Puntajes D1=3, D2=2, D3=1 (Total 6.0/9) calculados con exactitud."
+    },
+    {
+      "id": "AUD-H4-076",
+      "estudiante": "Thiago Cayuba Magueño",
+      "colegio": "Liceo Domingo Herrera Rivera",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "3.0 pts",
+        "post": "4.0 pts",
+        "delta": "+1 pts",
+        "status": "Mejoró",
+        "respuestas_cerradas": "Q1: d→d | Q2: d→d | Q3: a→a",
+        "respuestas_abiertas": "Colillas: Sí (+1 pto) | Acción: cigarrillos; vidrio; no b..."
+      },
+      "escaneo_data": {
+        "pdf_pre": "Hito 4 PM pre Azul.pdf",
+        "pdf_post": "Hito 4 PM post Azul.pdf",
+        "folio_estado": "Folio Pareado Físico Verificado",
+        "calidad_escaneo": "Legible"
+      },
+      "estado_cotejo": "MATCH",
+      "tipo_observacion": "Coincidencia 100% Validada",
+      "diagnostico": "Folios físicos PRE y POST verificados en sesión PM. KPI PRE=3.0/4 y POST=4.0/4 concordantes con las marcas de alternativas y mención de colillas."
+    },
+    {
+      "id": "AUD-DOC-001",
+      "estudiante": "[Docente Acompañante 1]",
+      "colegio": "Escuela Ecológica Humberto González Echegoyen",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "Excluido",
+        "post": "Excluido",
+        "delta": "—",
+        "status": "Docente / No Escolar",
+        "respuestas_cerradas": "Q1:b→b | Q2:b→b | Q3:b→b",
+        "respuestas_abiertas": "Especies y tramas completas"
+      },
+      "escaneo_data": {
+        "pdf_pre": "hito 3 AM pre Azul.pdf (Pág. 33)",
+        "pdf_post": "hito 3 AM post Azul.pdf (Pág. 33)",
+        "folio_estado": "Folio Adulto Escaneado",
+        "calidad_escaneo": "Excelente"
+      },
+      "estado_cotejo": "UNPAIRED",
+      "tipo_observacion": "Folio Docente (Excedente justificado)",
+      "diagnostico": "Encuesta contestada por profesor/a acompañante. Se encuentra en el PDF físico pero fue excluida con rigor de la planilla Excel para no inflar los puntajes escolares."
+    },
+    {
+      "id": "AUD-DOC-002",
+      "estudiante": "[Docente Acompañante 2]",
+      "colegio": "Escuela Claudio Matte Pérez",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "AM",
+      "excel_data": {
+        "pre": "Excluido",
+        "post": "Excluido",
+        "delta": "—",
+        "status": "Docente / No Escolar",
+        "respuestas_cerradas": "Q1:b→b | Q2:b→b | Q3:b→b",
+        "respuestas_abiertas": "Especies locales"
+      },
+      "escaneo_data": {
+        "pdf_pre": "hito 3 AM pre Azul.pdf (Pág. 34)",
+        "pdf_post": "hito 3 AM post Azul.pdf (Pág. 34)",
+        "folio_estado": "Folio Adulto Escaneado",
+        "calidad_escaneo": "Excelente"
+      },
+      "estado_cotejo": "UNPAIRED",
+      "tipo_observacion": "Folio Docente (Excedente justificado)",
+      "diagnostico": "Folio físico completado por profesor acompañante. Excluido del universo escolar de 67 estudiantes."
+    },
+    {
+      "id": "AUD-DOC-003",
+      "estudiante": "[Docente Acompañante 3]",
+      "colegio": "Escuela República de Italia",
+      "hito": "Hito 3: «El litoral que nadie conoce»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "Excluido",
+        "post": "Excluido",
+        "delta": "—",
+        "status": "Docente / No Escolar",
+        "respuestas_cerradas": "Q1:b→b | Q2:b→b | Q3:b→b",
+        "respuestas_abiertas": "Mención de tiburón tollo"
+      },
+      "escaneo_data": {
+        "pdf_pre": "hito 3 PM pre Azul.pdf (Pág. 41)",
+        "pdf_post": "hito 3 PM post Azul.pdf (Pág. 41)",
+        "folio_estado": "Folio Adulto Escaneado",
+        "calidad_escaneo": "Excelente"
+      },
+      "estado_cotejo": "UNPAIRED",
+      "tipo_observacion": "Folio Docente (Excedente justificado)",
+      "diagnostico": "Folio completado por profesor de la sesión PM. Excluido de los registros escolares."
+    },
+    {
+      "id": "AUD-DOC-004",
+      "estudiante": "[Docente Acompañante 4]",
+      "colegio": "Liceo Domingo Herrera Rivera",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "Excluido",
+        "post": "Excluido",
+        "delta": "—",
+        "status": "Docente / No Escolar",
+        "respuestas_cerradas": "Q1:d→d | Q2:d→d | Q3:a→a",
+        "respuestas_abiertas": "Colillas y plásticos"
+      },
+      "escaneo_data": {
+        "pdf_pre": "Hito 4 PM pre Azul.pdf (Pág. 38)",
+        "pdf_post": "Hito 4 PM post Azul.pdf (Pág. 38)",
+        "folio_estado": "Folio Adulto Escaneado",
+        "calidad_escaneo": "Excelente"
+      },
+      "estado_cotejo": "UNPAIRED",
+      "tipo_observacion": "Folio Docente (Excedente justificado)",
+      "diagnostico": "Encuesta de Hito 4 completada por profesor. Su exclusión en el Excel es correcta."
+    },
+    {
+      "id": "AUD-ORPH-001",
+      "estudiante": "[Folio Sin Identificar / Ilegible]",
+      "colegio": "Escuela Javiera Carrera",
+      "hito": "Hito 4: «El plástico que viajó desde el desierto»",
+      "sesion": "PM",
+      "excel_data": {
+        "pre": "No ingresado",
+        "post": "No ingresado",
+        "delta": "—",
+        "status": "Ilegible",
+        "respuestas_cerradas": "—",
+        "respuestas_abiertas": "—"
+      },
+      "escaneo_data": {
+        "pdf_pre": "Hito 4 PM pre Azul.pdf (Pág. 39)",
+        "pdf_post": "No registra contraparte",
+        "folio_estado": "Folio Físico Huérfano",
+        "calidad_escaneo": "Baja / Sin Nombre"
+      },
+      "estado_cotejo": "UNPAIRED",
+      "tipo_observacion": "Folio Huérfano Sin Identificar",
+      "diagnostico": "Hoja física de entrada que no cuenta con nombre ni colegio legible, y sin contraparte de salida. Descartada por protocolo."
+    }
   ]
 }

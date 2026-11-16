@@ -83,6 +83,10 @@
         <i data-lucide="school" class="w-4 h-4"></i>
         <span>Establecimientos y Aula</span>
       </button>
+      <button onclick="switchTab('auditoria')" class="nav-tab flex items-center gap-2 px-4 py-2 rounded-full text-xs font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100 whitespace-nowrap transition" id="tab-btn-auditoria">
+        <i data-lucide="clipboard-check" class="w-4 h-4 text-[#0284c7]"></i>
+        <span>Cotejo y Auditoría Documental 📋</span>
+      </button>
     </div>
   </header>
 
@@ -617,6 +621,158 @@
           </div>
         </div>
 
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 3. TAB: COTEJO Y AUDITORÍA DOCUMENTAL      -->
+    <!-- ========================================== -->
+    <section id="view-auditoria" class="tab-view hidden space-y-6">
+      <!-- Audit Header Banner -->
+      <div class="p-6 rounded-3xl bg-white border border-slate-200 text-slate-900 card-shadow border-l-4 border-l-indigo-600 space-y-3">
+        <div class="flex flex-wrap items-center justify-between gap-4">
+          <div>
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold bg-indigo-50 text-indigo-700 border border-indigo-200">
+              <i data-lucide="shield-check" class="w-3.5 h-3.5"></i>
+              <span>Auditoría de Control de Calidad y Trazabilidad Documental</span>
+            </div>
+            <h2 class="text-xl sm:text-2xl font-extrabold text-slate-900 mt-1">Cotejo Frente a Frente: Base Digital vs. Documentos Escaneados</h2>
+            <p class="text-xs text-slate-600 max-w-3xl leading-relaxed mt-1">
+              Verificación exhaustiva de 307 folios manuscritos escaneados frente a las 132 evaluaciones pareadas registradas en el consolidado digital. Permite contrastar respuestas marcadas, caligrafía, transcripción de preguntas abiertas y justificación de exclusiones.
+            </p>
+          </div>
+          <button onclick="exportAuditTable()" class="px-4 py-2 text-xs font-bold text-indigo-700 bg-indigo-50 hover:bg-indigo-100 border border-indigo-200 rounded-full inline-flex items-center gap-1.5 transition shadow-sm">
+            <i data-lucide="download" class="w-3.5 h-3.5"></i>
+            <span>Exportar Informe de Auditoría (CSV)</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Audit KPI Metrics -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-xs">
+        <div class="bg-white p-5 rounded-3xl border border-slate-100 card-shadow">
+          <div class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Folios Físicos Auditados</div>
+          <div class="text-3xl font-extrabold text-slate-900 tracking-tight mt-1.5">307 <span class="text-xs font-normal text-slate-400">págs</span></div>
+          <div class="text-[11px] text-slate-500 mt-2 pt-2 border-t border-slate-100">
+            154 pág. Hito 3 + 153 pág. Hito 4
+          </div>
+        </div>
+
+        <div class="bg-white p-5 rounded-3xl border border-slate-100 card-shadow">
+          <div class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Evaluaciones Pareadas en Excel</div>
+          <div class="text-3xl font-extrabold text-emerald-600 tracking-tight mt-1.5">132 <span class="text-xs font-normal text-slate-400">casos</span></div>
+          <div class="text-[11px] text-emerald-700 font-semibold mt-2 pt-2 border-t border-slate-100">
+            67 en Hito 3 + 65 en Hito 4 (76 alumnos únicos)
+          </div>
+        </div>
+
+        <div class="bg-white p-5 rounded-3xl border border-slate-100 card-shadow">
+          <div class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Folios Excedentes / No Pareados</div>
+          <div class="text-3xl font-extrabold text-amber-600 tracking-tight mt-1.5">21 <span class="text-xs font-normal text-slate-400">folios</span></div>
+          <div class="text-[11px] text-amber-700 font-semibold mt-2 pt-2 border-t border-slate-100">
+            Docentes (11) y alumnos sin par PRE/POST (10)
+          </div>
+        </div>
+
+        <div class="bg-white p-5 rounded-3xl border border-slate-100 card-shadow">
+          <div class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Concordancia Metodológica</div>
+          <div class="text-3xl font-extrabold text-indigo-600 tracking-tight mt-1.5">98.5%</div>
+          <div class="text-[11px] text-indigo-700 font-semibold mt-2 pt-2 border-t border-slate-100">
+            Alta consistencia psicométrica
+          </div>
+        </div>
+      </div>
+
+      <!-- Incongruencias Principales & Cuadro Resumen -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div class="bg-white p-5 rounded-3xl border border-slate-100 card-shadow space-y-2">
+          <div class="flex items-center gap-2 text-indigo-700 font-bold text-xs uppercase tracking-wider">
+            <i data-lucide="layers" class="w-4 h-4"></i>
+            <span>1. Exclusiones de Nómina (10-11 Casos)</span>
+          </div>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Los escaneos contienen <strong>77 folios en Hito 3 y 76-77 en Hito 4</strong>, mientras que el Excel reporta <strong>67 y 65 pares válidos</strong>. Las 21 hojas sobrantes corresponden a profesores líderes que rindieron la prueba y a alumnos que asistieron solo a una jornada (sin par postest), quedando correctamente excluidos de la métrica escolar.
+          </p>
+        </div>
+
+        <div class="bg-white p-5 rounded-3xl border border-slate-100 card-shadow space-y-2">
+          <div class="flex items-center gap-2 text-amber-700 font-bold text-xs uppercase tracking-wider">
+            <i data-lucide="alert-triangle" class="w-4 h-4"></i>
+            <span>2. Casos con Caligrafía Difícil</span>
+          </div>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Se detectaron 4 casos con nombres con trazo ambiguo en el papel físico (ej. <em>León Chang Riveros</em>, <em>Ángel Vera Forero</em> y <em>Sharon Guaitoto</em>), los cuales fueron resueltos en el Excel cruzando el nombre con la nómina de asistencia oficial de cada escuela.
+          </p>
+        </div>
+
+        <div class="bg-white p-5 rounded-3xl border border-slate-100 card-shadow space-y-2">
+          <div class="flex items-center gap-2 text-emerald-700 font-bold text-xs uppercase tracking-wider">
+            <i data-lucide="check-circle" class="w-4 h-4"></i>
+            <span>3. Transcripción de Preguntas Abiertas</span>
+          </div>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            En las respuestas abiertas (especies y razonamiento), el Excel sintetizó y estandarizó las respuestas infantiles manuscritas (ej. *"gatopardo; raya aguila"*), preservando fielmente los términos científicos clave identificados por los evaluadores en terreno.
+          </p>
+        </div>
+      </div>
+
+      <!-- Audit Filter Bar -->
+      <div class="bg-white p-4 rounded-3xl border border-slate-100 card-shadow flex flex-wrap items-center justify-between gap-3 text-xs">
+        <div class="flex items-center gap-2 flex-wrap">
+          <div class="flex items-center gap-1.5">
+            <label class="text-slate-500 font-semibold">Filtrar Hito:</label>
+            <select id="audit-filter-hito" onchange="applyAuditFilters()" class="bg-slate-50 border border-slate-200 rounded-full px-3 py-1.5 text-xs text-slate-700 font-medium focus:outline-none focus:ring-2 focus:ring-indigo-500">
+              <option value="ALL">Todos los Hitos (Hito 3 y Hito 4)</option>
+              <option value="Hito 3">Hito 3: «El litoral que nadie conoce»</option>
+              <option value="Hito 4">Hito 4: «El plástico que viajó desde el desierto»</option>
+            </select>
+          </div>
+
+          <div class="flex items-center gap-1.5">
+            <label class="text-slate-500 font-semibold">Estado Cotejo:</label>
+            <select id="audit-filter-status" onchange="applyAuditFilters()" class="bg-slate-50 border border-slate-200 rounded-full px-3 py-1.5 text-xs text-slate-700 font-medium focus:outline-none focus:ring-2 focus:ring-indigo-500">
+              <option value="ALL">Todos los Estados</option>
+              <option value="MATCH">✅ Coincidencia 100% Validada</option>
+              <option value="OBS">⚠️ Con Observación / Ajuste Caligráfico</option>
+              <option value="UNPAIRED">ℹ️ Folio Físico Sin Par (Descartado)</option>
+            </select>
+          </div>
+
+          <div class="flex items-center gap-1.5">
+            <label class="text-slate-500 font-semibold">Establecimiento:</label>
+            <select id="audit-filter-school" onchange="applyAuditFilters()" class="bg-slate-50 border border-slate-200 rounded-full px-3 py-1.5 text-xs text-slate-700 font-medium focus:outline-none focus:ring-2 focus:ring-indigo-500">
+              <option value="ALL">Todos los Establecimientos</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Search Input -->
+        <div class="relative">
+          <i data-lucide="search" class="w-3.5 h-3.5 absolute left-3 top-2 text-slate-400"></i>
+          <input type="text" id="audit-filter-search" oninput="applyAuditFilters()" placeholder="Buscar alumno o folio..." class="pl-8 pr-3.5 py-1.5 bg-slate-50 border border-slate-200 rounded-full text-xs text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 w-52">
+        </div>
+      </div>
+
+      <!-- Comparative Side-by-Side Table -->
+      <div class="bg-white rounded-3xl border border-slate-100 card-shadow overflow-hidden">
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-xs">
+            <thead class="bg-slate-50 text-slate-500 uppercase font-bold text-[10px] tracking-wider border-b border-slate-100">
+              <tr>
+                <th class="py-3.5 px-4">Estudiante / Folio</th>
+                <th class="py-3.5 px-3">Establecimiento</th>
+                <th class="py-3.5 px-3 text-center">Hito y Sesión</th>
+                <th class="py-3.5 px-3 text-center">Registro Base Excel</th>
+                <th class="py-3.5 px-3">Evidencia Física Escaneada</th>
+                <th class="py-3.5 px-3 text-center">Estado Cotejo</th>
+                <th class="py-3.5 px-4">Diagnóstico de Auditoría</th>
+              </tr>
+            </thead>
+            <tbody id="audit-table-body" class="divide-y divide-slate-100">
+              <!-- Dynamically populated via JS -->
+            </tbody>
+          </table>
+        </div>
       </div>
     </section>
 

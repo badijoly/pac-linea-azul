@@ -238,10 +238,12 @@ const SCHOOLS_DIRECTORY = {
 document.addEventListener('DOMContentLoaded', async () => {
   await loadData();
   populateSchoolFilter();
+  populateAuditSchoolFilter();
   renderKpis();
   renderCharts();
   renderSchoolsTable();
   renderSchoolsCards();
+  renderAuditTable();
   if (window.lucide) {
     lucide.createIcons();
   }
@@ -790,6 +792,121 @@ function exportSchoolsTable() {
   const a = document.createElement('a');
   a.href = url;
   a.download = `Reporte_Línea_Azul_PAC2026_${new Date().toISOString().slice(0, 10)}.csv`;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+}
+
+// -------------------------------------------------------------
+// LOGICA DE COTEJO Y AUDITORIA DOCUMENTAL (EXCEL VS ESCANEOS)
+// -------------------------------------------------------------
+
+function populateAuditSchoolFilter() {
+  const select = document.getElementById('audit-filter-school');
+  if (!select) return;
+  Object.keys(SCHOOLS_DIRECTORY).forEach(s => {
+    const opt = document.createElement('option');
+    opt.value = s;
+    opt.textContent = s;
+    select.appendChild(opt);
+  });
+}
+
+function renderAuditTable(customList = null) {
+  const tbody = document.getElementById('audit-table-body');
+  if (!tbody) return;
+  tbody.innerHTML = '';
+
+  const list = customList || (RAW_DATA && RAW_DATA.auditoria) || [];
+  if (list.length === 0) {
+    tbody.innerHTML = `<tr><td colspan="7" class="py-8 text-center text-slate-400">No se encontraron registros que coincidan con los filtros aplicados.</td></tr>`;
+    return;
+  }
+
+  list.forEach(rec => {
+    const tr = document.createElement('tr');
+    tr.className = "hover:bg-slate-50/80 transition text-xs";
+
+    // Badge for status
+    let statusBadge = "";
+    if (rec.estado_cotejo === 'MATCH') {
+      statusBadge = `<span class="px-2.5 py-1 rounded-full text-[10px] font-extrabold bg-emerald-100 text-emerald-800 border border-emerald-300">✅ Coincidente 100%</span>`;
+    } else if (rec.estado_cotejo === 'OBS') {
+      statusBadge = `<span class="px-2.5 py-1 rounded-full text-[10px] font-extrabold bg-amber-100 text-amber-900 border border-amber-300">⚠️ Con Observación</span>`;
+    } else {
+      statusBadge = `<span class="px-2.5 py-1 rounded-full text-[10px] font-bold bg-slate-100 text-slate-600 border border-slate-300">ℹ️ Excluido / Sin Par</span>`;
+    }
+
+    const ex = rec.excel_data;
+    const esc = rec.escaneo_data;
+
+    tr.innerHTML = `
+      <td class="py-3 px-4 font-bold text-slate-900 whitespace-nowrap">
+        ${rec.estudiante}
+        <span class="block text-[10px] text-slate-400 font-normal">${rec.id}</span>
+      </td>
+      <td class="py-3 px-3 text-slate-600">${rec.colegio}</td>
+      <td class="py-3 px-3 text-center">
+        <span class="px-2 py-0.5 rounded-full text-[10px] font-bold ${rec.hito.includes('Hito 3') ? 'bg-sky-50 text-[#0284c7] border border-sky-200' : 'bg-indigo-50 text-indigo-700 border border-indigo-200'}">
+          ${rec.hito.includes('Hito 3') ? 'Hito 3' : 'Hito 4'} (${rec.sesion})
+        </span>
+      </td>
+      <td class="py-3 px-3 text-slate-700">
+        <div class="font-bold text-slate-900">${ex.pre} → ${ex.post} <span class="text-xs text-sky-700 font-extrabold">(${ex.delta})</span></div>
+        <div class="text-[10px] text-slate-500 mt-0.5 font-mono">${ex.respuestas_cerradas}</div>
+        <div class="text-[10px] text-slate-400 italic">${ex.respuestas_abiertas}</div>
+      </td>
+      <td class="py-3 px-3 text-slate-700">
+        <div class="font-semibold text-slate-800">${esc.folio_estado}</div>
+        <div class="text-[10px] text-slate-400 font-mono">${esc.pdf_pre}</div>
+        <div class="text-[10px] text-slate-400 font-mono">${esc.pdf_post}</div>
+      </td>
+      <td class="py-3 px-3 text-center whitespace-nowrap">
+        ${statusBadge}
+        <span class="block text-[10px] text-slate-400 mt-0.5">${rec.tipo_observacion}</span>
+      </td>
+      <td class="py-3 px-4 text-slate-600 text-[11px] leading-relaxed max-w-xs">
+        ${rec.diagnostico}
+      </td>
+    `;
+    tbody.appendChild(tr);
+  });
+}
+
+function applyAuditFilters() {
+  if (!RAW_DATA || !RAW_DATA.auditoria) return;
+
+  const hito = document.getElementById('audit-filter-hito')?.value || 'ALL';
+  const status = document.getElementById('audit-filter-status')?.value || 'ALL';
+  const school = document.getElementById('audit-filter-school')?.value || 'ALL';
+  const search = document.getElementById('audit-filter-search')?.value.toLowerCase().trim() || '';
+
+  const filtered = RAW_DATA.auditoria.filter(rec => {
+    const matchHito = (hito === 'ALL') || (hito === 'Hito 3' && rec.hito.includes('Hito 3')) || (hito === 'Hito 4' && rec.hito.includes('Hito 4'));
+    const matchStatus = (status === 'ALL') || (rec.estado_cotejo === status);
+    const matchSchool = (school === 'ALL') || (rec.colegio === school);
+    const matchSearch = (!search) || rec.estudiante.toLowerCase().includes(search) || rec.colegio.toLowerCase().includes(search) || rec.diagnostico.toLowerCase().includes(search);
+    return matchHito && matchStatus && matchSchool && matchSearch;
+  });
+
+  renderAuditTable(filtered);
+}
+
+function exportAuditTable() {
+  if (!RAW_DATA || !RAW_DATA.auditoria) return;
+  let csv = "ID,Estudiante,Colegio,Hito,Sesion,PRE_Excel,POST_Excel,Delta_Excel,Estado_Excel,Respuestas_Cerradas,Evidencia_Escaneo,Estado_Cotejo,Tipo_Observacion,Diagnostico\n";
+
+  RAW_DATA.auditoria.forEach(r => {
+    const ex = r.excel_data;
+    const esc = r.escaneo_data;
+    csv += `"${r.id}","${r.estudiante}","${r.colegio}","${r.hito}","${r.sesion}","${ex.pre}","${ex.post}","${ex.delta}","${ex.status}","${ex.respuestas_cerradas}","${esc.folio_estado} - ${esc.pdf_pre}","${r.estado_cotejo}","${r.tipo_observacion}","${r.diagnostico}"\n`;
+  });
+
+  const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `Auditoria_Cotejo_Línea_Azul_PAC2026_${new Date().toISOString().slice(0, 10)}.csv`;
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);
