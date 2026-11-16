@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard de Evaluación · Línea Azul PAC 2026</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="icon" type="image/png" href="logo.png">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background-color: #cbd5e1;
+      border-radius: 4px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    .card-shadow {
+      box-shadow: 0 12px 30px -6px rgba(10, 22, 34, 0.08), 0 4px 10px -3px rgba(10, 22, 34, 0.04);
+    }
+    .badge-improved { background-color: #f0fdf4; color: #166534; border: 1px solid #bbf7d0; }
+    .badge-maintained { background-color: #f0f9ff; color: #0369a1; border: 1px solid #bae6fd; }
+    .badge-regressed { background-color: #fffbeb; color: #b45309; border: 1px solid #fde68a; }
+    .group:hover .group-hover\:block,
+    .group:focus-within .group-hover\:block,
+    .group:focus .group-hover\:block {
+      display: block !important;
+    }
+  </style>
+</head>
+<body class="bg-[#f8fafc] text-slate-800 min-h-screen flex flex-col antialiased">
+
+  <!-- TOP NAVBAR -->
+  <header class="bg-white/95 backdrop-blur-md border-b border-slate-200 sticky top-0 z-40 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex flex-wrap items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <!-- Logo oficial del Programa de Acción Climática -->
+        <div class="bg-white p-1 rounded-2xl shadow-sm border border-slate-200">
+          <img src="logo.png" alt="Programa de Acción Climática" class="h-10 w-auto object-contain">
+        </div>
+        <div class="border-l border-slate-200 pl-3">
+          <div class="flex items-center gap-2">
+            <h1 class="text-base sm:text-lg font-bold text-slate-900 tracking-tight">Evaluación de Aprendizajes · Línea Azul</h1>
+            <span class="text-xs font-bold px-3 py-0.5 rounded-full bg-[#0284c7]/15 text-[#0369a1] border border-[#7dd3fc] shadow-sm">PAC 2026</span>
+          </div>
+          <p class="text-[11px] text-slate-500 font-medium">Océano, Biodiversidad de Condrictios y Conservación Litoral</p>
+        </div>
+      </div>
+
+      <!-- Action buttons y Sync Status -->
+      <div class="flex items-center gap-2.5 flex-wrap">
+        <div id="sync-status" class="flex items-center gap-2 text-xs text-slate-600 bg-slate-100 px-3.5 py-1.5 rounded-full border border-slate-200">
+          <span class="w-2 h-2 rounded-full bg-[#0284c7] animate-pulse"></span>
+          <span id="sync-text">Datos Normalizados 0-5.0</span>
+        </div>
+
+        <button onclick="toggleCompareMode()" id="btn-toggle-compare" class="inline-flex items-center gap-1.5 px-4 py-1.5 text-xs font-bold text-white bg-gradient-to-r from-[#0284c7] to-[#00ADBB] hover:opacity-90 rounded-full transition shadow-sm" title="Comparar Línea Azul vs Línea Verde">
+          <i data-lucide="split" class="w-3.5 h-3.5"></i>
+          <span>Ensayo Comparativo (Verde vs Azul)</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- MAIN TABS NAVIGATION (2 Pestañas requeridas) -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-slate-100 py-2.5 flex gap-2 overflow-x-auto custom-scrollbar">
+      <button onclick="switchTab('resumen')" class="nav-tab active-tab flex items-center gap-2 px-4 py-2 rounded-full text-xs font-bold bg-[#0284c7] text-white shadow-sm whitespace-nowrap transition" id="tab-btn-resumen">
+        <i data-lucide="layout-dashboard" class="w-4 h-4"></i>
+        <span>Resumen Ejecutivo</span>
+      </button>
+      <button onclick="switchTab('establecimientos')" class="nav-tab flex items-center gap-2 px-4 py-2 rounded-full text-xs font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100 whitespace-nowrap transition" id="tab-btn-establecimientos">
+        <i data-lucide="school" class="w-4 h-4"></i>
+        <span>Establecimientos y Aula</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- FILTER CONTROLS BAR -->
+  <div class="bg-white border-b border-slate-200 py-3 px-4 sm:px-6 lg:px-8 shadow-sm">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3 text-xs">
+      
+      <!-- Hito selection pills -->
+      <div class="flex items-center gap-1 bg-slate-100 p-1 rounded-full border border-slate-200">
+        <button onclick="setHito('Global')" id="btn-hito-global" class="px-4 py-1.5 rounded-full text-xs font-bold bg-[#0284c7] text-white shadow-sm transition">
+          Resumen Global Azul
+        </button>
+        <button onclick="setHito('Challwa')" id="btn-hito-challwa" class="px-4 py-1.5 rounded-full text-xs font-medium text-slate-600 hover:text-slate-900 transition">
+          Hito 1: Challwa (Tiburones y Rayas)
+        </button>
+        <button onclick="setHito('Desierto')" id="btn-hito-desierto" class="px-4 py-1.5 rounded-full text-xs font-medium text-slate-600 hover:text-slate-900 transition">
+          Hito 2: Desierto Azul (Plásticos y Colillas)
+        </button>
+      </div>
+
+      <!-- Filters: School, Status, Search -->
+      <div id="filters-container" class="flex items-center gap-2 flex-wrap">
+        <!-- School Select -->
+        <div class="flex items-center gap-1.5">
+          <label class="text-slate-500 font-semibold">Colegio:</label>
+          <select id="filter-school" onchange="applyFilters()" class="bg-slate-50 border border-slate-200 rounded-full px-3.5 py-1.5 text-xs text-slate-700 font-medium focus:outline-none focus:ring-2 focus:ring-[#0284c7]">
+            <option value="ALL">Todos los Establecimientos (8)</option>
+          </select>
+        </div>
+
+        <!-- Status Select -->
+        <div class="flex items-center gap-1.5">
+          <label class="text-slate-500 font-semibold">Evolución:</label>
+          <select id="filter-status" onchange="applyFilters()" class="bg-slate-50 border border-slate-200 rounded-full px-3.5 py-1.5 text-xs text-slate-700 font-medium focus:outline-none focus:ring-2 focus:ring-[#0284c7]">
+            <option value="ALL">Todos los estados</option>
+            <option value="Mejoró">Mejoró (+pts)</option>
+            <option value="Mantuvo">Consolidó (0 pts)</option>
+            <option value="Retrocedió">Requiere refuerzo (-pts)</option>
+          </select>
+        </div>
+
+        <!-- Search Input -->
+        <div class="relative">
+          <i data-lucide="search" class="w-3.5 h-3.5 absolute left-3 top-2 text-slate-400"></i>
+          <input type="text" id="filter-search" oninput="applyFilters()" placeholder="Buscar participante..." class="pl-8 pr-3.5 py-1.5 bg-slate-50 border border-slate-200 rounded-full text-xs text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-[#0284c7] w-48">
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT AREA -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex-1 w-full">
+
+    <!-- ========================================== -->
+    <!-- 1. TAB: RESUMEN EJECUTIVO                  -->
+    <!-- ========================================== -->
+    <section id="view-resumen" class="tab-view space-y-6">
+      
+      <!-- Challenge banner -->
+      <div id="banner-desafio" class="p-6 rounded-3xl bg-white border border-slate-200 text-slate-900 card-shadow flex flex-wrap items-center justify-between gap-4 border-l-4 border-l-[#0284c7]">
+        <div>
+          <span class="text-xs uppercase tracking-wider text-[#0369a1] font-bold">Consolidado Formativo · Línea Azul</span>
+          <h2 id="banner-title" class="text-xl sm:text-2xl font-extrabold text-slate-900 mt-1">Resumen Global del Aprendizaje (Challwa + Desierto Azul)</h2>
+          <p id="banner-desc" class="text-xs text-slate-600 mt-1.5 max-w-3xl leading-relaxed">
+            Evaluación normalizada de aprendizajes en la Línea Azul del PAC 2026. Integra el reconocimiento ecológico de tiburones, rayas y biodiversidad marina (Hito 1: Challwa) y la prevención de contaminación litoral por plásticos y colillas (Hito 2: Desierto Azul), con métricas homologadas a la escala 0-5.0 de la Línea Verde.
+          </p>
+          <div id="banner-sample-tag" class="mt-2.5 inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold text-slate-700 bg-slate-100 border border-slate-200">
+            <i data-lucide="users" class="w-3.5 h-3.5 text-[#0284c7]"></i>
+            <span id="banner-sample-text">Muestra: 132 evaluaciones pareadas (76 estudiantes únicos en 8 colegios)</span>
+          </div>
+        </div>
+        <div class="flex items-center gap-3 bg-sky-50 border border-[#7dd3fc] px-5 py-3 rounded-2xl">
+          <i data-lucide="award" class="w-7 h-7 text-[#0284c7]"></i>
+          <div>
+            <div class="flex items-center gap-1.5">
+              <span class="text-[10px] uppercase text-[#0369a1] font-bold tracking-wider">Ganancia Normalizada (Hake)</span>
+              <span class="relative group inline-flex items-center cursor-help" tabindex="0">
+                <i data-lucide="help-circle" class="w-3.5 h-3.5 text-[#0369a1] hover:text-[#0284c7] transition"></i>
+                <span class="absolute bottom-full right-0 sm:left-1/2 sm:-translate-x-1/2 mb-2 hidden group-hover:block group-focus:block w-64 p-2.5 bg-slate-900 text-white text-[11px] rounded-xl shadow-xl z-50 pointer-events-none leading-relaxed text-center font-normal normal-case">
+                  Fracción de la brecha de aprendizaje inicial que fue efectivamente cerrada. Escala independiente y comparable directamente con Línea Verde.
+                </span>
+              </span>
+            </div>
+            <div id="kpi-hake-val" class="text-xl font-extrabold text-slate-900">G = +0.412</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPI METRIC CARDS -->
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+        <!-- KPI 1: Rendimiento Favorable -->
+        <div class="bg-white p-5 rounded-3xl border border-slate-100 card-shadow flex flex-col justify-between hover:translate-y-[-2px] transition duration-200">
+          <div>
+            <div class="flex items-center justify-between">
+              <div class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Rendimiento Favorable</div>
+              <span class="relative group inline-flex items-center cursor-help" tabindex="0">
+                <i data-lucide="info" class="w-3.5 h-3.5 text-slate-400 group-hover:text-slate-600 transition"></i>
+                <span class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 hidden group-hover:block group-focus:block w-56 p-2 bg-slate-900 text-white text-[11px] rounded-xl shadow-xl z-50 pointer-events-none leading-relaxed text-center font-normal normal-case">
+                  Estudiantes que subieron su puntaje o consolidaron su nivel alto sin retroceso.
+                </span>
+              </span>
+            </div>
+            <div id="kpi-pct-favorable" class="text-3xl font-extrabold text-[#0284c7] tracking-tight mt-1.5">91.7%</div>
+          </div>
+          <div id="kpi-count-favorable" class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-[11px] text-[#0369a1] font-semibold">
+            <span>121 de 132 favorables</span>
+            <span class="w-2 h-2 rounded-full bg-[#0284c7]"></span>
+          </div>
+        </div>
+
+        <!-- KPI 2: Nivel POST Logrado (Normalizado 0-5) -->
+        <div class="bg-white p-5 rounded-3xl border border-slate-100 card-shadow flex flex-col justify-between hover:translate-y-[-2px] transition duration-200">
+          <div>
+            <div class="flex items-center justify-between">
+              <div class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Nivel POST (Norm.)</div>
+              <span class="relative group inline-flex items-center cursor-help" tabindex="0">
+                <i data-lucide="info" class="w-3.5 h-3.5 text-slate-400 group-hover:text-slate-600 transition"></i>
+                <span class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 hidden group-hover:block group-focus:block w-56 p-2 bg-slate-900 text-white text-[11px] rounded-xl shadow-xl z-50 pointer-events-none leading-relaxed text-center font-normal normal-case">
+                  Puntaje promedio final normalizado a la escala canónica 0 a 5.0 puntos de Línea Verde.
+                </span>
+              </span>
+            </div>
+            <div id="kpi-post" class="text-3xl font-extrabold text-emerald-600 tracking-tight mt-1.5">3.40 <span class="text-xs font-normal text-slate-400">/ 5.0</span></div>
+          </div>
+          <div id="kpi-post-detail" class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-[11px] text-emerald-700 font-semibold">
+            <span>68.0% logro conceptual</span>
+            <div class="w-12 h-1.5 bg-emerald-100 rounded-full overflow-hidden">
+              <div class="w-[68%] h-full bg-emerald-500 rounded-full"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- KPI 3: Ganancia Normalizada Hake -->
+        <div class="bg-white p-5 rounded-3xl border border-slate-100 card-shadow flex flex-col justify-between hover:translate-y-[-2px] transition duration-200">
+          <div>
+            <div class="flex items-center justify-between">
+              <div class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Ganancia Hake</div>
+              <span class="relative group inline-flex items-center cursor-help" tabindex="0">
+                <i data-lucide="info" class="w-3.5 h-3.5 text-slate-400 group-hover:text-slate-600 transition"></i>
+                <span class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 hidden group-hover:block group-focus:block w-56 p-2 bg-slate-900 text-white text-[11px] rounded-xl shadow-xl z-50 pointer-events-none leading-relaxed text-center font-normal normal-case">
+                  41.2% de la brecha formativa potencial cerrada por los estudiantes.
+                </span>
+              </span>
+            </div>
+            <div id="kpi-hake-card" class="text-3xl font-extrabold text-[#0284c7] tracking-tight mt-1.5">+0.412</div>
+          </div>
+          <div id="kpi-hake-detail" class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-[11px] text-[#0369a1] font-semibold">
+            <span>Alto impacto formativo</span>
+            <span class="text-xs">★</span>
+          </div>
+        </div>
+
+        <!-- KPI 4: Avance Promedio Neto -->
+        <div class="bg-white p-5 rounded-3xl border border-slate-100 card-shadow flex flex-col justify-between hover:translate-y-[-2px] transition duration-200">
+          <div>
+            <div class="flex items-center justify-between">
+              <div class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Avance Neto (Delta)</div>
+              <span class="relative group inline-flex items-center cursor-help" tabindex="0">
+                <i data-lucide="info" class="w-3.5 h-3.5 text-slate-400 group-hover:text-slate-600 transition"></i>
+                <span class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 hidden group-hover:block group-focus:block w-56 p-2 bg-slate-900 text-white text-[11px] rounded-xl shadow-xl z-50 pointer-events-none leading-relaxed text-center font-normal normal-case">
+                  Incremento neto promedio en escala normalizada (2.34 PRE a 3.40 POST).
+                </span>
+              </span>
+            </div>
+            <div id="kpi-delta" class="text-3xl font-extrabold text-emerald-600 tracking-tight mt-1.5">+1.07</div>
+          </div>
+          <div id="kpi-delta-detail" class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-[11px] text-emerald-700 font-semibold">
+            <span>+21.4% avance absoluto</span>
+            <span class="text-xs">↗</span>
+          </div>
+        </div>
+
+        <!-- KPI 5: Cobertura Territorial -->
+        <div class="bg-white p-5 rounded-3xl border border-slate-100 card-shadow flex flex-col justify-between hover:translate-y-[-2px] transition duration-200">
+          <div>
+            <div class="flex items-center justify-between">
+              <div class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Cobertura Territorial</div>
+              <span class="relative group inline-flex items-center cursor-help" tabindex="0">
+                <i data-lucide="info" class="w-3.5 h-3.5 text-slate-400 group-hover:text-slate-600 transition"></i>
+                <span class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 hidden group-hover:block group-focus:block w-56 p-2 bg-slate-900 text-white text-[11px] rounded-xl shadow-xl z-50 pointer-events-none leading-relaxed text-center font-normal normal-case">
+                  8 establecimientos educacionales de Antofagasta con evaluación completa en Línea Azul.
+                </span>
+              </span>
+            </div>
+            <div id="kpi-cobertura" class="text-3xl font-extrabold text-slate-900 tracking-tight mt-1.5">100%</div>
+          </div>
+          <div id="kpi-cobertura-detail" class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-500">
+            <span>8 de 8 Escuelas activas</span>
+            <span class="w-2 h-2 rounded-full bg-[#0284c7]"></span>
+          </div>
+        </div>
+
+        <!-- KPI 6: Climatón Línea Azul -->
+        <div class="bg-white p-5 rounded-3xl border border-slate-100 card-shadow flex flex-col justify-between hover:translate-y-[-2px] transition duration-200">
+          <div>
+            <div class="flex items-center justify-between">
+              <div class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Encuesta Climatón</div>
+              <span class="relative group inline-flex items-center cursor-help" tabindex="0">
+                <i data-lucide="info" class="w-3.5 h-3.5 text-slate-400 group-hover:text-slate-600 transition"></i>
+                <span class="absolute bottom-full right-0 sm:left-1/2 sm:-translate-x-1/2 mb-2 hidden group-hover:block group-focus:block w-60 p-2.5 bg-slate-900 text-white text-[11px] rounded-xl shadow-xl z-50 pointer-events-none leading-relaxed text-center font-normal normal-case">
+                  Estudiantes evaluados en jornada Climatón: 100% manifiesta alta satisfacción e interés por proteger el mar.
+                </span>
+              </span>
+            </div>
+            <div id="kpi-climaton" class="text-3xl font-extrabold text-amber-600 tracking-tight mt-1.5">43</div>
+          </div>
+          <div id="kpi-climaton-detail" class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-[11px] text-amber-700 font-semibold">
+            <span>Estudiantes evaluados</span>
+            <i data-lucide="sparkles" class="w-3.5 h-3.5 text-amber-500"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- CHARTS ROW 1: Donut + Question Accuracy -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <!-- Distribution Donut Chart -->
+        <div class="bg-white p-6 rounded-3xl border border-slate-100 card-shadow flex flex-col justify-between">
+          <div>
+            <h3 class="font-bold text-slate-900 text-base flex items-center gap-1.5">
+              <span>Distribución de Resultados</span>
+              <span class="relative group inline-flex items-center cursor-help" tabindex="0">
+                <i data-lucide="help-circle" class="w-3.5 h-3.5 text-slate-400 group-hover:text-slate-600 transition"></i>
+                <span class="absolute bottom-full left-0 mb-2 hidden group-hover:block group-focus:block w-60 p-2 bg-slate-900 text-white text-[11px] rounded-xl shadow-xl z-50 pointer-events-none leading-relaxed font-normal normal-case">
+                  Clasificación de evaluaciones: Mejoró (+pts), Consolidó (0 pts) o Requiere refuerzo (-pts).
+                </span>
+              </span>
+            </h3>
+            <p class="text-xs text-slate-400 mt-0.5">Variación neta PRE vs POST en Línea Azul</p>
+          </div>
+          <div class="h-64 my-auto flex items-center justify-center relative">
+            <canvas id="chart-status-donut"></canvas>
+          </div>
+          <div id="legend-status" class="grid grid-cols-3 gap-2 pt-3 border-t border-slate-100 text-center text-xs">
+            <div class="p-2 rounded-xl bg-emerald-50 text-emerald-800 font-bold">
+              <span class="text-lg block" id="leg-mej">89</span> Mejoró (67.4%)
+            </div>
+            <div class="p-2 rounded-xl bg-sky-50 text-sky-800 font-bold">
+              <span class="text-lg block" id="leg-man">32</span> Mantuvo (24.2%)
+            </div>
+            <div class="p-2 rounded-xl bg-amber-50 text-amber-800 font-bold">
+              <span class="text-lg block" id="leg-ret">11</span> Refuerzo (8.3%)
+            </div>
+          </div>
+        </div>
+
+        <!-- Question Accuracy Comparison Bar Chart -->
+        <div class="bg-white p-6 rounded-3xl border border-slate-100 card-shadow lg:col-span-2 flex flex-col justify-between">
+          <div class="flex items-center justify-between">
+            <div>
+              <h3 class="font-bold text-slate-900 text-base flex items-center gap-1.5">
+                <span id="title-chart-questions">Evolución de Aciertos por Dimensión (% Correctas PRE vs POST)</span>
+                <span class="relative group inline-flex items-center cursor-help" tabindex="0">
+                  <i data-lucide="help-circle" class="w-3.5 h-3.5 text-slate-400 group-hover:text-slate-600 transition"></i>
+                  <span class="absolute bottom-full left-0 mb-2 hidden group-hover:block group-focus:block w-64 p-2 bg-slate-900 text-white text-[11px] rounded-xl shadow-xl z-50 pointer-events-none leading-relaxed font-normal normal-case">
+                    Comparación del porcentaje de aciertos en cada reactivo antes y después del hito formativo.
+                  </span>
+                </span>
+              </h3>
+              <p id="desc-chart-questions" class="text-xs text-slate-400 mt-0.5">Respuestas cerradas y residuos críticos analizados</p>
+            </div>
+            <span id="tag-questions-count" class="text-xs font-bold px-3 py-1 rounded-full bg-sky-50 text-[#0369a1] border border-sky-200">
+              3 Ítems + Colillas
+            </span>
+          </div>
+          <div class="h-64 my-auto">
+            <canvas id="chart-questions-bar"></canvas>
+          </div>
+          <div id="footer-chart-questions" class="text-[11px] text-slate-500 pt-3 border-t border-slate-100 flex items-center justify-between">
+            <span>* Mayores avances: Reconocimiento de condrictios locales (+52.2%) y Colillas tóxicas (+43.9%)</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CHARTS ROW 2: Schools Impact + Semantic Matrix -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <!-- Schools Delta Bar Chart -->
+        <div class="bg-white p-6 rounded-3xl border border-slate-100 card-shadow flex flex-col justify-between">
+          <div class="mb-4">
+            <h3 class="font-bold text-slate-900 text-base flex items-center gap-1.5">
+              <span>Impacto Pedagógico por Establecimiento (Delta Promedio Norm. 0-5)</span>
+              <span class="relative group inline-flex items-center cursor-help" tabindex="0">
+                <i data-lucide="help-circle" class="w-3.5 h-3.5 text-slate-400 group-hover:text-slate-600 transition"></i>
+                <span class="absolute bottom-full left-0 mb-2 hidden group-hover:block group-focus:block w-64 p-2 bg-slate-900 text-white text-[11px] rounded-xl shadow-xl z-50 pointer-events-none leading-relaxed font-normal normal-case">
+                  Ganancia neta promedio de puntaje (POST - PRE) de los 8 colegios de Línea Azul.
+                </span>
+              </span>
+            </h3>
+            <p class="text-xs text-slate-400 mt-0.5">Desempeño normalizado en escala 0.0 a 5.0 puntos</p>
+          </div>
+          <div class="h-64">
+            <canvas id="chart-schools-delta"></canvas>
+          </div>
+        </div>
+
+        <!-- Semantic Maturation Qualitative Matrix -->
+        <div class="bg-white p-6 rounded-3xl border border-slate-100 card-shadow flex flex-col justify-between">
+          <div class="mb-3">
+            <h3 class="font-bold text-slate-900 text-base flex items-center gap-1.5">
+              <span>Maduración Semántica del Lenguaje Marino</span>
+              <span class="relative group inline-flex items-center cursor-help" tabindex="0">
+                <i data-lucide="help-circle" class="w-3.5 h-3.5 text-slate-400 group-hover:text-slate-600 transition"></i>
+                <span class="absolute bottom-full left-0 mb-2 hidden group-hover:block group-focus:block w-64 p-2 bg-slate-900 text-white text-[11px] rounded-xl shadow-xl z-50 pointer-events-none leading-relaxed font-normal normal-case">
+                  Evolución cualitativa a partir del análisis de las 2 preguntas abiertas: identificación de especies y razonamiento ecológico.
+                </span>
+              </span>
+            </h3>
+            <p class="text-xs text-slate-400 mt-0.5">Apropiación de vocabulario científico de terreno (PRE vs POST)</p>
+          </div>
+          <div class="overflow-x-auto">
+            <table class="w-full text-left text-xs">
+              <thead class="bg-slate-50 text-slate-500 uppercase font-bold text-[10px] tracking-wider border-b border-slate-100">
+                <tr>
+                  <th class="py-2.5 px-3">Dimensión Marina</th>
+                  <th class="py-2.5 px-3">Concepción Inicial (PRE)</th>
+                  <th class="py-2.5 px-3">Evolución Científica (POST)</th>
+                  <th class="py-2.5 px-2 text-right">Métrica</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-100 text-[11px]">
+                <tr>
+                  <td class="py-2.5 px-3 font-bold text-slate-900">Especies de Condrictios</td>
+                  <td class="py-2.5 px-3 text-slate-600">"Peces comunes", "lobos marinos", "no conozco"</td>
+                  <td class="py-2.5 px-3 text-emerald-800 font-medium">"Tiburón tollo", "gatopardo", "raya águila", "pez guitarra"</td>
+                  <td class="py-2.5 px-2 text-right font-extrabold text-emerald-700">7.5% → 70.1%</td>
+                </tr>
+                <tr>
+                  <td class="py-2.5 px-3 font-bold text-slate-900">Rol Trófico Depredador</td>
+                  <td class="py-2.5 px-3 text-slate-600">"No pasaría nada", "menos peligro", "no sé"</td>
+                  <td class="py-2.5 px-3 text-emerald-800 font-medium">"Sobrepoblación de presas", "desbalance en cadena alimenticia"</td>
+                  <td class="py-2.5 px-2 text-right font-extrabold text-emerald-700">11.9% → 64.2%</td>
+                </tr>
+                <tr>
+                  <td class="py-2.5 px-3 font-bold text-slate-900">Residuo Crítico Litoral</td>
+                  <td class="py-2.5 px-3 text-slate-600">"Basura general", "bolsas", "botellas"</td>
+                  <td class="py-2.5 px-3 text-sky-800 font-medium">"Colillas de cigarro como residuo más tóxico de playas"</td>
+                  <td class="py-2.5 px-2 text-right font-extrabold text-sky-700">25.8% → 69.7%</td>
+                </tr>
+                <tr>
+                  <td class="py-2.5 px-3 font-bold text-slate-900">Acción y Conservación</td>
+                  <td class="py-2.5 px-3 text-slate-600">"Botar basura en basureros"</td>
+                  <td class="py-2.5 px-3 text-sky-800 font-medium">"Limpieza selectiva, reciclaje de colillas, protección ballena"</td>
+                  <td class="py-2.5 px-2 text-right font-extrabold text-sky-700">34.8% → 78.8%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- ======================================================= -->
+      <!-- MODULO DE ENSAYO COMPARATIVO: LINEA AZUL VS LINEA VERDE -->
+      <!-- ======================================================= -->
+      <div id="section-comparativa" class="p-6 rounded-3xl bg-gradient-to-br from-slate-900 via-slate-800 to-sky-950 text-white card-shadow space-y-6">
+        <div class="flex flex-wrap items-center justify-between gap-4 border-b border-slate-700/80 pb-4">
+          <div>
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold bg-sky-500/20 text-sky-300 border border-sky-400/30">
+              <i data-lucide="layers" class="w-3.5 h-3.5"></i>
+              <span>Ensayo de Síntesis Global · PAC 2026</span>
+            </div>
+            <h3 class="text-xl font-extrabold text-white mt-1.5">Comparativa Transversal: Línea Verde vs. Línea Azul</h3>
+            <p class="text-xs text-slate-300 mt-1 max-w-2xl leading-relaxed">
+              Análisis comparativo de impacto con datos completamente normalizados a la escala 0 a 5.0 puntos. Permite evaluar la efectividad formativa de todo el Programa de Acción Climática en Antofagasta.
+            </p>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="text-right">
+              <span class="text-[10px] uppercase font-bold text-slate-400 block tracking-wider">Cobertura Total PAC</span>
+              <span class="text-2xl font-black text-white">15 Colegios · 259 Eval.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 Comparison Cards (Verde, Azul, Consolidado PAC) -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+          <!-- Card Línea Verde -->
+          <div class="p-5 rounded-2xl bg-white/5 border border-emerald-500/30 backdrop-blur-sm space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-emerald-500/20 text-emerald-400 border border-emerald-500/40">
+                Línea Verde
+              </span>
+              <span class="text-xs text-slate-400">7 Colegios (Antofagasta)</span>
+            </div>
+            <div class="text-2xl font-extrabold text-emerald-300">
+              79.5% <span class="text-xs font-medium text-slate-300">Tasa Favorable</span>
+            </div>
+            <div class="space-y-1.5 text-xs text-slate-300 pt-2 border-t border-slate-700/60">
+              <div class="flex justify-between"><span>Puntaje PRE → POST:</span> <strong>3.26 → 3.71</strong></div>
+              <div class="flex justify-between"><span>Ganancia Hake:</span> <strong class="text-emerald-400">G = 0.214 (21.4%)</strong></div>
+              <div class="flex justify-between"><span>Delta Promedio:</span> <strong>+0.45 pts</strong></div>
+              <div class="flex justify-between"><span>Foco:</span> <span class="text-slate-400 text-right">Humedales, aves y cielos oscuros</span></div>
+            </div>
+          </div>
+
+          <!-- Card Línea Azul -->
+          <div class="p-5 rounded-2xl bg-white/5 border border-sky-500/30 backdrop-blur-sm space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-sky-500/20 text-sky-400 border border-sky-500/40">
+                Línea Azul
+              </span>
+              <span class="text-xs text-slate-400">8 Colegios (Antofagasta)</span>
+            </div>
+            <div class="text-2xl font-extrabold text-sky-300">
+              91.7% <span class="text-xs font-medium text-slate-300">Tasa Favorable</span>
+            </div>
+            <div class="space-y-1.5 text-xs text-slate-300 pt-2 border-t border-slate-700/60">
+              <div class="flex justify-between"><span>Puntaje PRE → POST:</span> <strong>2.34 → 3.40</strong></div>
+              <div class="flex justify-between"><span>Ganancia Hake:</span> <strong class="text-sky-400">G = 0.412 (41.2%)</strong></div>
+              <div class="flex justify-between"><span>Delta Promedio:</span> <strong>+1.07 pts</strong></div>
+              <div class="flex justify-between"><span>Foco:</span> <span class="text-slate-400 text-right">Tiburones, océano y colillas</span></div>
+            </div>
+          </div>
+
+          <!-- Card Consolidado Global PAC -->
+          <div class="p-5 rounded-2xl bg-gradient-to-br from-indigo-900/40 to-sky-900/40 border border-indigo-400/40 backdrop-blur-sm space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-indigo-500/30 text-indigo-300 border border-indigo-400/50">
+                Total PAC 2026 (Global)
+              </span>
+              <span class="text-xs text-slate-300 font-semibold">15 Escuelas</span>
+            </div>
+            <div class="text-2xl font-extrabold text-indigo-200">
+              85.7% <span class="text-xs font-medium text-slate-300">Tasa Ponderada</span>
+            </div>
+            <div class="space-y-1.5 text-xs text-slate-200 pt-2 border-t border-slate-700/60">
+              <div class="flex justify-between"><span>Puntaje PRE → POST:</span> <strong>2.79 → 3.55</strong></div>
+              <div class="flex justify-between"><span>Ganancia Hake Global:</span> <strong class="text-indigo-300">G = 0.315 (31.5%)</strong></div>
+              <div class="flex justify-between"><span>Delta Consolidado:</span> <strong>+0.76 pts (+15.2%)</strong></div>
+              <div class="flex justify-between"><span>Evaluaciones Totales:</span> <strong>259 pareadas</strong></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Comparative Chart Canvas -->
+        <div class="bg-white/5 p-4 rounded-2xl border border-slate-700/60">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-xs font-bold uppercase tracking-wider text-slate-300">Comparación Visual de Desempeño y Ganancia de Hake</span>
+            <span class="text-[11px] text-slate-400">Escala Normalizada 0.0 - 5.0</span>
+          </div>
+          <div class="h-60">
+            <canvas id="chart-comparison-pac"></canvas>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 2. TAB: ESTABLECIMIENTOS Y AULA            -->
+    <!-- ========================================== -->
+    <section id="view-establecimientos" class="tab-view hidden space-y-6">
+      <div class="bg-white p-6 rounded-3xl border border-slate-100 card-shadow">
+        <div class="flex flex-wrap items-center justify-between gap-4 mb-5">
+          <div>
+            <h3 class="font-bold text-slate-900 text-lg">Desempeño y Directorio de Establecimientos · Línea Azul</h3>
+            <p class="text-xs text-slate-400 mt-0.5">Resultados desagregados, dependencia institucional y acreditación ambiental SNCAE (MMA)</p>
+          </div>
+          <div class="flex items-center gap-2">
+            <button onclick="exportSchoolsTable()" class="px-4 py-2 text-xs font-semibold text-slate-700 bg-slate-100 hover:bg-slate-200 rounded-full flex items-center gap-1.5 transition shadow-sm">
+              <i data-lucide="download" class="w-3.5 h-3.5"></i>
+              <span>Exportar CSV</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Banner de Contexto Territorial: SNCAE -->
+        <div class="mb-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+          <!-- Card SNCAE -->
+          <div class="p-4 rounded-2xl bg-gradient-to-br from-sky-50/70 to-blue-50/40 border border-sky-200/80 space-y-2">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <i data-lucide="award" class="w-4 h-4 text-[#0284c7]"></i>
+                <span class="text-xs font-extrabold uppercase tracking-wider text-[#0369a1]">Sello Ecológico y SNCAE (MMA)</span>
+              </div>
+              <span class="px-2.5 py-0.5 rounded-full text-[10px] font-extrabold bg-sky-100 text-[#0369a1] border border-sky-300">
+                2 de 8 con Sello Ecológico Oficial
+              </span>
+            </div>
+            <p class="text-xs text-slate-700 leading-relaxed">
+              <strong>Escuela Ecológica Humberto González Echegoyen</strong> y <strong>Escuela Ecológica Padre Alberto Hurtado</strong> cuentan con sello ambiental curricular. Para los 6 establecimientos restantes, la Línea Azul del PAC representa su principal instancia formativa de educación oceánica.
+            </p>
+          </div>
+
+          <!-- Card Metodología y Normalización -->
+          <div class="p-4 rounded-2xl bg-gradient-to-br from-emerald-50/70 to-teal-50/40 border border-emerald-200/80 space-y-2">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-700"></i>
+                <span class="text-xs font-extrabold uppercase tracking-wider text-emerald-900">Homologación y Normalización</span>
+              </div>
+              <span class="px-2.5 py-0.5 rounded-full text-[10px] font-extrabold bg-emerald-100 text-emerald-800 border border-emerald-300">
+                Escala 0 - 5.0 pts
+              </span>
+            </div>
+            <p class="text-xs text-slate-700 leading-relaxed">
+              Los puntajes de Challwa (0 a 9) y Desierto Azul (0 a 4) fueron normalizados matemáticamente al estándar 0 a 5.0 puntos de Línea Verde, garantizando comparabilidad directa y neutralidad de escala en el cálculo de Hake.
+            </p>
+          </div>
+        </div>
+
+        <!-- Schools Table -->
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-xs">
+            <thead class="bg-slate-50 text-slate-500 uppercase font-bold text-[11px] tracking-wider border-b border-slate-100">
+              <tr>
+                <th class="py-3.5 px-4 rounded-l-xl">Establecimiento</th>
+                <th class="py-3.5 px-3">Dependencia</th>
+                <th class="py-3.5 px-3">Sello Ambiental / SNCAE</th>
+                <th class="py-3.5 px-3 text-center">N° Eval.</th>
+                <th class="py-3.5 px-3 text-center">Puntaje PRE (0-5)</th>
+                <th class="py-3.5 px-3 text-center">Puntaje POST (0-5)</th>
+                <th class="py-3.5 px-3 text-center">Variación (Delta)</th>
+                <th class="py-3.5 px-3 text-center">% Tasa Favorable</th>
+                <th class="py-3.5 px-3">Distribución</th>
+                <th class="py-3.5 px-4 text-center rounded-r-xl">Climatón</th>
+              </tr>
+            </thead>
+            <tbody id="schools-table-body" class="divide-y divide-slate-100">
+              <!-- Dynamically populated via JS -->
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Fichas Detalladas Institucionales -->
+        <div class="mt-8 pt-6 border-t border-slate-100 space-y-4">
+          <div>
+            <h4 class="font-bold text-slate-900 text-base">Fichas Institucionales y Orientaciones Pedagógicas</h4>
+            <p class="text-xs text-slate-400">Detalle de participación, resultados y recomendaciones de aula para profesores líderes de cada escuela</p>
+          </div>
+          <div id="schools-cards-container" class="space-y-6">
+            <!-- Dynamically populated via JS -->
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-white border-t border-slate-200 py-6 mt-auto">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap items-center justify-between gap-4 text-xs text-slate-500">
+      <div class="flex items-center gap-2">
+        <img src="logo_verdical.png" alt="Verdical" class="h-6 w-auto object-contain opacity-80" onerror="this.style.display='none'">
+        <span>Programa de Acción Climática (PAC 2026) · Línea Azul Antofagasta</span>
+      </div>
+      <div class="flex items-center gap-4 text-slate-400">
+        <span>Evaluación Homologada (Pretest - Postest)</span>
+        <span>•</span>
+        <span>Escala Normalizada 0.0 - 5.0</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript Logic -->
+  <script src="app.js"></script>
+</body>
+</html>

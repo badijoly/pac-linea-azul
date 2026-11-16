@@ -1,0 +1,75 @@
+import csv
+
+challwa_puntajes_raw = """Nombre,Colegio,D1 PRE,D2 PRE,D3 PRE,Total PRE,D1 POST,D2 POST,D3 POST,Total POST,Δ,Mejoró
+Alan Erazo Cuero,Escuela Claudio Matte Pérez,1,1,1,3,3,3,2,8,+5,SI
+Alonso Cárdenas Cabrera,Escuela Claudio Matte Pérez,0,1,0,1,1,1,0,2,+1,SI
+Antonia Negrete Pastén,Escuela Claudio Matte Pérez,1,2,0,3,3,1,1,5,+2,SI
+Ariana Morales Alpaca,Escuela Claudio Matte Pérez,0,2,0,2,1,2,2,5,+3,SI
+Cristopher Padrón Cárdenas,Escuela Claudio Matte Pérez,0,2,0,2,3,3,2,8,+6,SI
+Janely Rodríguez Hernández,Escuela Claudio Matte Pérez,0,1,0,1,2,1,2,5,+4,SI
+José Arando Jiménez,Escuela Claudio Matte Pérez,1,0,0,1,1,0,1,2,+1,SI
+Luciana Urapiante Bilbao,Escuela Claudio Matte Pérez,0,1,0,1,3,3,3,9,+8,SI
+Nahuel Prieto Campillay,Escuela Claudio Matte Pérez,1,2,1,4,2,2,1,5,+1,SI
+Ángel Vera Forero,Escuela Claudio Matte Pérez,0,2,0,2,1,2,2,5,+3,SI
+Alfonso Araos Torrejón,Escuela Ecológica Humberto González Echegoyen,2,3,2,7,2,3,2,7,0,=
+Cristopher Salazar Medero,Escuela Ecológica Humberto González Echegoyen,0,1,0,1,2,1,3,6,+5,SI
+Emilia Ahumada Araya,Escuela Ecológica Humberto González Echegoyen,0,2,2,4,3,2,3,8,+4,SI
+Javiera Paredes Jackson,Escuela Ecológica Humberto González Echegoyen,1,2,3,6,2,2,1,5,-1,NO
+Kendra Calderón Viacava,Escuela Ecológica Humberto González Echegoyen,2,3,2,7,2,3,1,6,-1,NO
+Matias Roda Olivares,Escuela Ecológica Humberto González Echegoyen,3,3,2,8,3,3,2,8,0,=
+Maximiliano Cortés Barrios,Escuela Ecológica Humberto González Echegoyen,1,2,2,5,1,1,1,3,-2,NO
+Máximo Alvarado Gordillo,Escuela Ecológica Humberto González Echegoyen,0,1,2,3,2,1,2,5,+2,SI
+Antonella Espinoza Manuelda,Escuela Ecológica Padre Alberto Hurtado,2,2,2,6,3,3,3,9,+3,SI
+María Paz Amira Valencia,Escuela Ecológica Padre Alberto Hurtado,1,2,0,3,3,3,2,8,+5,SI
+Roberto Ledezma Cuturrufo,Escuela Ecológica Padre Alberto Hurtado,0,1,1,2,3,2,2,7,+5,SI
+Sofía Araos Bueno,Escuela Ecológica Padre Alberto Hurtado,2,1,0,3,3,1,2,6,+3,SI
+Sofía Mella,Escuela Ecológica Padre Alberto Hurtado,1,2,0,3,1,3,1,5,+2,SI
+Álvaro Vargas,Escuela Ecológica Padre Alberto Hurtado,1,1,0,2,3,2,2,7,+5,SI
+Aymeet Cueva Opazo,Escuela Javiera Carrera,1,1,0,2,2,3,1,6,+4,SI
+Esteban Guerra Calle,Escuela Javiera Carrera,1,2,0,3,3,3,1,7,+4,SI
+Hugo Molina Naranjo,Escuela Javiera Carrera,0,2,0,2,2,3,1,6,+4,SI
+León Chang Riveros,Escuela Javiera Carrera,2,0,0,2,2,0,0,2,0,=
+Roben Díaz Condori,Escuela Javiera Carrera,1,1,0,2,2,1,1,4,+2,SI
+Sebastián Salazar Tapia,Escuela Javiera Carrera,1,3,3,7,3,3,3,9,+2,SI
+Valery Cáceres Meneses,Escuela Javiera Carrera,0,1,0,1,1,2,3,6,+5,SI
+Aliz Mollericona Ticona,Escuela Juan Pablo II,0,2,1,3,2,2,3,7,+4,SI
+Ana Campos,Escuela Juan Pablo II,1,0,0,1,2,1,2,5,+4,SI
+Emilia Marín Castillo,Escuela Juan Pablo II,2,2,0,4,2,1,2,5,+1,SI
+Erik Serrano,Escuela Juan Pablo II,1,1,0,2,2,2,0,4,+2,SI
+Juan Sánchez Valencia,Escuela Juan Pablo II,2,2,0,4,3,1,0,4,0,=
+Mateo Torres Quispe,Escuela Juan Pablo II,1,1,1,3,3,3,3,9,+6,SI
+Nadriel Vaca Suárez,Escuela Juan Pablo II,1,2,1,4,2,3,1,6,+2,SI
+Patricio Chandía González,Escuela Juan Pablo II,2,1,1,4,2,1,3,6,+2,SI
+Aron Ardiles Vega,Escuela República de Estados Unidos,1,2,0,3,3,2,1,6,+3,SI
+Aylynn Opazo Carvajal,Escuela República de Estados Unidos,1,3,0,4,2,3,3,8,+4,SI
+Berenice Jora Zarate,Escuela República de Estados Unidos,0,0,1,1,2,0,0,2,+1,SI
+Evelyn Estigarribia Choquecota,Escuela República de Estados Unidos,1,2,2,5,2,2,1,5,0,=
+Jorge Seas Tomicha,Escuela República de Estados Unidos,1,1,1,3,1,1,1,3,0,=
+Keyla Morán González,Escuela República de Estados Unidos,2,3,0,5,3,3,2,8,+3,SI
+Lucas Llanqui Honorio,Escuela República de Estados Unidos,1,3,1,5,3,2,2,7,+2,SI
+Matías Orellana Flores,Escuela República de Estados Unidos,1,3,2,6,3,3,1,7,+1,SI
+Minzy Díaz Vergara,Escuela República de Estados Unidos,1,3,0,4,3,2,3,8,+4,SI
+Ariatna Herrera Caicedo,Escuela República de Italia,3,2,0,5,2,2,1,5,0,=
+Arshiel Gronchi Martínez,Escuela República de Italia,1,1,1,3,3,2,1,6,+3,SI
+Emilia Narváez Narváez,Escuela República de Italia,2,0,1,3,1,0,0,1,-2,NO
+Fernando Aros Santus,Escuela República de Italia,1,3,3,7,3,3,3,9,+2,SI
+Jesús Rivero Velásquez,Escuela República de Italia,0,1,0,1,2,1,2,5,+4,SI
+José Rivero Velásquez,Escuela República de Italia,0,1,0,1,1,1,2,4,+3,SI
+Kiara Carvajal Mondaca,Escuela República de Italia,1,1,0,2,1,1,0,2,0,=
+María Rementería Ardiles,Escuela República de Italia,1,1,2,4,1,1,1,3,-1,NO
+Nicol Palacios Cruz,Escuela República de Italia,2,2,1,5,2,2,1,5,0,=
+Thais Opazo Ovando,Escuela República de Italia,0,2,0,2,0,2,0,2,0,=
+Antonella Ruiz Fritis,Liceo Domingo Herrera Rivera,1,2,0,3,2,3,1,6,+3,SI
+Belén Dubost Alfaro,Liceo Domingo Herrera Rivera,2,2,0,4,3,1,1,5,+1,SI
+Daliha Orellana Humaña,Liceo Domingo Herrera Rivera,1,3,0,4,2,2,1,5,+1,SI
+Ignacia Reyes Yau,Liceo Domingo Herrera Rivera,0,2,0,2,0,2,2,4,+2,SI
+Juan Talamilla Jiménez,Liceo Domingo Herrera Rivera,2,2,0,4,3,3,2,8,+4,SI
+Matías Gálvez Gaete,Liceo Domingo Herrera Rivera,2,0,0,2,3,2,0,5,+3,SI
+Máximo Díaz López,Liceo Domingo Herrera Rivera,0,1,0,1,0,0,0,0,-1,NO
+Sharon Guaitoto Duque,Liceo Domingo Herrera Rivera,1,3,1,5,3,3,1,7,+2,SI
+Thiago Cayuba Magueño,Liceo Domingo Herrera Rivera,1,1,0,2,3,2,1,6,+4,SI"""
+
+with open("E:/dashboard_linea_azul/raw_challwa_puntajes.csv", "w", encoding="utf-8") as f:
+    f.write(challwa_puntajes_raw)
+
+print("Challwa puntajes guardados")
