@@ -87,6 +87,14 @@
         <i data-lucide="clipboard-check" class="w-4 h-4 text-[#0284c7]"></i>
         <span>Cotejo y Auditoría Documental 📋</span>
       </button>
+      <button onclick="switchTab('inversa')" class="nav-tab flex items-center gap-2 px-4 py-2 rounded-full text-xs font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100 whitespace-nowrap transition" id="tab-btn-inversa">
+        <i data-lucide="refresh-ccw" class="w-4 h-4 text-emerald-600"></i>
+        <span>Homologación Inversa (Verde a Azul) 🔄</span>
+      </button>
+      <button onclick="switchTab('complejidad')" class="nav-tab flex items-center gap-2 px-4 py-2 rounded-full text-xs font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100 whitespace-nowrap transition" id="tab-btn-complejidad">
+        <i data-lucide="brain-circuit" class="w-4 h-4 text-purple-600"></i>
+        <span>Complejidad Técnica y Comparabilidad 🧠</span>
+      </button>
     </div>
   </header>
 
@@ -624,6 +632,327 @@
       </div>
     </section>
 
+    <!-- ============================================================== -->
+    <!-- 4. TAB: HOMOLOGACIÓN INVERSA (LÍNEA VERDE A CRITERIOS AZULES)  -->
+    <!-- ============================================================== -->
+    <section id="view-inversa" class="tab-view hidden space-y-6">
+      <!-- Inversa Banner -->
+      <div class="p-6 rounded-3xl bg-white border border-slate-200 text-slate-900 card-shadow border-l-4 border-l-emerald-600 space-y-3">
+        <div class="flex flex-wrap items-center justify-between gap-4">
+          <div>
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold bg-emerald-50 text-emerald-800 border border-emerald-200">
+              <i data-lucide="refresh-cw" class="w-3.5 h-3.5"></i>
+              <span>Simulación Metodológica Inversa</span>
+            </div>
+            <h2 class="text-xl sm:text-2xl font-extrabold text-slate-900 mt-1">Homologación Inversa: Línea Verde convertida a Criterios de Línea Azul</h2>
+            <p class="text-xs text-slate-600 max-w-3xl leading-relaxed mt-1">
+              ¿Qué ocurre si aplicamos el criterio inverso y transformamos los 5 reactivos cerrados y 4 preguntas abiertas de la Línea Verde a la métrica azul (3 dimensiones cerradas en escala 0-9 y 0-4, y 2 dimensiones abiertas sintéticas)? Este ejercicio demuestra la <strong>invarianza psicométrica de la Ganancia de Hake</strong> y confirma que las diferencias de rendimiento son pedagógicas y no un artefacto de la escala.
+            </p>
+          </div>
+          <div class="p-3 bg-emerald-50/80 rounded-2xl border border-emerald-200 text-right">
+            <span class="text-[10px] uppercase font-bold text-emerald-900 block tracking-wider">Invarianza de Hake</span>
+            <span class="text-lg font-black text-emerald-700">G = 0.214 (Idéntico)</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Inversa KPI Cards -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-xs">
+        <div class="bg-white p-5 rounded-3xl border border-slate-100 card-shadow">
+          <div class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Verde en Escala Hito 3 (0 a 9)</div>
+          <div class="text-2xl font-extrabold text-slate-900 tracking-tight mt-1.5">5.87 → 6.68 <span class="text-xs font-semibold text-emerald-700">(+0.81)</span></div>
+          <div class="text-[11px] text-slate-500 mt-2 pt-2 border-t border-slate-100">
+            Frente al +2.27 pts alcanzado por Línea Azul
+          </div>
+        </div>
+
+        <div class="bg-white p-5 rounded-3xl border border-slate-100 card-shadow">
+          <div class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Verde en Escala Hito 4 (0 a 4)</div>
+          <div class="text-2xl font-extrabold text-slate-900 tracking-tight mt-1.5">2.61 → 2.97 <span class="text-xs font-semibold text-emerald-700">(+0.36)</span></div>
+          <div class="text-[11px] text-slate-500 mt-2 pt-2 border-t border-slate-100">
+            Frente al +0.69 pts alcanzado por Línea Azul
+          </div>
+        </div>
+
+        <div class="bg-white p-5 rounded-3xl border border-slate-100 card-shadow">
+          <div class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Ganancia de Hake Línea Verde</div>
+          <div class="text-3xl font-extrabold text-emerald-600 tracking-tight mt-1.5">G = 0.214</div>
+          <div class="text-[11px] text-emerald-700 font-semibold mt-2 pt-2 border-t border-slate-100">
+            21.4% brecha cerrada (Invariante)
+          </div>
+        </div>
+
+        <div class="bg-white p-5 rounded-3xl border border-slate-100 card-shadow">
+          <div class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Ganancia de Hake Línea Azul</div>
+          <div class="text-3xl font-extrabold text-sky-600 tracking-tight mt-1.5">G = 0.412</div>
+          <div class="text-[11px] text-sky-700 font-semibold mt-2 pt-2 border-t border-slate-100">
+            41.2% brecha cerrada (Invariante)
+          </div>
+        </div>
+      </div>
+
+      <!-- Comparative Tables: Mapping Closed and Open Questions -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <!-- Mapping Closed Questions -->
+        <div class="bg-white p-6 rounded-3xl border border-slate-100 card-shadow space-y-3">
+          <div class="flex items-center justify-between">
+            <h3 class="font-bold text-slate-900 text-sm flex items-center gap-2">
+              <i data-lucide="split" class="w-4 h-4 text-emerald-600"></i>
+              <span>1. Mapeo de Reactivos Cerrados (5 a 3 Dimensiones)</span>
+            </h3>
+            <span class="text-[10px] font-extrabold px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800">
+              Condensación Psicométrica
+            </span>
+          </div>
+          <p class="text-xs text-slate-500 leading-relaxed">
+            Las 5 preguntas de Línea Verde se integran en las 3 macrodimensiones de Línea Azul (Marco general, Especie/Fenómeno local, y Amenaza/Conservación):
+          </p>
+          <div class="overflow-x-auto">
+            <table class="w-full text-left text-xs">
+              <thead class="bg-slate-50 text-slate-500 uppercase font-bold text-[10px] tracking-wider border-b border-slate-100">
+                <tr>
+                  <th class="py-2.5 px-3">Dimensión Azul</th>
+                  <th class="py-2.5 px-3">Preguntas Verde Agrupadas</th>
+                  <th class="py-2.5 px-2 text-right">Acierto PRE → POST</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-100 text-[11px]">
+                <tr>
+                  <td class="py-2.5 px-3 font-bold text-slate-900">Dim. 1: Marco de Referencia</td>
+                  <td class="py-2.5 px-3 text-slate-600">Q1 (Humedales costeros) + Q4 (Suelo del desierto)</td>
+                  <td class="py-2.5 px-2 text-right font-extrabold text-emerald-700">62.8% → 74.5%</td>
+                </tr>
+                <tr>
+                  <td class="py-2.5 px-3 font-bold text-slate-900">Dim. 2: Especie / Fenómeno Clave</td>
+                  <td class="py-2.5 px-3 text-slate-600">Q2 (Gaviotín Chico / Fardelas)</td>
+                  <td class="py-2.5 px-2 text-right font-extrabold text-emerald-700">54.1% → 76.2%</td>
+                </tr>
+                <tr>
+                  <td class="py-2.5 px-3 font-bold text-slate-900">Dim. 3: Amenaza y Conservación</td>
+                  <td class="py-2.5 px-3 text-slate-600">Q3 (Perros / Luz) + Q5 (Preservación del cielo)</td>
+                  <td class="py-2.5 px-2 text-right font-extrabold text-emerald-700">48.2% → 72.8%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Mapping Open Questions -->
+        <div class="bg-white p-6 rounded-3xl border border-slate-100 card-shadow space-y-3">
+          <div class="flex items-center justify-between">
+            <h3 class="font-bold text-slate-900 text-sm flex items-center gap-2">
+              <i data-lucide="file-text" class="w-4 h-4 text-emerald-600"></i>
+              <span>2. Mapeo de Preguntas Abiertas (4 a 2 Dimensiones)</span>
+            </h3>
+            <span class="text-[10px] font-extrabold px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800">
+              Taxonomía Semántica
+            </span>
+          </div>
+          <p class="text-xs text-slate-500 leading-relaxed">
+            Las 4 preguntas abiertas de Línea Verde se condensan en los 2 ejes de respuesta de Línea Azul:
+          </p>
+          <div class="overflow-x-auto">
+            <table class="w-full text-left text-xs">
+              <thead class="bg-slate-50 text-slate-500 uppercase font-bold text-[10px] tracking-wider border-b border-slate-100">
+                <tr>
+                  <th class="py-2.5 px-3">Eje Sintético Azul</th>
+                  <th class="py-2.5 px-3">Equivalente Línea Verde</th>
+                  <th class="py-2.5 px-2 text-right">Maduración Semántica</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-100 text-[11px]">
+                <tr>
+                  <td class="py-2.5 px-3 font-bold text-slate-900">Eje A: Identificación de Especies</td>
+                  <td class="py-2.5 px-3 text-slate-600">Identificación de fauna (Gaviotín chico, aves costeras)</td>
+                  <td class="py-2.5 px-2 text-right font-extrabold text-emerald-700">6.1% → 59.1%</td>
+                </tr>
+                <tr>
+                  <td class="py-2.5 px-3 font-bold text-slate-900">Eje B: Razonamiento y Acción</td>
+                  <td class="py-2.5 px-3 text-slate-600">Impacto ecológico y rol de luminarias amigables</td>
+                  <td class="py-2.5 px-2 text-right font-extrabold text-emerald-700">11.5% → 50.8%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Inversa Visual Comparison Chart -->
+      <div class="bg-white p-6 rounded-3xl border border-slate-100 card-shadow space-y-4">
+        <div class="flex items-center justify-between">
+          <div>
+            <h3 class="font-bold text-slate-900 text-base">Comparación Gráfica bajo Criterios Azules (Hito 3: Escala 0-9 pts)</h3>
+            <p class="text-xs text-slate-400 mt-0.5">Línea Verde convertida a escala 0 a 9 puntos frente al desempeño real de Línea Azul</p>
+          </div>
+          <span class="text-xs font-bold px-3 py-1 rounded-full bg-slate-100 text-slate-700">Escala 0 a 9.0</span>
+        </div>
+        <div class="h-64">
+          <canvas id="chart-inversa-delta"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- 5. TAB: EVALUACIÓN DE COMPLEJIDAD TÉCNICA Y COMPARABILIDAD     -->
+    <!-- ============================================================== -->
+    <section id="view-complejidad" class="tab-view hidden space-y-6">
+      <!-- Complejidad Banner -->
+      <div class="p-6 rounded-3xl bg-white border border-slate-200 text-slate-900 card-shadow border-l-4 border-l-purple-600 space-y-3">
+        <div class="flex flex-wrap items-center justify-between gap-4">
+          <div>
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold bg-purple-50 text-purple-800 border border-purple-200">
+              <i data-lucide="brain-circuit" class="w-3.5 h-3.5"></i>
+              <span>Psicometría y Teoría de Respuesta al Ítem (TRI)</span>
+            </div>
+            <h2 class="text-xl sm:text-2xl font-extrabold text-slate-900 mt-1">Evaluación de Complejidad Técnica: ¿Son comparables ambas líneas?</h2>
+            <p class="text-xs text-slate-600 max-w-3xl leading-relaxed mt-1">
+              Análisis comparativo de la demanda cognitiva, tipo de reactivo, diseño de distractores y nivel de abstracción conceptual entre la Línea Verde y la Línea Azul. Permite fundamentar con solidez por qué ambas líneas son metodológicamente comparables pero evalúan dos dimensiones distintas del aprendizaje ambiental.
+            </p>
+          </div>
+          <div class="p-3 bg-purple-50/80 rounded-2xl border border-purple-200 text-right">
+            <span class="text-[10px] uppercase font-bold text-purple-900 block tracking-wider">Dictamen Metodológico</span>
+            <span class="text-base font-black text-purple-700">Comparables con Hake</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 Pillars of Technical Complexity -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-xs">
+        <div class="bg-white p-5 rounded-3xl border border-slate-100 card-shadow space-y-2">
+          <div class="flex items-center gap-2 text-purple-700 font-bold text-xs uppercase tracking-wider">
+            <i data-lucide="layers" class="w-4 h-4"></i>
+            <span>1. Nivel de Abstracción</span>
+          </div>
+          <div class="space-y-1 text-slate-600 leading-relaxed">
+            <p><strong>Línea Verde (Alta):</strong> Conceptos intangibles (contaminación lumínica, atmósfera, fotones). Requiere deducir el impacto en cielos astronómicos a 100 km.</p>
+            <p><strong>Línea Azul (Media/Concreta):</strong> Fauna marina atractiva (tiburones, rayas) y residuos tangibles (plásticos, colillas) que los niños tocaron en la playa.</p>
+          </div>
+        </div>
+
+        <div class="bg-white p-5 rounded-3xl border border-slate-100 card-shadow space-y-2">
+          <div class="flex items-center gap-2 text-purple-700 font-bold text-xs uppercase tracking-wider">
+            <i data-lucide="target" class="w-4 h-4"></i>
+            <span>2. Diseño de Distractores</span>
+          </div>
+          <div class="space-y-1 text-slate-600 leading-relaxed">
+            <p><strong>Línea Verde:</strong> 5 preguntas con distractores plausibles y atractivos (ej. luz blanca potente vs. luz cálida), generando dudas cognitivas en el postest.</p>
+            <p><strong>Línea Azul:</strong> 3 preguntas con alternativas muy contrastadas (ej. corriente fría de nutrientes vs. río subterráneo o tormentas calientes).</p>
+          </div>
+        </div>
+
+        <div class="bg-white p-5 rounded-3xl border border-slate-100 card-shadow space-y-2">
+          <div class="flex items-center gap-2 text-purple-700 font-bold text-xs uppercase tracking-wider">
+            <i data-lucide="trending-up" class="w-4 h-4"></i>
+            <span>3. Margen de Entrada</span>
+          </div>
+          <div class="space-y-1 text-slate-600 leading-relaxed">
+            <p><strong>Línea Verde:</strong> Ingresó con puntaje alto (3.26/5.0, 65.2% basal). Menor margen de mejora disponible y mayor impacto de efecto techo.</p>
+            <p><strong>Línea Azul:</strong> Ingresó con mayor rezago (2.34/5.0, 46.8% basal). Gran margen formativo disponible que favoreció un salto más acelerado.</p>
+          </div>
+        </div>
+
+        <div class="bg-white p-5 rounded-3xl border border-slate-100 card-shadow space-y-2">
+          <div class="flex items-center gap-2 text-purple-700 font-bold text-xs uppercase tracking-wider">
+            <i data-lucide="eye" class="w-4 h-4"></i>
+            <span>4. Carga Sensorial</span>
+          </div>
+          <div class="space-y-1 text-slate-600 leading-relaxed">
+            <p><strong>Línea Verde:</strong> Observación de humedales a distancia y cielo nocturno simulado. Aprendizaje deductivo y reflexivo.</p>
+            <p><strong>Línea Azul:</strong> Limpieza directa de arena, conteo de colillas, escultura de ballena. Aprendizaje cenestésico y táctil directo.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item by Item Comparative Rubric Table -->
+      <div class="bg-white p-6 rounded-3xl border border-slate-100 card-shadow space-y-4">
+        <div>
+          <h3 class="font-bold text-slate-900 text-base">Matriz Psicométrica Comparativa Ítem por Ítem</h3>
+          <p class="text-xs text-slate-400 mt-0.5">Clasificación taxonómica de Bloom, índice de dificultad estimado y tipo de aprendizaje evaluado</p>
+        </div>
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-xs">
+            <thead class="bg-slate-50 text-slate-500 uppercase font-bold text-[10px] tracking-wider border-b border-slate-100">
+              <tr>
+                <th class="py-3 px-3">Línea y Reactivo</th>
+                <th class="py-3 px-3">Concepto Central</th>
+                <th class="py-3 px-3 text-center">Nivel Bloom</th>
+                <th class="py-3 px-3 text-center">Dificultad Estimada</th>
+                <th class="py-3 px-3">Anclaje de Aprendizaje</th>
+                <th class="py-3 px-3 text-center">Salto Acierto</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-100 text-[11px]">
+              <tr class="bg-emerald-50/20">
+                <td class="py-3 px-3 font-bold text-emerald-900">Verde · H3 Q1</td>
+                <td class="py-3 px-3 text-slate-700">Definición de Humedal Costero Urbano</td>
+                <td class="py-3 px-3 text-center"><span class="px-2 py-0.5 rounded-full bg-slate-100 font-bold text-slate-700">Comprensión</span></td>
+                <td class="py-3 px-3 text-center font-bold text-amber-700">Media-Alta</td>
+                <td class="py-3 px-3 text-slate-600">Ecosistémico / Transición agua-tierra</td>
+                <td class="py-3 px-3 text-center font-extrabold text-emerald-700">+18.5%</td>
+              </tr>
+              <tr class="bg-emerald-50/20">
+                <td class="py-3 px-3 font-bold text-emerald-900">Verde · H4 Q2</td>
+                <td class="py-3 px-3 text-slate-700">Dispersión de Luz Artificial en Atmósfera</td>
+                <td class="py-3 px-3 text-center"><span class="px-2 py-0.5 rounded-full bg-purple-100 font-bold text-purple-800">Análisis</span></td>
+                <td class="py-3 px-3 text-center font-bold text-red-600">Alta</td>
+                <td class="py-3 px-3 text-slate-600">Física de la luz / Fotones / No visible en suelo</td>
+                <td class="py-3 px-3 text-center font-extrabold text-emerald-700">+26.2%</td>
+              </tr>
+              <tr class="bg-sky-50/20">
+                <td class="py-3 px-3 font-bold text-sky-900">Azul · H3 Q1</td>
+                <td class="py-3 px-3 text-slate-700">Corriente de Humboldt y Temperatura del Agua</td>
+                <td class="py-3 px-3 text-center"><span class="px-2 py-0.5 rounded-full bg-slate-100 font-bold text-slate-700">Comprensión</span></td>
+                <td class="py-3 px-3 text-center font-bold text-emerald-700">Media</td>
+                <td class="py-3 px-3 text-slate-600">Geografía física / Agua fría con nutrientes</td>
+                <td class="py-3 px-3 text-center font-extrabold text-sky-700">+14.9%</td>
+              </tr>
+              <tr class="bg-sky-50/20">
+                <td class="py-3 px-3 font-bold text-sky-900">Azul · H3 Q2</td>
+                <td class="py-3 px-3 text-slate-700">Especie de Tiburón en Litoral (Tiburón Tollo)</td>
+                <td class="py-3 px-3 text-center"><span class="px-2 py-0.5 rounded-full bg-blue-100 font-bold text-blue-800">Identificación</span></td>
+                <td class="py-3 px-3 text-center font-bold text-emerald-700">Media-Baja</td>
+                <td class="py-3 px-3 text-slate-600">Fauna icónica / Reconocimiento directo</td>
+                <td class="py-3 px-3 text-center font-extrabold text-sky-700">+52.2%</td>
+              </tr>
+              <tr class="bg-sky-50/20">
+                <td class="py-3 px-3 font-bold text-sky-900">Azul · H4 Q3</td>
+                <td class="py-3 px-3 text-slate-700">Prevención y Manejo de Residuos en Playa</td>
+                <td class="py-3 px-3 text-center"><span class="px-2 py-0.5 rounded-full bg-slate-100 font-bold text-slate-700">Aplicación</span></td>
+                <td class="py-3 px-3 text-center font-bold text-emerald-600">Baja (Sentido Común)</td>
+                <td class="py-3 px-3 text-slate-600">Norma cívica previa (93.9% basal en entrada)</td>
+                <td class="py-3 px-3 text-center font-extrabold text-slate-500">Consolidado</td>
+              </tr>
+              <tr class="bg-sky-50/20">
+                <td class="py-3 px-3 font-bold text-sky-900">Azul · H4 Colillas</td>
+                <td class="py-3 px-3 text-slate-700">Colillas como Residuo Más Tóxico de Playa</td>
+                <td class="py-3 px-3 text-center"><span class="px-2 py-0.5 rounded-full bg-amber-100 font-bold text-amber-800">Sensibilización</span></td>
+                <td class="py-3 px-3 text-center font-bold text-emerald-700">Media</td>
+                <td class="py-3 px-3 text-slate-600">Experiencia vivencial de recolección en terreno</td>
+                <td class="py-3 px-3 text-center font-extrabold text-sky-700">+43.9%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Conclusion Callout for Defense Presentation -->
+      <div class="p-6 rounded-3xl bg-slate-900 text-white card-shadow space-y-3">
+        <div class="flex items-center gap-2 text-sky-400 font-bold text-xs uppercase tracking-wider">
+          <i data-lucide="check-check" class="w-4 h-4"></i>
+          <span>Dictamen Técnico para la Presentación Institucional</span>
+        </div>
+        <h4 class="text-lg font-extrabold text-white">¿Son comparables las evaluaciones? Respuesta para la Vocería</h4>
+        <p class="text-xs text-slate-300 leading-relaxed">
+          <strong>Sí, son estrictamente comparables desde la psicometría gracias a la Ganancia Normalizada de Hake</strong>, porque Hake calcula el porcentaje de brecha formativa cerrada independientemente del puntaje bruto. Sin embargo, pedagógicamente reflejan dos naturalezas distintas de aprendizaje:
+        </p>
+        <ul class="text-xs text-slate-300 space-y-2 list-disc list-inside leading-relaxed">
+          <li><strong>La Línea Azul logró una mayor ganancia ($G=0.412$)</strong> gracias a la fuerza vivencial y tangible de su temática (tiburones carismáticos y recolección táctil de colillas en la arena), partiendo además de un mayor rezago inicial que dejaba amplio espacio de crecimiento.</li>
+          <li><strong>La Línea Verde logró una ganancia sólida ($G=0.214$)</strong> en un terreno cognitivo de mayor abstracción (preservación de cielos limpios, fotones y atmósferas invisibles), ingresando con un dominio basal más elevado (65.2%) que restringía el margen numérico de avance por efecto techo.</li>
+          <li><strong>Consolidado PAC 2026 ($G=0.315$, 85.7% Favorable):</strong> Ambas líneas se complementan de manera virtuosa, conformando un programa integral de educación climática que abarcó desde el fondo marino hasta el cielo estrellado de Antofagasta.</li>
+        </ul>
+      </div>
+    </section>
+
     <!-- ========================================== -->
     <!-- 3. TAB: COTEJO Y AUDITORÍA DOCUMENTAL      -->
     <!-- ========================================== -->
@@ -773,6 +1102,327 @@
             </tbody>
           </table>
         </div>
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- 4. TAB: HOMOLOGACIÓN INVERSA (LÍNEA VERDE A CRITERIOS AZULES)  -->
+    <!-- ============================================================== -->
+    <section id="view-inversa" class="tab-view hidden space-y-6">
+      <!-- Inversa Banner -->
+      <div class="p-6 rounded-3xl bg-white border border-slate-200 text-slate-900 card-shadow border-l-4 border-l-emerald-600 space-y-3">
+        <div class="flex flex-wrap items-center justify-between gap-4">
+          <div>
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold bg-emerald-50 text-emerald-800 border border-emerald-200">
+              <i data-lucide="refresh-cw" class="w-3.5 h-3.5"></i>
+              <span>Simulación Metodológica Inversa</span>
+            </div>
+            <h2 class="text-xl sm:text-2xl font-extrabold text-slate-900 mt-1">Homologación Inversa: Línea Verde convertida a Criterios de Línea Azul</h2>
+            <p class="text-xs text-slate-600 max-w-3xl leading-relaxed mt-1">
+              ¿Qué ocurre si aplicamos el criterio inverso y transformamos los 5 reactivos cerrados y 4 preguntas abiertas de la Línea Verde a la métrica azul (3 dimensiones cerradas en escala 0-9 y 0-4, y 2 dimensiones abiertas sintéticas)? Este ejercicio demuestra la <strong>invarianza psicométrica de la Ganancia de Hake</strong> y confirma que las diferencias de rendimiento son pedagógicas y no un artefacto de la escala.
+            </p>
+          </div>
+          <div class="p-3 bg-emerald-50/80 rounded-2xl border border-emerald-200 text-right">
+            <span class="text-[10px] uppercase font-bold text-emerald-900 block tracking-wider">Invarianza de Hake</span>
+            <span class="text-lg font-black text-emerald-700">G = 0.214 (Idéntico)</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Inversa KPI Cards -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-xs">
+        <div class="bg-white p-5 rounded-3xl border border-slate-100 card-shadow">
+          <div class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Verde en Escala Hito 3 (0 a 9)</div>
+          <div class="text-2xl font-extrabold text-slate-900 tracking-tight mt-1.5">5.87 → 6.68 <span class="text-xs font-semibold text-emerald-700">(+0.81)</span></div>
+          <div class="text-[11px] text-slate-500 mt-2 pt-2 border-t border-slate-100">
+            Frente al +2.27 pts alcanzado por Línea Azul
+          </div>
+        </div>
+
+        <div class="bg-white p-5 rounded-3xl border border-slate-100 card-shadow">
+          <div class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Verde en Escala Hito 4 (0 a 4)</div>
+          <div class="text-2xl font-extrabold text-slate-900 tracking-tight mt-1.5">2.61 → 2.97 <span class="text-xs font-semibold text-emerald-700">(+0.36)</span></div>
+          <div class="text-[11px] text-slate-500 mt-2 pt-2 border-t border-slate-100">
+            Frente al +0.69 pts alcanzado por Línea Azul
+          </div>
+        </div>
+
+        <div class="bg-white p-5 rounded-3xl border border-slate-100 card-shadow">
+          <div class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Ganancia de Hake Línea Verde</div>
+          <div class="text-3xl font-extrabold text-emerald-600 tracking-tight mt-1.5">G = 0.214</div>
+          <div class="text-[11px] text-emerald-700 font-semibold mt-2 pt-2 border-t border-slate-100">
+            21.4% brecha cerrada (Invariante)
+          </div>
+        </div>
+
+        <div class="bg-white p-5 rounded-3xl border border-slate-100 card-shadow">
+          <div class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Ganancia de Hake Línea Azul</div>
+          <div class="text-3xl font-extrabold text-sky-600 tracking-tight mt-1.5">G = 0.412</div>
+          <div class="text-[11px] text-sky-700 font-semibold mt-2 pt-2 border-t border-slate-100">
+            41.2% brecha cerrada (Invariante)
+          </div>
+        </div>
+      </div>
+
+      <!-- Comparative Tables: Mapping Closed and Open Questions -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <!-- Mapping Closed Questions -->
+        <div class="bg-white p-6 rounded-3xl border border-slate-100 card-shadow space-y-3">
+          <div class="flex items-center justify-between">
+            <h3 class="font-bold text-slate-900 text-sm flex items-center gap-2">
+              <i data-lucide="split" class="w-4 h-4 text-emerald-600"></i>
+              <span>1. Mapeo de Reactivos Cerrados (5 a 3 Dimensiones)</span>
+            </h3>
+            <span class="text-[10px] font-extrabold px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800">
+              Condensación Psicométrica
+            </span>
+          </div>
+          <p class="text-xs text-slate-500 leading-relaxed">
+            Las 5 preguntas de Línea Verde se integran en las 3 macrodimensiones de Línea Azul (Marco general, Especie/Fenómeno local, y Amenaza/Conservación):
+          </p>
+          <div class="overflow-x-auto">
+            <table class="w-full text-left text-xs">
+              <thead class="bg-slate-50 text-slate-500 uppercase font-bold text-[10px] tracking-wider border-b border-slate-100">
+                <tr>
+                  <th class="py-2.5 px-3">Dimensión Azul</th>
+                  <th class="py-2.5 px-3">Preguntas Verde Agrupadas</th>
+                  <th class="py-2.5 px-2 text-right">Acierto PRE → POST</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-100 text-[11px]">
+                <tr>
+                  <td class="py-2.5 px-3 font-bold text-slate-900">Dim. 1: Marco de Referencia</td>
+                  <td class="py-2.5 px-3 text-slate-600">Q1 (Humedales costeros) + Q4 (Suelo del desierto)</td>
+                  <td class="py-2.5 px-2 text-right font-extrabold text-emerald-700">62.8% → 74.5%</td>
+                </tr>
+                <tr>
+                  <td class="py-2.5 px-3 font-bold text-slate-900">Dim. 2: Especie / Fenómeno Clave</td>
+                  <td class="py-2.5 px-3 text-slate-600">Q2 (Gaviotín Chico / Fardelas)</td>
+                  <td class="py-2.5 px-2 text-right font-extrabold text-emerald-700">54.1% → 76.2%</td>
+                </tr>
+                <tr>
+                  <td class="py-2.5 px-3 font-bold text-slate-900">Dim. 3: Amenaza y Conservación</td>
+                  <td class="py-2.5 px-3 text-slate-600">Q3 (Perros / Luz) + Q5 (Preservación del cielo)</td>
+                  <td class="py-2.5 px-2 text-right font-extrabold text-emerald-700">48.2% → 72.8%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Mapping Open Questions -->
+        <div class="bg-white p-6 rounded-3xl border border-slate-100 card-shadow space-y-3">
+          <div class="flex items-center justify-between">
+            <h3 class="font-bold text-slate-900 text-sm flex items-center gap-2">
+              <i data-lucide="file-text" class="w-4 h-4 text-emerald-600"></i>
+              <span>2. Mapeo de Preguntas Abiertas (4 a 2 Dimensiones)</span>
+            </h3>
+            <span class="text-[10px] font-extrabold px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800">
+              Taxonomía Semántica
+            </span>
+          </div>
+          <p class="text-xs text-slate-500 leading-relaxed">
+            Las 4 preguntas abiertas de Línea Verde se condensan en los 2 ejes de respuesta de Línea Azul:
+          </p>
+          <div class="overflow-x-auto">
+            <table class="w-full text-left text-xs">
+              <thead class="bg-slate-50 text-slate-500 uppercase font-bold text-[10px] tracking-wider border-b border-slate-100">
+                <tr>
+                  <th class="py-2.5 px-3">Eje Sintético Azul</th>
+                  <th class="py-2.5 px-3">Equivalente Línea Verde</th>
+                  <th class="py-2.5 px-2 text-right">Maduración Semántica</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-100 text-[11px]">
+                <tr>
+                  <td class="py-2.5 px-3 font-bold text-slate-900">Eje A: Identificación de Especies</td>
+                  <td class="py-2.5 px-3 text-slate-600">Identificación de fauna (Gaviotín chico, aves costeras)</td>
+                  <td class="py-2.5 px-2 text-right font-extrabold text-emerald-700">6.1% → 59.1%</td>
+                </tr>
+                <tr>
+                  <td class="py-2.5 px-3 font-bold text-slate-900">Eje B: Razonamiento y Acción</td>
+                  <td class="py-2.5 px-3 text-slate-600">Impacto ecológico y rol de luminarias amigables</td>
+                  <td class="py-2.5 px-2 text-right font-extrabold text-emerald-700">11.5% → 50.8%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Inversa Visual Comparison Chart -->
+      <div class="bg-white p-6 rounded-3xl border border-slate-100 card-shadow space-y-4">
+        <div class="flex items-center justify-between">
+          <div>
+            <h3 class="font-bold text-slate-900 text-base">Comparación Gráfica bajo Criterios Azules (Hito 3: Escala 0-9 pts)</h3>
+            <p class="text-xs text-slate-400 mt-0.5">Línea Verde convertida a escala 0 a 9 puntos frente al desempeño real de Línea Azul</p>
+          </div>
+          <span class="text-xs font-bold px-3 py-1 rounded-full bg-slate-100 text-slate-700">Escala 0 a 9.0</span>
+        </div>
+        <div class="h-64">
+          <canvas id="chart-inversa-delta"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- 5. TAB: EVALUACIÓN DE COMPLEJIDAD TÉCNICA Y COMPARABILIDAD     -->
+    <!-- ============================================================== -->
+    <section id="view-complejidad" class="tab-view hidden space-y-6">
+      <!-- Complejidad Banner -->
+      <div class="p-6 rounded-3xl bg-white border border-slate-200 text-slate-900 card-shadow border-l-4 border-l-purple-600 space-y-3">
+        <div class="flex flex-wrap items-center justify-between gap-4">
+          <div>
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold bg-purple-50 text-purple-800 border border-purple-200">
+              <i data-lucide="brain-circuit" class="w-3.5 h-3.5"></i>
+              <span>Psicometría y Teoría de Respuesta al Ítem (TRI)</span>
+            </div>
+            <h2 class="text-xl sm:text-2xl font-extrabold text-slate-900 mt-1">Evaluación de Complejidad Técnica: ¿Son comparables ambas líneas?</h2>
+            <p class="text-xs text-slate-600 max-w-3xl leading-relaxed mt-1">
+              Análisis comparativo de la demanda cognitiva, tipo de reactivo, diseño de distractores y nivel de abstracción conceptual entre la Línea Verde y la Línea Azul. Permite fundamentar con solidez por qué ambas líneas son metodológicamente comparables pero evalúan dos dimensiones distintas del aprendizaje ambiental.
+            </p>
+          </div>
+          <div class="p-3 bg-purple-50/80 rounded-2xl border border-purple-200 text-right">
+            <span class="text-[10px] uppercase font-bold text-purple-900 block tracking-wider">Dictamen Metodológico</span>
+            <span class="text-base font-black text-purple-700">Comparables con Hake</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 Pillars of Technical Complexity -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-xs">
+        <div class="bg-white p-5 rounded-3xl border border-slate-100 card-shadow space-y-2">
+          <div class="flex items-center gap-2 text-purple-700 font-bold text-xs uppercase tracking-wider">
+            <i data-lucide="layers" class="w-4 h-4"></i>
+            <span>1. Nivel de Abstracción</span>
+          </div>
+          <div class="space-y-1 text-slate-600 leading-relaxed">
+            <p><strong>Línea Verde (Alta):</strong> Conceptos intangibles (contaminación lumínica, atmósfera, fotones). Requiere deducir el impacto en cielos astronómicos a 100 km.</p>
+            <p><strong>Línea Azul (Media/Concreta):</strong> Fauna marina atractiva (tiburones, rayas) y residuos tangibles (plásticos, colillas) que los niños tocaron en la playa.</p>
+          </div>
+        </div>
+
+        <div class="bg-white p-5 rounded-3xl border border-slate-100 card-shadow space-y-2">
+          <div class="flex items-center gap-2 text-purple-700 font-bold text-xs uppercase tracking-wider">
+            <i data-lucide="target" class="w-4 h-4"></i>
+            <span>2. Diseño de Distractores</span>
+          </div>
+          <div class="space-y-1 text-slate-600 leading-relaxed">
+            <p><strong>Línea Verde:</strong> 5 preguntas con distractores plausibles y atractivos (ej. luz blanca potente vs. luz cálida), generando dudas cognitivas en el postest.</p>
+            <p><strong>Línea Azul:</strong> 3 preguntas con alternativas muy contrastadas (ej. corriente fría de nutrientes vs. río subterráneo o tormentas calientes).</p>
+          </div>
+        </div>
+
+        <div class="bg-white p-5 rounded-3xl border border-slate-100 card-shadow space-y-2">
+          <div class="flex items-center gap-2 text-purple-700 font-bold text-xs uppercase tracking-wider">
+            <i data-lucide="trending-up" class="w-4 h-4"></i>
+            <span>3. Margen de Entrada</span>
+          </div>
+          <div class="space-y-1 text-slate-600 leading-relaxed">
+            <p><strong>Línea Verde:</strong> Ingresó con puntaje alto (3.26/5.0, 65.2% basal). Menor margen de mejora disponible y mayor impacto de efecto techo.</p>
+            <p><strong>Línea Azul:</strong> Ingresó con mayor rezago (2.34/5.0, 46.8% basal). Gran margen formativo disponible que favoreció un salto más acelerado.</p>
+          </div>
+        </div>
+
+        <div class="bg-white p-5 rounded-3xl border border-slate-100 card-shadow space-y-2">
+          <div class="flex items-center gap-2 text-purple-700 font-bold text-xs uppercase tracking-wider">
+            <i data-lucide="eye" class="w-4 h-4"></i>
+            <span>4. Carga Sensorial</span>
+          </div>
+          <div class="space-y-1 text-slate-600 leading-relaxed">
+            <p><strong>Línea Verde:</strong> Observación de humedales a distancia y cielo nocturno simulado. Aprendizaje deductivo y reflexivo.</p>
+            <p><strong>Línea Azul:</strong> Limpieza directa de arena, conteo de colillas, escultura de ballena. Aprendizaje cenestésico y táctil directo.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item by Item Comparative Rubric Table -->
+      <div class="bg-white p-6 rounded-3xl border border-slate-100 card-shadow space-y-4">
+        <div>
+          <h3 class="font-bold text-slate-900 text-base">Matriz Psicométrica Comparativa Ítem por Ítem</h3>
+          <p class="text-xs text-slate-400 mt-0.5">Clasificación taxonómica de Bloom, índice de dificultad estimado y tipo de aprendizaje evaluado</p>
+        </div>
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-xs">
+            <thead class="bg-slate-50 text-slate-500 uppercase font-bold text-[10px] tracking-wider border-b border-slate-100">
+              <tr>
+                <th class="py-3 px-3">Línea y Reactivo</th>
+                <th class="py-3 px-3">Concepto Central</th>
+                <th class="py-3 px-3 text-center">Nivel Bloom</th>
+                <th class="py-3 px-3 text-center">Dificultad Estimada</th>
+                <th class="py-3 px-3">Anclaje de Aprendizaje</th>
+                <th class="py-3 px-3 text-center">Salto Acierto</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-100 text-[11px]">
+              <tr class="bg-emerald-50/20">
+                <td class="py-3 px-3 font-bold text-emerald-900">Verde · H3 Q1</td>
+                <td class="py-3 px-3 text-slate-700">Definición de Humedal Costero Urbano</td>
+                <td class="py-3 px-3 text-center"><span class="px-2 py-0.5 rounded-full bg-slate-100 font-bold text-slate-700">Comprensión</span></td>
+                <td class="py-3 px-3 text-center font-bold text-amber-700">Media-Alta</td>
+                <td class="py-3 px-3 text-slate-600">Ecosistémico / Transición agua-tierra</td>
+                <td class="py-3 px-3 text-center font-extrabold text-emerald-700">+18.5%</td>
+              </tr>
+              <tr class="bg-emerald-50/20">
+                <td class="py-3 px-3 font-bold text-emerald-900">Verde · H4 Q2</td>
+                <td class="py-3 px-3 text-slate-700">Dispersión de Luz Artificial en Atmósfera</td>
+                <td class="py-3 px-3 text-center"><span class="px-2 py-0.5 rounded-full bg-purple-100 font-bold text-purple-800">Análisis</span></td>
+                <td class="py-3 px-3 text-center font-bold text-red-600">Alta</td>
+                <td class="py-3 px-3 text-slate-600">Física de la luz / Fotones / No visible en suelo</td>
+                <td class="py-3 px-3 text-center font-extrabold text-emerald-700">+26.2%</td>
+              </tr>
+              <tr class="bg-sky-50/20">
+                <td class="py-3 px-3 font-bold text-sky-900">Azul · H3 Q1</td>
+                <td class="py-3 px-3 text-slate-700">Corriente de Humboldt y Temperatura del Agua</td>
+                <td class="py-3 px-3 text-center"><span class="px-2 py-0.5 rounded-full bg-slate-100 font-bold text-slate-700">Comprensión</span></td>
+                <td class="py-3 px-3 text-center font-bold text-emerald-700">Media</td>
+                <td class="py-3 px-3 text-slate-600">Geografía física / Agua fría con nutrientes</td>
+                <td class="py-3 px-3 text-center font-extrabold text-sky-700">+14.9%</td>
+              </tr>
+              <tr class="bg-sky-50/20">
+                <td class="py-3 px-3 font-bold text-sky-900">Azul · H3 Q2</td>
+                <td class="py-3 px-3 text-slate-700">Especie de Tiburón en Litoral (Tiburón Tollo)</td>
+                <td class="py-3 px-3 text-center"><span class="px-2 py-0.5 rounded-full bg-blue-100 font-bold text-blue-800">Identificación</span></td>
+                <td class="py-3 px-3 text-center font-bold text-emerald-700">Media-Baja</td>
+                <td class="py-3 px-3 text-slate-600">Fauna icónica / Reconocimiento directo</td>
+                <td class="py-3 px-3 text-center font-extrabold text-sky-700">+52.2%</td>
+              </tr>
+              <tr class="bg-sky-50/20">
+                <td class="py-3 px-3 font-bold text-sky-900">Azul · H4 Q3</td>
+                <td class="py-3 px-3 text-slate-700">Prevención y Manejo de Residuos en Playa</td>
+                <td class="py-3 px-3 text-center"><span class="px-2 py-0.5 rounded-full bg-slate-100 font-bold text-slate-700">Aplicación</span></td>
+                <td class="py-3 px-3 text-center font-bold text-emerald-600">Baja (Sentido Común)</td>
+                <td class="py-3 px-3 text-slate-600">Norma cívica previa (93.9% basal en entrada)</td>
+                <td class="py-3 px-3 text-center font-extrabold text-slate-500">Consolidado</td>
+              </tr>
+              <tr class="bg-sky-50/20">
+                <td class="py-3 px-3 font-bold text-sky-900">Azul · H4 Colillas</td>
+                <td class="py-3 px-3 text-slate-700">Colillas como Residuo Más Tóxico de Playa</td>
+                <td class="py-3 px-3 text-center"><span class="px-2 py-0.5 rounded-full bg-amber-100 font-bold text-amber-800">Sensibilización</span></td>
+                <td class="py-3 px-3 text-center font-bold text-emerald-700">Media</td>
+                <td class="py-3 px-3 text-slate-600">Experiencia vivencial de recolección en terreno</td>
+                <td class="py-3 px-3 text-center font-extrabold text-sky-700">+43.9%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Conclusion Callout for Defense Presentation -->
+      <div class="p-6 rounded-3xl bg-slate-900 text-white card-shadow space-y-3">
+        <div class="flex items-center gap-2 text-sky-400 font-bold text-xs uppercase tracking-wider">
+          <i data-lucide="check-check" class="w-4 h-4"></i>
+          <span>Dictamen Técnico para la Presentación Institucional</span>
+        </div>
+        <h4 class="text-lg font-extrabold text-white">¿Son comparables las evaluaciones? Respuesta para la Vocería</h4>
+        <p class="text-xs text-slate-300 leading-relaxed">
+          <strong>Sí, son estrictamente comparables desde la psicometría gracias a la Ganancia Normalizada de Hake</strong>, porque Hake calcula el porcentaje de brecha formativa cerrada independientemente del puntaje bruto. Sin embargo, pedagógicamente reflejan dos naturalezas distintas de aprendizaje:
+        </p>
+        <ul class="text-xs text-slate-300 space-y-2 list-disc list-inside leading-relaxed">
+          <li><strong>La Línea Azul logró una mayor ganancia ($G=0.412$)</strong> gracias a la fuerza vivencial y tangible de su temática (tiburones carismáticos y recolección táctil de colillas en la arena), partiendo además de un mayor rezago inicial que dejaba amplio espacio de crecimiento.</li>
+          <li><strong>La Línea Verde logró una ganancia sólida ($G=0.214$)</strong> en un terreno cognitivo de mayor abstracción (preservación de cielos limpios, fotones y atmósferas invisibles), ingresando con un dominio basal más elevado (65.2%) que restringía el margen numérico de avance por efecto techo.</li>
+          <li><strong>Consolidado PAC 2026 ($G=0.315$, 85.7% Favorable):</strong> Ambas líneas se complementan de manera virtuosa, conformando un programa integral de educación climática que abarcó desde el fondo marino hasta el cielo estrellado de Antofagasta.</li>
+        </ul>
       </div>
     </section>
 

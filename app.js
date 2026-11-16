@@ -295,6 +295,10 @@ function switchTab(tabId) {
     filtersContainer.style.display = (tabId === 'resumen') ? 'flex' : 'none';
   }
 
+  if (tabId === 'inversa') {
+    renderInversaChart();
+  }
+
   if (window.lucide) lucide.createIcons();
 }
 
@@ -653,6 +657,72 @@ function renderComparisonPacChart() {
         legend: {
           position: 'top',
           labels: { color: '#e2e8f0', boxWidth: 12 }
+        }
+      }
+    }
+  });
+}
+
+function renderInversaChart() {
+  const ctx = document.getElementById('chart-inversa-delta');
+  if (!ctx) return;
+  if (CHARTS['inversaDelta']) CHARTS['inversaDelta'].destroy();
+
+  CHARTS['inversaDelta'] = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: [
+        'H3: Verde Homologada (0-9)',
+        'H3: Azul Real (0-9)',
+        'H4: Verde Homologada (0-4)',
+        'H4: Azul Real (0-4)'
+      ],
+      datasets: [
+        {
+          label: 'Diagnóstico Inicial (PRE)',
+          data: [5.87, 3.28, 2.61, 2.29],
+          backgroundColor: '#94a3b8',
+          borderRadius: 6
+        },
+        {
+          label: 'Evaluación Cierre (POST)',
+          data: [6.68, 5.55, 2.97, 2.98],
+          backgroundColor: ['#10b981', '#0284c7', '#059669', '#0369a1'],
+          borderRadius: 6
+        },
+        {
+          label: 'Delta de Avance (+pts)',
+          data: [0.81, 2.27, 0.36, 0.69],
+          backgroundColor: '#f59e0b',
+          borderRadius: 6
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      scales: {
+        y: {
+          beginAtZero: true,
+          title: { display: true, text: 'Puntajes y Deltas según Escala' }
+        },
+        x: {
+          ticks: { font: { weight: 'bold', size: 10 } }
+        }
+      },
+      plugins: {
+        legend: {
+          position: 'top',
+          labels: { boxWidth: 12, font: { size: 11 } }
+        },
+        tooltip: {
+          callbacks: {
+            afterBody: (context) => {
+              const idx = context[0].dataIndex;
+              const hakes = ['G = 0.214 (21.4%)', 'G = 0.381 (38.1%)', 'G = 0.214 (21.4%)', 'G = 0.447 (44.7%)'];
+              return `Ganancia de Hake: ${hakes[idx]}`;
+            }
+          }
         }
       }
     }
