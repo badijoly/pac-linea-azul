@@ -326,17 +326,17 @@ function updateHitoBanner() {
   const sample = document.getElementById('banner-sample-text');
 
   if (CURRENT_HITO === 'Global') {
-    if (title) title.textContent = "Resumen Global del Aprendizaje (Challwa + Desierto Azul)";
-    if (desc) desc.textContent = "Evaluación consolidada en escala normalizada 0 a 5.0 puntos. Integra el reconocimiento ecológico de tiburones, rayas y biodiversidad marina con la concientización sobre plásticos y colillas costeras.";
+    if (title) title.textContent = "Resumen Global del Aprendizaje (Hito 3 + Hito 4)";
+    if (desc) desc.textContent = "Evaluación consolidada en escala normalizada 0 a 5.0 puntos. Integra el reconocimiento ecológico de tiburones, rayas y biodiversidad marina (Hito 3: «El litoral que nadie conoce») con la concientización sobre plásticos y colillas costeras (Hito 4: «El plástico que viajó desde el desierto»).";
     if (sample) sample.textContent = "Muestra: 132 evaluaciones pareadas (76 estudiantes únicos en 8 colegios)";
   } else if (CURRENT_HITO === 'Challwa') {
-    if (title) title.textContent = "Hito 1: Challwa · Biodiversidad Marina y Depredadores Tope";
-    if (desc) desc.textContent = "Evaluación centrada en la trama trófica del océano de Antofagasta, identificación de especies locales (tiburón tollo, gatopardo, raya águila) y su rol regulador frente a presas y lobos marinos.";
-    if (sample) sample.textContent = "Muestra Hito 1: 67 evaluaciones pareadas (8 colegios)";
+    if (title) title.textContent = "Hito 3: «El litoral que nadie conoce» · Biodiversidad Marina y Condrictios";
+    if (desc) desc.textContent = "Evaluación centrada en la trama trófica del océano de Antofagasta, identificación de especies locales (tiburón tollo, gatopardo, raya águila, pez guitarra) y su rol regulador frente a presas y lobos marinos.";
+    if (sample) sample.textContent = "Muestra Hito 3: 67 evaluaciones pareadas (8 colegios)";
   } else {
-    if (title) title.textContent = "Hito 2: Desierto Azul · Plásticos y Residuos Costeros";
+    if (title) title.textContent = "Hito 4: «El plástico que viajó desde el desierto» · Plásticos y Conservación Litoral";
     if (desc) desc.textContent = "Evaluación focalizada en vectores de contaminación litoral, tiempo de degradación de materiales y el reconocimiento de las colillas de cigarro como el residuo más tóxico y numeroso de las playas.";
-    if (sample) sample.textContent = "Muestra Hito 2: 65 evaluaciones pareadas (8 colegios)";
+    if (sample) sample.textContent = "Muestra Hito 4: 65 evaluaciones pareadas (8 colegios)";
   }
 }
 

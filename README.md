@@ -31,8 +31,8 @@ Para hacer posible una comparación justa, científica y rigurosa entre ambas l�
 * **Reactivos Cerrados:**
   * En la Línea Verde se utilizaron 5 preguntas cerradas (escala directa de 0.0 a 5.0 puntos).
   * En la Línea Azul se utilizaron 3 preguntas cerradas:
-    * **Hito 1 (Challwa):** Rúbrica de 3 dimensiones de 0 a 3 puntos cada una (escala bruta de 0 a 9 puntos).
-    * **Hito 2 (Desierto Azul):** 3 reactivos conceptuales de 0 a 3 puntos + 1 reactivo de residuo crítico (colillas de cigarro), totalizando una escala bruta de 0 a 4 puntos.
+    * **Hito 3 («El litoral que nadie conoce»):** Rúbrica de 3 dimensiones de 0 a 3 puntos cada una (escala bruta de 0 a 9 puntos).
+    * **Hito 4 («El plástico que viajó desde el desierto»):** 3 reactivos conceptuales de 0 a 3 puntos + 1 reactivo de residuo crítico (colillas de cigarro), totalizando una escala bruta de 0 a 4 puntos.
   * **Fórmula de Normalización Canónica:**
     $$\text{Puntaje Normalizado (0-5.0)} = \left(\frac{\text{Puntaje Bruto}}{\text{Puntaje Máximo}}\right) \times 5.0$$
 * **Reactivos Abiertos:**

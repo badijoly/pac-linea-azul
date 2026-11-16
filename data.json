@@ -3,11 +3,11 @@
     "programa": "Programa de Acción Climática (PAC 2026)",
     "linea": "Línea Azul",
     "hitos": {
-      "Hito 1": "Challwa: Biodiversidad Marina y Depredadores Tope",
-      "Hito 2": "Desierto Azul: Contaminación por Plásticos y Colillas Costeras"
+      "Hito 3": "El litoral que nadie conoce (Biodiversidad Marina y Condrictios)",
+      "Hito 4": "El plástico que viajó desde el desierto (Contaminación por Plásticos y Colillas Costeras)"
     },
-    "escala_original_h1": "0 a 9 puntos (3 preguntas/dimensiones de 3 pts)",
-    "escala_original_h2": "0 a 4 puntos (3 pts conceptos + 1 pto residuo crítico colillas)",
+    "escala_original_h3": "0 a 9 puntos (3 preguntas/dimensiones de 3 pts)",
+    "escala_original_h4": "0 a 4 puntos (3 pts conceptos + 1 pto residuo crítico colillas)",
     "escala_normalizada": "0 a 5.0 puntos (Canónica y equivalente a Línea Verde)"
   },
   "resumen_linea_azul": {
