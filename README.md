@@ -3,6 +3,10 @@
 
 Dashboard interactivo e independiente para el análisis psicométrico, cualitativo y comparativo de los aprendizajes de la **Línea Azul** (Océano, Biodiversidad de Condrictios y Conservación Litoral), homologado a la escala canónica de la **Línea Verde**.
 
+## 🚀 Acceso en Línea (GitHub Pages)
+Puedes acceder directamente al dashboard en:
+👉 **[https://badijoly.github.io/pac-linea-azul/](https://badijoly.github.io/pac-linea-azul/)**
+
 ---
 
 ## 🌊 1. Estructura del Dashboard
